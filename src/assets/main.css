@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette sampled from the design: teal/emerald/cyan lagoon tones */
+  --color-brand-50: #ecfdf7;
+  --color-brand-100: #d1faea;
+  --color-brand-200: #a5f2d8;
+  --color-brand-300: #6de4c3;
+  --color-brand-400: #34cead;
+  --color-brand-500: #14b892;
+  --color-brand-600: #0e9c7c;
+  --color-brand-700: #0f7c66;
+  --color-brand-800: #116353;
+  --color-brand-900: #0f5145;
+  --color-brand-950: #072e28;
+
+  --color-lagoon-400: #2fc0e0;
+  --color-lagoon-500: #16a9cb;
+  --color-lagoon-600: #0f88a8;
+
+  --font-display: "Playfair Display", "Georgia", serif;
+  --font-sans: "Poppins", "system-ui", "sans-serif";
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-brand-950);
+  }
+}
+
+@layer utilities {
+  .tracking-widest-plus {
+    letter-spacing: 0.25em;
+  }
+}
