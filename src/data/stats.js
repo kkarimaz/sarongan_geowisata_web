@@ -6,8 +6,8 @@ export const stats = [
     color: 'bg-brand-700',
   },
   {
-    label: 'Jumlah Destinasi',
-    value: '12 Lokasi',
+    label: 'Populasi',
+    value: '6.525 Jiwa',
     color: 'bg-lagoon-500',
   },
   {
