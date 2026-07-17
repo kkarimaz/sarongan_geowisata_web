@@ -16,7 +16,7 @@ export const articles = [
   },
   {
     slug: 'artikel-2',
-    title: 'Judul Artikel Edukasi 2',
+    title: 'Judul Artikel Berita 2',
     category: 'Konservasi',
     date: '2026-02-03',
     excerpt: loremShort,
@@ -25,7 +25,7 @@ export const articles = [
   },
   {
     slug: 'artikel-3',
-    title: 'Judul Artikel Edukasi 3',
+    title: 'Judul Artikel Berita 3',
     category: 'Ekowisata',
     date: '2026-03-18',
     excerpt: loremShort,
@@ -34,7 +34,7 @@ export const articles = [
   },
   {
     slug: 'artikel-4',
-    title: 'Judul Artikel Edukasi 4',
+    title: 'Judul Artikel Berita 4',
     category: 'Budaya Lokal',
     date: '2026-04-25',
     excerpt: loremShort,
@@ -43,7 +43,7 @@ export const articles = [
   },
   {
     slug: 'artikel-5',
-    title: 'Judul Artikel Edukasi 5',
+    title: 'Judul Artikel Berita 5',
     category: 'Geologi',
     date: '2026-05-09',
     excerpt: loremShort,
@@ -52,7 +52,7 @@ export const articles = [
   },
   {
     slug: 'artikel-6',
-    title: 'Judul Artikel Edukasi 6',
+    title: 'Judul Artikel Berita 6',
     category: 'Konservasi',
     date: '2026-06-14',
     excerpt: loremShort,
