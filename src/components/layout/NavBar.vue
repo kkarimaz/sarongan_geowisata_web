@@ -7,9 +7,9 @@ const isOpen = ref(false)
 const links = [
   { to: '/', label: 'Home' },
   { to: '/destination', label: 'Destination' },
+  { to: '/news', label: 'News'},
   { to: '/edukasi', label: 'Edukasi' },
   { to: '/contact', label: 'Contact' },
-  { to: '/news', label: 'News'},
 ]
 </script>
 
