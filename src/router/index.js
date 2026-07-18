@@ -25,9 +25,21 @@ const router = createRouter({
       component: () => import('@/views/edukasi_view.vue'),
     },
     {
+      path: '/edukasi/:slug',
+      name: 'edukasi-detail',
+      component: () => import('@/views/edukasi_detail_view.vue'),
+      props: true,
+    },
+    {
       path: '/news',
       name: 'news',
       component: () => import('@/views/news_view.vue'),
+    },
+    {
+      path: '/news/:slug',
+      name: 'news-detail',
+      component: () => import('@/views/news_detail_view.vue'),
+      props: true,
     },
     {
       path: '/contact',
