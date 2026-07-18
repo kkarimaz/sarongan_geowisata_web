@@ -1,4 +1,6 @@
 // Placeholder — ganti judul, tanggal, kategori, foto, dan isi artikel dengan konten asli.
+import tehHerbal1 from '@/assets/images/edukasi/teh_herbal_1.JPG'
+
 const loremShort =
   'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since 1966.'
 
@@ -18,6 +20,7 @@ export const articles = [
               Proses pembuatannya pun relatif sederhana. Daun kelor yang telah dipetik, dicuci hingga bersih, kemudian dikeringkan menggunakan oven pada suhu sekitar 80°C selama kurang lebih 30 menit dan sering dilakukan pengecekan setiap 10 menit. Opsi pengeringan lain dapat dilakukan dengan dijemur di bawah sinar matahari selama kurang lebih tiga hari dengan penutup kain bersih berwarna gelap untuk menghindari teh terkontaminasi dengan zat lain. Daun yang telah benar-benar kering ditandai dengan tekstur yang rapuh saat diremas, kemudian dipotong atau diblender kasar. Pada tahap ini, aroma daun kelor juga menjadi lebih harum menyerupai aroma daun teh kering, sehingga memberikan sensasi segar saat diseduh. 
               Melalui kegiatan ini, Tim KKN-PPM Universitas Gadjah Mada berharap pemanfaatan daun kelor tidak terbatas sebagai sayuran, melainkan juga berkembang menjadi produk olahan yang bernilai tambah, mudah didapat dan dibuat, serta dapat menjadi alternatif minuman herbal bagi masyarakat. Tujuan lain dari program ini sebagai upaya dalam mendorong pemanfaatan pengelolaan lahan, serta pemanfaatan kekayaan sumber daya alam di Desa Sarongan sebagai bagian dari budaya hidup sehat yang berkelanjutan. 
               `,
+    image: tehHerbal1,
     variant: 1,
   },
   {

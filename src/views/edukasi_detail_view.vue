@@ -34,7 +34,13 @@ const others = computed(() => articles.filter((a) => a.slug !== route.params.slu
       </RouterLink>
 
       <div class="mt-6 aspect-[16/8] overflow-hidden rounded-3xl shadow-lg shadow-brand-950/10">
-        <PlaceholderImage :label="article.title" :variant="article.variant" rounded="rounded-none" />
+        <img
+          v-if="article.image"
+          :src="article.image"
+          :alt="article.title"
+          class="h-full w-full object-cover"
+        />
+        <PlaceholderImage v-else :label="article.title" :variant="article.variant" rounded="rounded-none" />
       </div>
 
       <div class="mt-6 flex flex-wrap gap-4 text-sm text-brand-950/60">

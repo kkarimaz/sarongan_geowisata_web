@@ -15,7 +15,13 @@ defineProps({
     class="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-md shadow-brand-950/5 ring-1 ring-brand-950/5 transition hover:-translate-y-1 hover:shadow-xl"
   >
     <div class="aspect-[16/10] overflow-hidden">
-      <PlaceholderImage :label="article.title" :variant="article.variant" rounded="rounded-none" />
+      <img
+        v-if="article.image"
+        :src="article.image"
+        :alt="article.title"
+        class="h-full w-full object-cover"
+      />
+      <PlaceholderImage v-else :label="article.title" :variant="article.variant" rounded="rounded-none" />
     </div>
     <div class="flex flex-1 flex-col gap-2 p-5">
       <span class="inline-flex w-fit rounded-full bg-lagoon-500/10 px-3 py-1 text-xs font-semibold tracking-wide text-lagoon-600">
