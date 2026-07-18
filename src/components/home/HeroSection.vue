@@ -6,8 +6,8 @@ import PlaceholderHero from '@/components/common/PlaceholderHero.vue'
   <section class="relative h-[560px] w-full overflow-hidden md:h-[680px]">
     <PlaceholderHero label="Foto Aerial Kawasan Sarongan — Placeholder" />
     <img 
-    src="/home/khansa/Documents/coding/sarongan_geowisata_web/src/assets/images/IMG_6276.webp" 
-    alt="Deskripsi foto" 
+    src="@/assets/images/IMG_6276.webp" 
+    alt="Teluk Ijo, Sarongan, Banyuwangi" 
     class="absolute inset-0 h-full w-full object-cover z-0"
     />
     <div class="relative mx-auto flex h-full max-w-7xl flex-col justify-center px-6 md:px-10">
