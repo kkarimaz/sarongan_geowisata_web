@@ -1,5 +1,5 @@
 // Placeholder — ganti judul, tanggal, kategori, foto, dan isi artikel dengan konten asli.
-import tehHerbal1 from '@/assets/images/edukasi/teh_herbal_1.JPG'
+import tehHerbal1 from '@/assets/images/edukasi/teh_herbal_1.webp'
 
 const loremShort =
   'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since 1966.'
