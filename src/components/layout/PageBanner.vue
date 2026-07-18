@@ -8,16 +8,16 @@ defineProps({
 </script>
 
 <template>
-  <section class="relative flex h-72 items-end overflow-hidden md:h-80">
+  <section class="relative flex min-h-72 items-end md:min-h-80">
     <PlaceholderHero />
-    <div class="relative mx-auto w-full max-w-7xl px-6 pb-10 md:px-10">
+    <div class="relative mx-auto w-full max-w-7xl px-6 py-10 md:px-10">
       <p
         v-if="eyebrow"
         class="text-xs font-semibold tracking-widest-plus text-white/80 uppercase"
       >
         {{ eyebrow }}
       </p>
-      <h1 class="mt-2 font-display text-4xl font-semibold text-white md:text-5xl">
+      <h1 class="mt-2 text-balance font-display text-3xl font-semibold text-white md:text-5xl">
         {{ title }}
       </h1>
     </div>
