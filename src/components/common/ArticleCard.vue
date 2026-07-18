@@ -1,18 +1,19 @@
 <script setup>
 import { Calendar } from '@lucide/vue'
 import PlaceholderImage from './PlaceholderImage.vue'
+import { formatDate } from '@/utils/format'
 
 defineProps({
   article: { type: Object, required: true },
+  basePath: { type: String, default: '/edukasi' },
 })
-
-function formatDate(iso) {
-  return new Date(iso).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })
-}
 </script>
 
 <template>
-  <article class="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-md shadow-brand-950/5 ring-1 ring-brand-950/5 transition hover:-translate-y-1 hover:shadow-xl">
+  <router-link
+    :to="`${basePath}/${article.slug}`"
+    class="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-md shadow-brand-950/5 ring-1 ring-brand-950/5 transition hover:-translate-y-1 hover:shadow-xl"
+  >
     <div class="aspect-[16/10] overflow-hidden">
       <PlaceholderImage :label="article.title" :variant="article.variant" rounded="rounded-none" />
     </div>
@@ -29,5 +30,5 @@ function formatDate(iso) {
       </p>
       <p class="mt-1 line-clamp-3 text-sm text-brand-950/65">{{ article.excerpt }}</p>
     </div>
-  </article>
+  </router-link>
 </template>

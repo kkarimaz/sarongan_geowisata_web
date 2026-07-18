@@ -14,7 +14,7 @@ import { articles } from '@/data/news'
       </p>
 
       <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <ArticleCard v-for="article in articles" :key="article.slug" :article="article" />
+        <ArticleCard v-for="article in articles" :key="article.slug" :article="article" base-path="/news" />
       </div>
     </section>
   </div>
