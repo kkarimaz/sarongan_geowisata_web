@@ -9,13 +9,18 @@ import { destinations } from '@/data/destinations'
     <PageBanner eyebrow="Jelajahi" title="Destinations" />
 
     <section class="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
-      <p class="max-w-2xl text-brand-950/65">
+      <p v-reveal class="max-w-2xl text-brand-950/65">
         Daftar destinasi wisata di kawasan Sarongan berikut masih menggunakan data dan foto
         placeholder — akan diperbarui dengan informasi resmi setiap lokasi.
       </p>
 
       <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <DestinationCard v-for="destination in destinations" :key="destination.slug" :destination="destination" />
+        <DestinationCard
+          v-for="(destination, index) in destinations"
+          :key="destination.slug"
+          :destination="destination"
+          v-reveal="(index % 3) * 120"
+        />
       </div>
     </section>
   </div>
