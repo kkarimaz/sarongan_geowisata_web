@@ -11,8 +11,8 @@ import PlaceholderHero from '@/components/common/PlaceholderHero.vue'
     class="absolute inset-0 h-full w-full object-cover z-0"
     />
     <div class="relative mx-auto flex h-full max-w-7xl flex-col justify-center px-6 md:px-10">
-      <p class="text-3xl font-semibold tracking-widest-plus text-white/85">VISIT</p>
-      <h1 class="font-display text-7xl leading-none font-semibold text-white sm:text-8xl md:text-9xl">
+      <p v-reveal class="text-3xl font-semibold tracking-widest-plus text-white/85">VISIT</p>
+      <h1 v-reveal="120" class="font-display text-7xl leading-none font-semibold text-white sm:text-8xl md:text-9xl">
         Sarongan
       </h1>
     </div>
