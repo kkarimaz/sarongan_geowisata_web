@@ -18,11 +18,12 @@ defineProps({
     <div class="relative mx-auto w-full max-w-7xl px-6 py-10 md:px-10">
       <p
         v-if="eyebrow"
+        v-reveal
         class="text-xs font-semibold tracking-widest-plus text-white/80 uppercase"
       >
         {{ eyebrow }}
       </p>
-      <h1 class="mt-2 text-balance font-display text-3xl font-semibold text-white md:text-5xl">
+      <h1 v-reveal="100" class="mt-2 text-balance font-display text-3xl font-semibold text-white md:text-5xl">
         {{ title }}
       </h1>
     </div>
