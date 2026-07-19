@@ -10,8 +10,7 @@ import { articles } from '@/data/articles'
 
     <section class="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
       <p class="max-w-2xl text-brand-950/65">
-        Artikel edukasi seputar geologi, konservasi, dan ekowisata Sarongan. Judul, tanggal,
-        dan isi artikel di bawah ini masih placeholder.
+        Jelajahi berbagai artikel edukatif yang mengupas tuntas keunikan geologi, upaya konservasi, kegiatan warga, dan pesona ekowisata di Desa Sarongan. 
       </p>
 
       <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
