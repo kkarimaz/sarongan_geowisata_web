@@ -135,6 +135,21 @@ ditandai jelas agar mudah ditemukan dan diganti.
 Struktur data (nama field) di masing-masing modul `data/*.js` sudah final — cukup ubah
 isinya (`name`, `excerpt`, `description`, dst.) tanpa perlu mengubah komponen tampilan.
 
+**Menyisipkan foto + caption di tengah isi artikel (edukasi/news):** field `content` di
+`src/data/articles.js` dan `src/data/news.js` bukan string, tapi array "block" yang
+dirender berurutan oleh [ArticleBody.vue](src/components/common/ArticleBody.vue). Ada dua
+jenis block:
+
+```js
+{ type: 'paragraph', text: 'Isi paragraf...' }
+{ type: 'image', src: fotoYangDiimport, caption: 'Keterangan kecil di bawah foto' }
+```
+
+Tinggal sisipkan object `{ type: 'image', ... }` di posisi manapun dalam array `content`
+sesuai urutan yang diinginkan. Kalau foto asli belum ada, `src` boleh dihilangkan — akan
+otomatis fallback ke `PlaceholderImage` tapi caption tetap tampil. Contoh penerapan ada di
+`artikel-1` pada `src/data/articles.js`.
+
 ### 3. Form Kontak
 
 Form di `/contact` ([contact_view.vue](src/views/contact_view.vue)) saat ini hanya simulasi
