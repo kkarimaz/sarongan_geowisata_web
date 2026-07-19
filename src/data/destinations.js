@@ -7,8 +7,8 @@ const loremLong = `${loremShort} It was popularised in the 1960s with the releas
 export const destinations = [
   {
     slug: 'destinasi-1',
-    name: 'Destinasi 1',
-    category: 'Wisata Alam',
+    name: 'Muara Mbaduk',
+    category: 'Camping Ground',
     location: 'Sarongan, Banyuwangi',
     excerpt: loremShort,
     description: loremLong,
@@ -16,7 +16,7 @@ export const destinations = [
   },
   {
     slug: 'destinasi-2',
-    name: 'Destinasi 2',
+    name: 'Teluk Ijo',
     category: 'Wisata Bahari',
     location: 'Sarongan, Banyuwangi',
     excerpt: loremShort,
@@ -25,7 +25,7 @@ export const destinations = [
   },
   {
     slug: 'destinasi-3',
-    name: 'Destinasi 3',
+    name: 'Pantai Benteng',
     category: 'Camping Ground',
     location: 'Sarongan, Banyuwangi',
     excerpt: loremShort,
