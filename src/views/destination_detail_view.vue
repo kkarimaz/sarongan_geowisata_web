@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import { useRoute, RouterLink } from 'vue-router'
 import { MapPin, Tag } from '@lucide/vue'
-import PageBanner from '@/components/layout/PageBanner.vue'
+import PageBanner from '@/components/layout/EduPageBanner.vue'
 import PlaceholderImage from '@/components/common/PlaceholderImage.vue'
 import DestinationCard from '@/components/common/DestinationCard.vue'
 import { destinations } from '@/data/destinations'

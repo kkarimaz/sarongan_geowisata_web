@@ -1,7 +1,7 @@
 <script setup>
 import { reactive, ref } from 'vue'
 import { MapPin, Mail, Phone, Send, CheckCircle2 } from '@lucide/vue'
-import PageBanner from '@/components/layout/PageBanner.vue'
+import PageBanner from '@/components/layout/EduPageBanner.vue'
 import PlaceholderImage from '@/components/common/PlaceholderImage.vue'
 
 const form = reactive({ name: '', email: '', message: '' })

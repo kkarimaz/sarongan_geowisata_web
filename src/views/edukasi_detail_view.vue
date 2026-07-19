@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import { useRoute, RouterLink } from 'vue-router'
 import { Calendar, Tag } from '@lucide/vue'
-import PageBanner from '@/components/layout/PageBanner.vue'
+import PageBanner from '@/components/layout/EduPageBanner.vue'
 import PlaceholderImage from '@/components/common/PlaceholderImage.vue'
 import ArticleCard from '@/components/common/ArticleCard.vue'
 import { articles } from '@/data/articles'

@@ -1,5 +1,5 @@
 <script setup>
-import PageBanner from '@/components/layout/PageBanner.vue'
+import PageBanner from '@/components/layout/DestPageBanner.vue'
 import DestinationCard from '@/components/common/DestinationCard.vue'
 import { destinations } from '@/data/destinations'
 </script>

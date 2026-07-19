@@ -1,5 +1,5 @@
 <script setup>
-import PageBanner from '@/components/layout/PageBanner.vue'
+import PageBanner from '@/components/layout/NewsPageBanner.vue'
 import ArticleCard from '@/components/common/ArticleCard.vue'
 import { articles } from '@/data/news'
 </script>

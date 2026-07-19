@@ -10,6 +10,11 @@ defineProps({
 <template>
   <section class="relative flex min-h-72 items-end md:min-h-80">
     <PlaceholderHero />
+    <img 
+    src="@/assets/images/edukasi/kambing.JPG" 
+    alt="Teluk Ijo, Sarongan, Banyuwangi" 
+    class="absolute inset-0 h-full w-full object-cover z-0"
+    />
     <div class="relative mx-auto w-full max-w-7xl px-6 py-10 md:px-10">
       <p
         v-if="eyebrow"
