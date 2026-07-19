@@ -35,7 +35,7 @@ const others = computed(() => articles.filter((a) => a.slug !== route.params.slu
         <PlaceholderImage v-else :label="article.title" :variant="article.variant" rounded="rounded-none" />
       </div>
 
-      <div class="mt-6 flex flex-wrap gap-4 text-sm text-brand-950/60">
+      <div v-reveal class="mt-6 flex flex-wrap gap-4 text-sm text-brand-950/60">
         <span class="flex items-center gap-1.5">
           <Tag class="size-4 text-brand-600" />
           {{ article.category }}
@@ -46,18 +46,24 @@ const others = computed(() => articles.filter((a) => a.slug !== route.params.slu
         </span>
       </div>
 
-      <h1 class="mt-4 font-display text-3xl font-semibold text-brand-900 md:text-4xl">
+      <h1 v-reveal="100" class="mt-4 font-display text-3xl font-semibold text-brand-900 md:text-4xl">
         {{ article.title }}
       </h1>
 
-      <ArticleBody :blocks="article.content" />
+      <ArticleBody v-reveal="180" :blocks="article.content" />
     </section>
 
     <section v-if="others.length" class="border-t border-brand-950/5 bg-brand-50/40">
       <div class="mx-auto max-w-7xl px-6 py-16 md:px-10">
-        <h2 class="font-display text-2xl font-semibold text-brand-900">Artikel Lainnya</h2>
+        <h2 v-reveal class="font-display text-2xl font-semibold text-brand-900">Artikel Lainnya</h2>
         <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <ArticleCard v-for="item in others" :key="item.slug" :article="item" base-path="/edukasi" />
+          <ArticleCard
+            v-for="(item, index) in others"
+            :key="item.slug"
+            :article="item"
+            base-path="/edukasi"
+            v-reveal="index * 120"
+          />
         </div>
       </div>
     </section>

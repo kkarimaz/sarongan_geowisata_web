@@ -29,7 +29,7 @@ const others = computed(() =>
         <PlaceholderImage :label="destination.name" :variant="destination.variant" rounded="rounded-none" />
       </div>
 
-      <div class="mt-6 flex flex-wrap gap-4 text-sm text-brand-950/60">
+      <div v-reveal class="mt-6 flex flex-wrap gap-4 text-sm text-brand-950/60">
         <span class="flex items-center gap-1.5">
           <Tag class="size-4 text-brand-600" />
           {{ destination.category }}
@@ -40,20 +40,25 @@ const others = computed(() =>
         </span>
       </div>
 
-      <h1 class="mt-4 font-display text-3xl font-semibold text-brand-900 md:text-4xl">
+      <h1 v-reveal="100" class="mt-4 font-display text-3xl font-semibold text-brand-900 md:text-4xl">
         {{ destination.name }}
       </h1>
 
-      <p class="mt-5 leading-relaxed text-brand-950/70">
+      <p v-reveal="180" class="mt-5 leading-relaxed text-brand-950/70">
         {{ destination.description }}
       </p>
     </section>
 
     <section v-if="others.length" class="border-t border-brand-950/5 bg-brand-50/40">
       <div class="mx-auto max-w-7xl px-6 py-16 md:px-10">
-        <h2 class="font-display text-2xl font-semibold text-brand-900">Destinasi Lainnya</h2>
+        <h2 v-reveal class="font-display text-2xl font-semibold text-brand-900">Destinasi Lainnya</h2>
         <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <DestinationCard v-for="item in others" :key="item.slug" :destination="item" />
+          <DestinationCard
+            v-for="(item, index) in others"
+            :key="item.slug"
+            :destination="item"
+            v-reveal="index * 120"
+          />
         </div>
       </div>
     </section>

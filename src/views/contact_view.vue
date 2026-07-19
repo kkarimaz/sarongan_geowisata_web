@@ -16,7 +16,7 @@ function handleSubmit() {
 }
 
 const contactInfo = [
-  { icon: MapPin, label: 'Alamat', value: 'Desa Sarongan, Kec. Pesanggaran, Banyuwangi, Jawa Timur (placeholder)' },
+  { icon: MapPin, label: 'Alamat', value: 'Desa Sarongan, Kec. Pesanggaran, Banyuwangi, Jawa Timur' },
   { icon: Phone, label: 'Telepon', value: '+62 812-0000-0000' },
   { icon: Mail, label: 'Email', value: 'info@infosarongan.id' },
 ]
@@ -28,12 +28,12 @@ const contactInfo = [
 
     <section class="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-2 md:px-10 md:py-20">
       <div>
-        <h2 class="font-display text-2xl font-semibold text-brand-900">Kirim Pesan</h2>
-        <p class="mt-2 text-sm text-brand-950/60">
+        <h2 v-reveal class="font-display text-2xl font-semibold text-brand-900">Kirim Pesan</h2>
+        <p v-reveal="80" class="mt-2 text-sm text-brand-950/60">
           Formulir ini belum terhubung ke backend — hanya simulasi tampilan.
         </p>
 
-        <form v-if="!submitted" class="mt-6 flex flex-col gap-4" @submit.prevent="handleSubmit">
+        <form v-if="!submitted" v-reveal="160" class="mt-6 flex flex-col gap-4" @submit.prevent="handleSubmit">
           <div>
             <label for="name" class="text-sm font-medium text-brand-950/80">Nama</label>
             <input
@@ -84,7 +84,7 @@ const contactInfo = [
           </p>
         </div>
 
-        <ul class="mt-10 flex flex-col gap-4">
+        <ul v-reveal="240" class="mt-10 flex flex-col gap-4">
           <li v-for="item in contactInfo" :key="item.label" class="flex items-start gap-3">
             <span class="flex size-9 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700">
               <component :is="item.icon" class="size-4" />
@@ -97,7 +97,7 @@ const contactInfo = [
         </ul>
       </div>
 
-      <div class="aspect-square w-full overflow-hidden rounded-3xl shadow-lg shadow-brand-950/10 md:aspect-auto md:h-full">
+      <div v-reveal class="aspect-square w-full overflow-hidden rounded-3xl shadow-lg shadow-brand-950/10 md:aspect-auto md:h-full">
         <PlaceholderImage label="Peta Lokasi — Placeholder" :variant="2" rounded="rounded-none" />
       </div>
     </section>
