@@ -7,6 +7,7 @@ const year = new Date().getFullYear()
 const links = [
   { to: '/', label: 'Home' },
   { to: '/destination', label: 'Destination' },
+  { to: '/news', label: 'News'},
   { to: '/edukasi', label: 'Edukasi' },
   { to: '/contact', label: 'Contact' },
 ]
@@ -25,7 +26,7 @@ const socials = [
       <div class="md:col-span-2">
         <p class="text-sm font-semibold tracking-widest-plus text-white lowercase">infosarongan</p>
         <p class="mt-4 max-w-sm text-sm leading-relaxed text-white/60">
-          Portal informasi geowisata kawasan Sarongan — destinasi, edukasi geologi, dan
+          Portal informasi geowisata kawasan Sarongan yang berisi destinasi, edukasi geologi, dan
           potensi alam. Konten pada situs ini masih berupa placeholder.
         </p>
         <div class="mt-6 flex gap-3">
@@ -55,7 +56,7 @@ const socials = [
         <ul class="mt-4 space-y-3 text-sm">
           <li class="flex items-start gap-2.5">
             <MapPin class="mt-0.5 size-4 shrink-0 text-brand-400" />
-            <span>Desa Sarongan, Kec. Pesanggaran, Banyuwangi, Jawa Timur (placeholder)</span>
+            <span>Desa Sarongan, Kec. Pesanggaran, Banyuwangi, Jawa Timur</span>
           </li>
           <li class="flex items-center gap-2.5">
             <Phone class="size-4 shrink-0 text-brand-400" />
@@ -71,7 +72,7 @@ const socials = [
 
     <div class="border-t border-white/10">
       <p class="mx-auto max-w-7xl px-6 py-5 text-center text-xs text-white/40 md:px-10">
-        © {{ year }} Info Sarongan. Konten &amp; foto pada situs ini adalah placeholder.
+        © {{ year }} Info Sarongan, bekerja sama dengan KKN-PPM UGM 2026. 
       </p>
     </div>
   </footer>
