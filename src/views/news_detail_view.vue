@@ -5,21 +5,13 @@ import { Calendar, Tag } from '@lucide/vue'
 import PageBanner from '@/components/layout/EduPageBanner.vue'
 import PlaceholderImage from '@/components/common/PlaceholderImage.vue'
 import ArticleCard from '@/components/common/ArticleCard.vue'
+import ArticleBody from '@/components/common/ArticleBody.vue'
 import { articles } from '@/data/news'
 import { formatDate } from '@/utils/format'
 
 const route = useRoute()
 
 const article = computed(() => articles.find((a) => a.slug === route.params.slug))
-
-const paragraphs = computed(() =>
-  article.value
-    ? article.value.content
-        .split('\n')
-        .map((line) => line.trim())
-        .filter(Boolean)
-    : [],
-)
 
 const others = computed(() => articles.filter((a) => a.slug !== route.params.slug).slice(0, 3))
 </script>
@@ -52,9 +44,7 @@ const others = computed(() => articles.filter((a) => a.slug !== route.params.slu
         {{ article.title }}
       </h1>
 
-      <div class="mt-5 flex flex-col gap-4 leading-relaxed text-brand-950/70">
-        <p v-for="(paragraph, index) in paragraphs" :key="index">{{ paragraph }}</p>
-      </div>
+      <ArticleBody :blocks="article.content" />
     </section>
 
     <section v-if="others.length" class="border-t border-brand-950/5 bg-brand-50/40">
