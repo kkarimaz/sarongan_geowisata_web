@@ -1,4 +1,7 @@
 import tehHerbal1 from '@/assets/images/edukasi/teh_herbal_1.webp'
+import tehHerbal2 from '@/assets/images/edukasi/webp/teh_herbal_2.webp'
+import tehHerbal3 from '@/assets/images/edukasi/webp/teh_herbal_3.webp'
+
 
 const loremShort =
   'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since 1966.'
@@ -16,7 +19,7 @@ export const articles = [
     slug: 'artikel-1',
     title: 'PKK Desa Sarongan Belajar Olah Daun Kelor Menjadi Teh Herbal sebagai Upaya Promosi Gaya Hidup Sehat',
     category: 'Agroherbal',
-    date: '2026-07-11',
+    date: '2026-07-10',
     excerpt: "Mahasiswa KKN-PPM UGM Desa Sarongan melaksanakan program pengolahan teh herbal sebagai upaya edukasi dan promosi pemanfaatan herbal lokal dari daun kelor sebagai sumber pangan yang fungsional.",
     content: [
       {
@@ -33,7 +36,12 @@ export const articles = [
       },
       {
         type: 'image',
-        src: tehHerbal1,
+        src: tehHerbal2,
+        caption: 'Mahasiswa KKN-PPM Universitas Gadjah Mada memberikan edukasi mengenai pemanfaatan daun kelor sebagai bahan pangan fungsional kepada ibu-ibu PKK Desa Sarongan di Balai Desa Sarongan.',
+      },
+      {
+        type: 'image',
+        src: tehHerbal3,
         caption: 'Ibu-ibu PKK Desa Sarongan mengikuti demonstrasi pembuatan teh herbal daun kelor di Balai Desa Sarongan.',
       },
       {
