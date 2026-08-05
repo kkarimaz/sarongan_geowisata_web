@@ -17,7 +17,8 @@ dan informasi kontak. Dibangun dengan Vue 3 + Vite + Tailwind CSS v4.
 | Routing            | [Vue Router](https://router.vuejs.org/)                       |
 | State management   | [Pinia](https://pinia.vuejs.org/) (terpasang, belum dipakai — lihat catatan di bawah) |
 | Ikon               | [`@lucide/vue`](https://lucide.dev/)                          |
-| HTTP client        | [Axios](https://axios-http.com/) (terpasang, belum dipakai — untuk integrasi API/CMS nanti) |
+| HTTP client        | [Axios](https://axios-http.com/) (terpasang, belum dipakai) |
+| CMS (khusus News)  | [Sanity](https://sanity.io/) via `@sanity/client`, `@sanity/image-url`, `@portabletext/vue` — lihat [Setup CMS](#setup-cms-sanity---halaman-news) |
 | Testing (belum diisi) | Vitest (`vitest.config.js`), Playwright (`playwright.config.js`) — konfigurasi ada, belum ada test/dependency Playwright terpasang |
 
 ## Menjalankan Proyek
@@ -29,25 +30,132 @@ npm run build       # build production ke folder dist/
 npm run preview     # preview hasil build production secara lokal
 ```
 
+> Halaman `/news` mengambil data dari Sanity — tanpa setup di bawah dan file `.env`,
+> halaman ini akan menampilkan pesan "Gagal memuat berita" karena `VITE_SANITY_PROJECT_ID`
+> masih kosong. Semua halaman lain (Home, Destination, Edukasi, Contact) tidak terpengaruh.
+
+## Setup CMS (Sanity) — Halaman News
+
+Bagian **News** (`/news`, `/news/:slug`) sudah disambungkan ke [Sanity](https://sanity.io/),
+sebuah headless CMS gratis. Admin dashboard-nya (disebut **Studio**) ada di folder `studio/`
+di repo ini — tapi itu aplikasi terpisah (React, bukan Vue) yang di-deploy sendiri ke URL
+`https://<nama>.sanity.studio`. Perangkat desa login ke URL itu dan tinggal isi form, tanpa
+perlu tahu soal kode sama sekali. Situs utama (folder `src/`) otomatis mengambil apa pun yang
+mereka publish di sana — tidak perlu redeploy.
+
+**Langkah-langkah ini harus dijalankan sendiri** (butuh login interaktif ke akun Sanity, tidak
+bisa diotomatisasi):
+
+1. **Buat akun & project Sanity** — buka [sanity.io/manage](https://sanity.io/manage), daftar/masuk,
+   lalu buat project baru (mis. "Sarongan Geowisata"). Tambahkan dataset bernama `production`
+   dengan visibility **Public** (wajib — situs mengambil data tanpa token/login, dataset
+   Private akan menyebabkan error 401). Catat **Project ID**-nya, ditampilkan di halaman
+   project tersebut.
+
+2. **Isi Project ID** ke 2 file di `studio/` (ganti `REPLACE_WITH_PROJECT_ID`):
+   - `studio/sanity.config.js`
+   - `studio/sanity.cli.js`
+
+3. **Install & login Studio:**
+   ```bash
+   cd studio
+   npm install
+   npx sanity login
+   ```
+
+4. **Izinkan localhost mengakses data** (CORS) — perlu supaya `npm run dev` di root bisa fetch
+   dari Sanity:
+   ```bash
+   npx sanity cors add http://localhost:5173 --no-credentials
+   ```
+   Nanti setelah situs ini di-deploy ke domain publik, tambahkan origin domain tersebut juga
+   dengan perintah yang sama.
+
+5. **Coba Studio secara lokal** dulu untuk memastikan schema-nya jalan:
+   ```bash
+   npm run dev
+   ```
+   Buka `http://localhost:3333`, login, buat satu berita percobaan (isi judul, kategori,
+   tanggal, ringkasan, foto utama, dan isi artikel — bisa sisipkan foto + keterangan di
+   tengah artikel lewat tombol "+" di editor), lalu **Publish**.
+
+6. **Deploy Studio** supaya perangkat desa bisa akses tanpa kamu jalanin apa pun secara lokal:
+   ```bash
+   npx sanity deploy
+   ```
+   Pilih subdomain (mis. `sarongan-desa` → jadi `https://sarongan-desa.sanity.studio`). Inilah
+   URL dashboard admin yang dipakai perangkat desa sehari-hari.
+
+7. **Undang perangkat desa sebagai editor** — di [sanity.io/manage](https://sanity.io/manage),
+   buka project → **Members** → **Invite** → masukkan email mereka → role **Editor**. Mereka
+   akan menerima email undangan, bikin/login akun Sanity sendiri, lalu bisa langsung buka URL
+   Studio dari langkah 6.
+
+8. **Sambungkan situs utama ke project Sanity** — di root repo (bukan di `studio/`):
+   ```bash
+   cp .env.example .env
+   ```
+   Isi `.env`:
+   ```
+   VITE_SANITY_PROJECT_ID=project-id-dari-langkah-1
+   VITE_SANITY_DATASET=production
+   ```
+
+9. `npm run dev` di root, buka `/news` — berita percobaan dari langkah 5 harusnya muncul.
+
+### Cara kerja singkat (untuk yang mau ubah kode-nya)
+
+- `src/lib/sanity.js` — client Sanity + builder URL gambar, baca `VITE_SANITY_PROJECT_ID`/`VITE_SANITY_DATASET` dari `.env`.
+- `src/lib/sanityNews.js` — query GROQ (daftar berita & satu berita by slug) + `toCardArticle()` yang mengubah dokumen Sanity ke bentuk yang sudah dipakai `ArticleCard.vue`.
+- `src/composables/useSanityNews.js` — wrapper reaktif Vue di atas fungsi-fungsi tersebut (loading/error state).
+- `src/components/common/PortableTextImage.vue` — render foto+caption yang disisipkan di tengah artikel (field `body` di Sanity pakai format Portable Text, bukan array block custom seperti di Edukasi).
+- `studio/schemaTypes/newsPost.js` — definisi field yang muncul di form Studio.
+
+Bagian **Edukasi** (`/edukasi`) sengaja **tidak** ikut dipindah ke Sanity — datanya masih statis di `src/data/articles.js` seperti sebelumnya.
+
 ## Struktur Proyek
+
+`studio/` adalah project Sanity Studio terpisah (lihat [Setup CMS](#setup-cms-sanity---halaman-news))
+— punya `package.json`/`node_modules` sendiri, tidak ikut ke-bundle oleh Vite.
+
+```
+sarongan_geowisata_web/
+├── src/                        # aplikasi Vue (dijelaskan di bawah)
+└── studio/                     # Sanity Studio — admin dashboard untuk News, app React terpisah
+    ├── schemaTypes/
+    │   └── newsPost.js           # field-field yang muncul di form Studio
+    ├── sanity.config.js           # projectId/dataset + plugin Studio
+    └── sanity.cli.js              # dipakai perintah CLI (login, cors, deploy)
+```
 
 ```
 src/
-├── main.js                  # entry point: pasang Pinia, Vue Router, dan CSS global
-├── App.vue                  # root layout: NavBar + <router-view /> + Footer
+├── main.js                  # entry point: pasang Pinia, Vue Router, directive v-reveal, dan CSS global
+├── App.vue                  # root layout: NavBar + <router-view /> (dengan page-fade transition) + Footer
 ├── assets/
-│   └── main.css              # import Tailwind + tema warna/font kustom (@theme)
+│   └── main.css               # import Tailwind + tema warna/font kustom (@theme) + CSS reveal/transition
 ├── router/
 │   └── index.js               # definisi semua route (lazy-loaded per halaman)
-├── data/                     # "database" placeholder berupa modul JS statis
+├── directives/
+│   └── reveal.js               # v-reveal — fade/slide-in via IntersectionObserver saat elemen masuk viewport
+├── utils/
+│   └── format.js               # formatDate() bersama
+├── lib/                      # integrasi Sanity (khusus News, lihat Setup CMS)
+│   ├── sanity.js                # client Sanity + builder URL gambar
+│   └── sanityNews.js            # query GROQ + reshape data ke bentuk ArticleCard
+├── composables/
+│   └── useSanityNews.js        # wrapper reaktif Vue di atas src/lib/sanityNews.js (loading/error state)
+├── data/                     # "database" placeholder berupa modul JS statis (News TIDAK di sini lagi — lihat lib/)
 │   ├── stats.js                # 3 angka statistik di homepage (Luas Wilayah, dst.)
 │   ├── destinations.js          # daftar destinasi wisata
 │   └── articles.js              # daftar artikel edukasi
 ├── components/
 │   ├── layout/
-│   │   ├── NavBar.vue           # navigasi atas, transparan di atas hero/banner
-│   │   ├── Footer.vue           # footer (kontak, sosial media, navigasi)
-│   │   └── PageBanner.vue        # header/banner untuk halaman selain Home
+│   │   ├── NavBar.vue             # navigasi atas, transparan di atas hero/banner
+│   │   ├── Footer.vue             # footer (kontak, sosial media, navigasi)
+│   │   ├── EduPageBanner.vue      # header/banner untuk halaman Edukasi & Contact
+│   │   ├── NewsPageBanner.vue     # header/banner untuk halaman News
+│   │   └── DestPageBanner.vue     # header/banner untuk halaman Destination
 │   ├── home/
 │   │   ├── HeroSection.vue       # hero "VISIT Sarongan" di homepage
 │   │   ├── StatsSection.vue      # kontainer 3 kartu statistik
@@ -58,14 +166,19 @@ src/
 │       ├── PlaceholderImage.vue   # kotak foto placeholder bergradasi (kartu/list)
 │       ├── PlaceholderHero.vue    # backdrop placeholder untuk hero & banner
 │       ├── DestinationCard.vue    # kartu destinasi (grid, dipakai di /destination)
-│       ├── ArticleCard.vue        # kartu artikel (grid, dipakai di /edukasi)
+│       ├── ArticleCard.vue        # kartu artikel (grid, dipakai di /edukasi dan /news)
+│       ├── ArticleBody.vue        # render isi artikel Edukasi (array block paragraf/gambar statis)
+│       ├── PortableTextImage.vue  # render foto+caption di tengah isi berita News (format Portable Text Sanity)
 │       └── SocialIcon.vue         # ikon sosial media (Instagram/Facebook/dll — lucide tidak menyediakan ikon brand)
 └── views/
-    ├── homepage_view.vue          # "/" — Hero, Stats, Destinations (sesuai desain)
-    ├── destination_view.vue        # "/destination" — grid semua destinasi
-    ├── destination_detail_view.vue # "/destination/:slug" — detail satu destinasi
-    ├── edukasi_view.vue            # "/edukasi" — grid semua artikel
-    └── contact_view.vue            # "/contact" — form kontak (simulasi, belum ada backend) + info kontak
+    ├── homepage_view.vue           # "/" — Hero, Stats, Destinations (sesuai desain)
+    ├── destination_view.vue         # "/destination" — grid semua destinasi
+    ├── destination_detail_view.vue  # "/destination/:slug" — detail satu destinasi
+    ├── edukasi_view.vue             # "/edukasi" — grid semua artikel (data statis)
+    ├── edukasi_detail_view.vue      # "/edukasi/:slug" — detail satu artikel edukasi
+    ├── news_view.vue                # "/news" — grid berita, fetch dari Sanity
+    ├── news_detail_view.vue         # "/news/:slug" — detail satu berita, fetch dari Sanity
+    └── contact_view.vue             # "/contact" — form kontak (simulasi, belum ada backend) + info kontak
 ```
 
 ## Halaman & Routing
@@ -75,7 +188,10 @@ src/
 | `/`                       | Home                   | Sesuai mockup desain: Hero, Stats, Destinations    |
 | `/destination`            | Destination (list)     | Grid semua destinasi dari `data/destinations.js`   |
 | `/destination/:slug`      | Destination (detail)   | Detail 1 destinasi + rekomendasi destinasi lain     |
-| `/edukasi`                | Edukasi                | Grid semua artikel dari `data/articles.js`         |
+| `/edukasi`                | Edukasi (list)          | Grid semua artikel dari `data/articles.js` (statis) |
+| `/edukasi/:slug`          | Edukasi (detail)        | Detail 1 artikel edukasi                            |
+| `/news`                   | News (list)             | Grid berita, fetch dari Sanity CMS                  |
+| `/news/:slug`             | News (detail)           | Detail 1 berita, fetch dari Sanity CMS              |
 | `/contact`                | Contact                | Form kontak (client-side only) + info kontak       |
 
 Routing didefinisikan di [src/router/index.js](src/router/index.js), semua halaman di-*lazy
