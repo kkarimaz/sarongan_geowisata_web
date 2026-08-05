@@ -1,7 +1,12 @@
 <script setup>
+import { computed } from 'vue'
 import PageBanner from '@/components/layout/NewsPageBanner.vue'
 import ArticleCard from '@/components/common/ArticleCard.vue'
-import { articles } from '@/data/news'
+import { useSanityNewsList } from '@/composables/useSanityNews'
+import { toCardArticle } from '@/lib/sanityNews'
+
+const { articles: docs, isLoading, error } = useSanityNewsList()
+const articles = computed(() => docs.value.map(toCardArticle))
 </script>
 
 <template>
@@ -13,7 +18,19 @@ import { articles } from '@/data/news'
         Artikel berita seputar apa yang terjadi di Desa Sarongan.
       </p>
 
-      <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div v-if="isLoading" class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div v-for="n in 6" :key="n" class="h-72 animate-pulse rounded-2xl bg-brand-950/5" />
+      </div>
+
+      <div v-else-if="error" class="mt-10 rounded-2xl bg-red-50 p-6 text-sm text-red-700">
+        Gagal memuat berita. Coba muat ulang halaman.
+      </div>
+
+      <div v-else-if="!articles.length" class="mt-10 rounded-2xl bg-brand-50 p-6 text-sm text-brand-950/60">
+        Belum ada berita yang dipublikasikan.
+      </div>
+
+      <div v-else class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <ArticleCard
           v-for="(article, index) in articles"
           :key="article.slug"
