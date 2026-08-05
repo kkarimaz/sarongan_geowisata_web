@@ -2,9 +2,14 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
+.env.local
 
 .vscode
 
 test-results
 playwright-report
 blob-report
+
+# Sanity Studio (studio/) local runtime cache
+.sanity
