@@ -215,7 +215,11 @@ export const articles = [
       },
       {
         type: 'image',
-        src: rumputGamaUmami1,
+        src: rumputGamaUmami2,
+      },
+      {
+        type: 'image',
+        src: rumputGamaUmami3,
         caption: 'Rumput Gama Umami yang sedang dibudidayakan di Desa Sarongan',
       },
       {
