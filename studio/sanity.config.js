@@ -5,7 +5,7 @@ import { schemaTypes } from './schemaTypes'
 
 // Fill in with the Project ID shown at https://sanity.io/manage after
 // creating the project — see README "Setup CMS (Sanity)".
-const projectId = 'REPLACE_WITH_PROJECT_ID'
+const projectId = 'wpwxci05'
 const dataset = 'production'
 
 export default defineConfig({
