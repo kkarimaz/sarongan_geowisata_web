@@ -217,17 +217,13 @@ export const articles = [
       },
       {
         type: 'image',
-        src: rumputGamaUmami2,
-      },
-      {
-        type: 'image',
         src: rumputGamaUmami3,
         caption: 'Rumput Gama Umami yang sedang dibudidayakan di Desa Sarongan',
       },
-      {
-        type: 'paragraph',
-        text: 'Rumput Gama Umami: Pengetahuan Singkat bagi Kelompok Tani',
-      },
+      // {
+      //   type: 'paragraph',
+      //   text: 'Rumput Gama Umami: Pengetahuan Singkat bagi Kelompok Tani',
+      // },
       {
         type: 'paragraph',
         text: 'Dalam program pertama, mahasiswa KKN memperkenalkan rumput Gama Umami kepada kelompok tani di Desa Sarongan. Gama Umami merupakan hasil pemuliaan rumput gajah melalui teknik radiasi sinar gamma yang dikembangkan oleh Fakultas Peternakan UGM bekerja sama dengan Badan Tenaga Nuklir Nasional (BATAN). Melalui proses radiasi tersebut, dihasilkan varietas rumput gajah yang jauh lebih unggul dibandingkan tetuanya, baik dari segi produktivitas maupun kualitas gizinya.',
@@ -244,10 +240,10 @@ export const articles = [
         type: 'paragraph',
         text: 'Dalam sesi pelatihan, mahasiswa KKN mengajarkan cara budidaya rumput Gama Umami mulai dari teknik penyetekan batang, pengolahan lahan, hingga perawatan agar pertumbuhannya optimal. Warga diajarkan bahwa rumput ini dapat dikembangkan dengan mudah melalui stek batang, dan dalam waktu singkat mampu menghasilkan banyak tunas baru. Metode budidaya yang sederhana ini membuat kelompok tani optimis dapat mengembangkan rumput Gama Umami secara mandiri di lahan masing-masing untuk memenuhi kebutuhan pakan sapi mereka.',
       },
-      {
-        type: 'paragraph',
-        text: 'Vitamin untuk Ayam: Upaya Tingkatkan Produktivitas Peternak',
-      },
+      // {
+      //   type: 'paragraph',
+      //   text: 'Vitamin untuk Ayam: Upaya Tingkatkan Produktivitas Peternak',
+      // },
       {
         type: 'paragraph',
         text: 'Selain program rumput Gama Umami, mahasiswa KKN juga menjalankan program kerja kedua yang menyasar para peternak ayam di Desa Sarongan. Pada program ini, mahasiswa memberikan vitamin tambahan bagi ayam ternak warga guna menjaga kesehatan serta meningkatkan produktivitasnya, khususnya dalam hal kualitas dan kuantitas produksi telur.',
@@ -259,6 +255,12 @@ export const articles = [
       {
         type: 'paragraph',
         text: 'Pemberian vitamin secara rutin dinilai penting untuk menekan angka kematian ayam akibat penyakit, sekaligus membantu ayam tetap sehat dan produktif meskipun dalam kondisi cuaca yang kurang mendukung. Mahasiswa KKN turut menyoroti potensi ekonomi yang menjanjikan dari usaha peternakan ayam di Desa Sarongan, mengingat jumlah peternak ayam di desa tersebut masih tergolong sedikit dibandingkan dengan potensi pasar yang ada. Kondisi ini menjadi peluang tersendiri bagi warga, karena tingkat persaingan usaha di sektor peternakan ayam belum terlalu ketat.',
+      },
+      {
+        type: 'image',
+        src: rumputGamaUmami4,
+        caption: '',
+        // fit: 'contain',
       },
       {
         type: 'paragraph',
