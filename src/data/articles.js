@@ -5,7 +5,9 @@ import rumputGamaUmami1 from '@/assets/images/edukasi/webp/GAMAUMAMI.webp'
 import rumputGamaUmami2 from '@/assets/images/edukasi/webp/TANAM_GAMAUMAMI.webp'
 import rumputGamaUmami3 from '@/assets/images/edukasi/webp/TANAM2_GAMAUMAMI.webp'
 import rumputGamaUmami4 from '@/assets/images/edukasi/webp/FITRES_IMRON.webp'
-
+import AirAiran1 from '@/assets/images/edukasi/webp/air_airan_1.webp'
+import AirAiran2 from '@/assets/images/edukasi/webp/air_airan_2.webp'
+import AirAiran3 from '@/assets/images/edukasi/webp/air_airan_3.webp'
 
 const loremShort =
   'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since 1966.'
@@ -276,11 +278,57 @@ export const articles = [
   },
   {
     slug: 'artikel-5',
-    title: 'Judul Artikel Edukasi 5',
-    category: 'Geologi',
-    date: '2026-05-09',
+    title: 'Mengenal Kondisi Sumber Air Desa Sarongan Melalui Pemetaan dan Peninjauan Kualitas Air Tanah',
+    category: 'Edukasi Lingkungan',
+    date: '2026-07-18',
     excerpt: loremShort,
-    content: loremContent,
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Air merupakan sumber daya yang penting dalam menunjang kehidupan manusia, kegunaannya sangat baik untuk kebutuhan rumah tangga, pertanian, maupun menjaga keseimbangan ekosistem. Sebagai salah satu wilayah yang memiliki bentang alam perbukitan, dataran rendah dan pesisir pantai, Desa Sarongan memiliki sistem air tanah yang menarik dan perlu dipahami agar pemanfaatannya dapat dilakukan secara berkelanjutan.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Melalui program interdisipliner KKN-PPM Universitas Gadjah Mada Unit Sagara Pesanggaran, melakukan pemetaan serta peninjauan kondisi air tanah di Dusun Krajan, Desa Sarongan. Kegiatan ini bertujuan menyajikan informasi mengenai sistem air tanah dalam bentuk infografis yang mudah dipahami masyarakat sekaligus mendukung upaya konservasi sumber daya air.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Survei dilakukan pada sejumlah titik pengamatan yang meliputi sumur warga, tandon air, sumber mata air, dan sungai. Data yang dikumpulkan mencakup kedalaman muka air tanah (MAT), ketinggian muka air tanah, pola aliran air tanah, serta beberapa parameter kualitas air seperti pH, total dissolved solids (TDS), dan suhu. Data tersebut kemudian diolah menjadi tabel dan peta tematik sehingga kondisi air tanah dapat divisualisasikan serta dibaca secara lebih mudah.',
+      },
+      {
+        type: 'image',
+        src: AirAiran3,
+        caption: '',
+      },
+      {
+        type: 'image',
+        src: AirAiran2,
+        caption: 'Tim KKN-PPM UGM melakukan pemetaan dan peninjauan kualitas air tanah di Dusun Krajan, Desa Sarongan',
+      },
+      {
+        type: 'paragraph',
+        text: 'Hasilnya menunjukkan bahwa sistem air tanah di Dusun Krajan didominasi oleh akuifer bebas, yaitu lapisan air tanah yang berhubungan langsung dengan permukaan sehingga kondisi muka air tanah dapat berubah mengikuti curah hujan, musim, maupun pemanfaatan air oleh masyarakat. Daerah perbukitan yang tersusun oleh batuan breksi piroklastik berperan sebagai daerah resapan (recharge), tempat air hujan meresap ke dalam tanah. Selanjutnya, air tanah mengalir menuju daerah yang lebih rendah hingga akhirnya muncul kembali sebagai mata air, rembesan, maupun aliran sungai (discharge).',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pengambilan data dilakukan pada musim kemarau, sehingga debit sungai yang diamati relatif kecil. Meski demikian, aliran sungai tetap berlangsung karena memperoleh pasokan dari air tanah (baseflow) yang tersimpan di bawah permukaan. Temuan ini memperlihatkan bahwa keberadaan daerah resapan memiliki peran penting dalam menjaga ketersediaan air, terutama ketika curah hujan rendah.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Selain itu, kegiatan ini juga memberikan gambaran mengenai kondisi kualitas air melalui parameter pH, TDS dan suhu. Hasil pengukuran menunjukkan adanya variasi nilai pada setiap titik pengamatan yang dipengaruhi oleh kondisi geologi serta aktivitas di sekitar wilayah, seperti pertanian, perkebunan, peternakan, dan permukiman. Meskipun begitu, parameter tersebut merupakan indikator awal dan belum dapat digunakan untuk menentukan adanya pencemaran tanpa analisis yang lebih mendalam.',
+      },
+      {
+        type: 'image',
+        src: AirAiran1,
+        fit: 'contain',
+        caption: 'Hasil infografis pemetaan dan peninjauan kualitas air tanah di Dusun Krajan, Desa Sarongan',
+      },
+      {
+        type: 'paragraph',
+        text: 'Infografis yang dihasilkan diharapkan dapat menjadi media informasi yang mudah dipahami oleh masyarakat maupun pemerintah desa. Dengan memahami bagaimana air hujan meresap, mengalir di bawah permukaan, hingga kembali muncul sebagai mata air dan sungai, masyarakat diharapkan semakin menyadari pentingnya menjaga daerah resapan, mengelola penggunaan air tanah secara bijaksana, serta meminimalkan aktivitas yang berpotensi menurunkan kualitas air.',
+      },
+    ],
+    image: AirAiran3,
     variant: 0,
   },
   {
