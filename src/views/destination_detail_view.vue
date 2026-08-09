@@ -5,6 +5,7 @@ import { MapPin, Tag } from '@lucide/vue'
 import PageBanner from '@/components/layout/EduPageBanner.vue'
 import PlaceholderImage from '@/components/common/PlaceholderImage.vue'
 import DestinationCard from '@/components/common/DestinationCard.vue'
+import ArticleBody from '@/components/common/ArticleBody.vue'
 import { destinations } from '@/data/destinations'
 
 const route = useRoute()
@@ -44,9 +45,7 @@ const others = computed(() =>
         {{ destination.name }}
       </h1>
 
-      <p v-reveal="180" class="mt-5 leading-relaxed text-brand-950/70">
-        {{ destination.description }}
-      </p>
+      <ArticleBody v-reveal="180" :blocks="destination.description" />
     </section>
 
     <section v-if="others.length" class="border-t border-brand-950/5 bg-brand-50/40">

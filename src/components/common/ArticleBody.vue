@@ -13,6 +13,22 @@ defineProps({
     <template v-for="(block, index) in blocks" :key="index">
       <p v-if="block.type === 'paragraph'">{{ block.text }}</p>
 
+      <h3
+        v-else-if="block.type === 'heading'"
+        class="mt-2 font-display text-xl font-semibold text-brand-900 md:text-2xl"
+      >
+        {{ block.text }}
+      </h3>
+      <a
+        v-else-if="block.type === 'link'"
+        :href="block.href || block.text"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-primary underline"
+      >
+        {{ block.text }}
+      </a>
+
       <!--
         Image blocks default to a cropped 16:9 (fit: 'cover', for regular
         photos). Set `fit: 'contain'` for infographics/posters/screenshots
