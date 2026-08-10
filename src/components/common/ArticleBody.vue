@@ -19,6 +19,13 @@ defineProps({
       >
         {{ block.text }}
       </h3>
+
+      <h4
+        v-else-if="block.type === 'subheading'"
+        class="font-display text-lg font-semibold text-brand-800"
+      >
+        {{ block.text }}
+      </h4>
       <a
         v-else-if="block.type === 'link'"
         :href="block.href || block.text"

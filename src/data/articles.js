@@ -17,20 +17,21 @@ import agroforestri3 from '@/assets/images/edukasi/webp/agroforestri_3.webp'
 import agroherbal1 from '@/assets/images/edukasi/webp/agroherbal1.webp'
 import agroherbal2 from '@/assets/images/edukasi/webp/agroherbal2.webp'
 import agroherbal3 from '@/assets/images/edukasi/webp/agroherbal3.webp'
+import filtrasi1 from '@/assets/images/edukasi/webp/filtrasi1.webp'
+import filtrasi2 from '@/assets/images/edukasi/webp/filtrasi2.webp'
 
 const loremShort =
   'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since 1966.'
 
-const loremLong = `${loremShort} When designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset’s Body Type sheets. It was popularised in the 1960s with the release of Letraset sheets.`
-
 // content is a list of blocks rendered in order by ArticleBody.vue:
 //   { type: 'paragraph', text: '...' }
-//   { type: 'heading', text: '...' }  — subheading within the article body
+//   { type: 'heading', text: '...' }     — top-level section heading
+//   { type: 'subheading', text: '...' }  — secondary heading within a section
+//   { type: 'link', text: '...', href: '...' }
 //   { type: 'image', src: importedImage, caption: '...', fit: 'cover' | 'contain' }
 //   src is optional (falls back to a PlaceholderImage); fit defaults to
 //   'cover' (cropped 16:9) — use 'contain' for infographics/posters that
 //   must stay uncropped.
-const loremContent = [{ type: 'paragraph', text: loremLong }]
 
 export const articles = [
   {
@@ -156,35 +157,35 @@ export const articles = [
         type: 'paragraph',
         text: 'Melalui hasil observasi lapangan dan diskusi bersama beberapa anggota kelompok Tani Desa Sarongan, mahasiswa KKN-PPM Universitas Gadjah Mada mengidentifikasikan potensi pengembangan tanaman herbal yang dapat dimanfaatkan sebagai komoditas pertanian yang bernilai ekonomi, juga sebagai bagian dari upaya promotif dan preventif dalam menjaga kesehatan masyarakat. Berbekal dari potensi tersebut, tim KKN-PPM UGM menyelenggarakan kegiatan Sosialisasi Agroherbal bersama kelompok Tani Desa Sarongan pada Selasa malam, 21 Juli 2026, bertempat di Balai Desa Sarongan. Kegiatan ini diikuti oleh sejumlah 15 anggota kelompok tani yang antusias dalam diskusi mengenai peluang pemanfaatan tanaman herbal dalam mendukung pertanian yang berkelanjutan sekaligus juga meningkatkan kualitas kesehatan masyarakat. ',
       },
+      // {
+      //   type: 'image',
+      //   src: '',
+      //   caption: '',
+      // },
+      // {
+      //   type: 'image',
+      //   src: '',
+      //   caption: '',
+      // },
       {
         type: 'image',
-        src: '',
-        caption: '',
-      },
-      {
-        type: 'image',
-        src: '',
-        caption: '',
-      },
-      {
-        type: 'image',
-        src: '',
+        src: agroherbal2,
         caption: 'Mahasiswa KKN-PPM UGM menyampaikan materi sosialisasi Agroherbal kepada anggota Kelompok Tani Desa Sarongan di Balai Desa Sarongan',
       },
       {
         type: 'paragraph',
         text: 'Sebelum pelaksanaan sosialisasi, tim KKN-PPM UGM melakukan serangkaian wawancara bersama dengan petani buah naga untuk mengetahui jenis tanaman yang dinilai sesuai dengan kondisi lahan setempat. Hasil wawancara menunjukkan bahwa masyarakat telah mengenal beberapa tanaman herbal berdasarkan pengetahuan turun temurun, seperti jahe dan kencur, bahkan sebagai petani menilai tanaman-tanaman tersebut merupakan jenis tanaman yang relatif mudah dibudidayakan dengan biaya perawatan yang rendah. Pak Ridwan, salah satu petani buah naga, menyampaikan bahwa dibandingkan beberapa tanaman palawija, empon-empon cenderung lebih mudah dirawat dan tidak membutuhkan biaya produksi yang terlalu besar. Pendapat serupa juga disampaikan oleh Pak Eko yang menilai tanaman herbal memiliki peluang untuk dikembangkan sebagai tanaman pendamping selama pengaturan jarak waktu tanam dapat dilakukan dengan baik. ',
       },
-      {
-        type: 'image',
-        src: '',
-        caption: '',
-      },
-      {
-        type: 'image',
-        src: '',
-        caption: 'Tim KKN-PPM UGM melakukan wawancara dengan petani buah naga dalam identifikasi potensi pengembangan tanaman herbal di Desa Sarongan',
-      },
+      // {
+      //   type: 'image',
+      //   src: '',
+      //   caption: '',
+      // },
+      // {
+      //   type: 'image',
+      //   src: '',
+      //   caption: 'Tim KKN-PPM UGM melakukan wawancara dengan petani buah naga dalam identifikasi potensi pengembangan tanaman herbal di Desa Sarongan',
+      // },
       {
         type: 'paragraph',
         text: 'Melalui hasil tersebut, tim KKN-PPM UGM mengangkat aspek kesehatan sebagai spek utama pembahasan dalam kegiatan sosialisasi. Pada kegiatan tersebut, pengenalan manfaat jahe (Zingiber Officinale) sebagai salah satu tanaman herbal yang mudah dijumpai ini menjadi fokus utama pembahasan. Tim KKN-PPM UGM menjelaskan bahwa jahe mengandung senyawa aktif seperti gingerol, shogaol, dan zingerone yang memiliki aktivitas antioksidan dan antiinflamasi. Penyampaian materi berdasarkan pada berbagai penelitian sebelumnya yang menunjukkan bahwa konsumsi jahe secara rutin sebagai bagian dari pola hidup sehat dapat berpotensi dalam membantu meningkatkan sensitivitas insulin, mendukung pengendalian kadar gula darah dalam tubuh, serta mengurangi stres oksidatif yang berkaitan dengan perkembangan penyakit metabolik seperti diabetes melitus tipe 2. Penjelasan juga menekankan pada fungsi tanamann herbal yang bukan merupakan pokok pengganti terapi medis, melainkan sebagai pendukung gaya hidup sehat apabila dikonsumsi tepat. ',
@@ -197,14 +198,14 @@ export const articles = [
         type: 'paragraph',
         text: 'Suasana sosialisasi berlangsung interaktif. Peserta aktif mengajukan berbagai pertanyaan mengenai jenis jahe yang paling sesuai untuk ditanam di lahan pertanian, teknik budidaya, hingga cara pengolahan dan konsumsi jahe agar manfaatnya dapat diperoleh secara optimal. Antusiasme dari masyarakat ini, menunjukkan bahwa tanaman herbal tidak lagi dipandang hanya sebagai bumbu dapur, melainkan juga mulai dilihat sebagai komoditas yang bernilai ekonomi sekaligus memberikan manfaat bagi kesehatan keluarga. ',
       },
+      // {
+      //   type: 'image',
+      //   src: '',
+      //   caption: '',
+      // },
       {
         type: 'image',
-        src: '',
-        caption: '',
-      },
-      {
-        type: 'image',
-        src: '',
+        src: agroherbal3,
         caption: 'Peserta aktif berdiskusi terkait pengelolaan dan pemanfaatan tanaman herbal',
       },
       {
@@ -424,6 +425,12 @@ export const articles = [
         text: 'Penerapan Filtrasi Sederhana di Tingkat Desa dan Rumahan',
       },
       {
+        type: 'image',
+        src: filtrasi2,
+        caption: 'Sistem filtrasi sederhana berbasis media alami yang dapat diterapkan di rumah tangga maupun skala komunitas',
+        fit: 'contain',
+      },
+      {
         type: 'paragraph',
         text: 'Konsep filtrasi sederhana di atas bukan sekadar teori, tetapi bisa langsung diterapkan dalam berbagai kebutuhan nyata di lingkungan desa maupun skala rumah tangga, di antaranya:',
       },
@@ -480,13 +487,14 @@ export const articles = [
         text: 'Pada akhirnya, konsep filtrasi ini menjadi pelengkap dari pemahaman tentang siklus air tanah itu sendiri, mulai dari daerah resapan yang menyerap air hujan hingga upaya sederhana masyarakat dalam memastikan air yang mereka konsumsi tetap layak dan aman. Dengan begitu, warga Desa Sarongan tidak hanya memahami dari mana air mereka berasal, tetapi juga mampu berperan aktif menjaga kualitasnya secara mandiri dan berkelanjutan.',
       },
     ],
+    image: filtrasi1,
     variant: 1,
   },
   {
     slug: 'artikel-7',
     title: 'Menjaga Jejak Pulang Penyu: Upaya Konservasi Penyu di Taman Nasional Meru Betiri',
     category: 'Konservasi',
-    date: '2026-06-14',
+    date: '2026-07-30',
     excerpt: loremShort,
     content: [
       {
@@ -567,11 +575,540 @@ export const articles = [
   },
   {
     slug: 'artikel-8',
-    title: 'Judul Artikel Edukasi 8',
-    category: 'Konservasi',
+    title: 'Mengenal Keanekaragaman Flora Pesisir Kawasan Sarongan: Muara Mbaduk, Pantai Benteng, Pantai Rajegwesi, dan Pantai Sukamade',
+    category: 'Flora & Keanekaragaman Hayati',
     date: '2026-06-14',
-    excerpt: loremShort,
-    content: loremContent,
+    excerpt: 'Dokumentasi taksonomi, karakteristik morfologi, dan potensi ekologis maupun ekonomi berbagai jenis vegetasi pesisir yang ditemukan di empat kawasan pantai: Muara Mbaduk, Pantai Benteng, Pantai Rajegwesi, dan Pantai Sukamade.',
+    content: [
+      // ================= MUARA MBADUK =================
+      { type: 'heading', text: 'Muara Mbaduk' },
+      {
+        type: 'paragraph',
+        text: 'Keanekaragaman vegetasi di kawasan Pantai Muara Mbaduk menunjukkan adanya berbagai jenis tumbuhan yang mampu beradaptasi terhadap karakteristik lingkungan pesisir. Setiap jenis memiliki karakter taksonomi dan morfologi yang berbeda serta peranan ekologis yang mendukung keberlangsungan ekosistem pantai. Selain memiliki fungsi ekologis, keberadaan tumbuhan tersebut juga berpotensi dikembangkan sebagai bagian dari daya tarik wisata berbasis edukasi dan konservasi. Oleh karena itu, pengenalan jenis tumbuhan di Pantai Muara Mbaduk dilakukan melalui identifikasi taksonomi, karakteristik morfologi, serta potensi pemanfaatannya dalam mendukung pengelolaan kawasan wisata secara berkelanjutan.',
+      },
+
+      { type: 'subheading', text: '1. Katang-Katang' },
+      { type: 'image', caption: 'Tumbuhan, daun, dan buah Katang-Katang — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Solanales, Famili Convolvulaceae, Genus Ipomoea, Spesies Ipomoea pes-caprae.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Katang-katang (Ipomoea pes-caprae) merupakan tumbuhan menjalar yang termasuk dalam famili Convolvulaceae dan umum ditemukan pada kawasan pantai berpasir. Tumbuhan ini memiliki batang berbentuk bulat, menjalar di atas permukaan tanah, dan dapat tumbuh memanjang dengan percabangan yang cukup banyak. Batangnya umumnya berwarna hijau hingga kecokelatan dan pada bagian tertentu dapat membentuk akar pada ruas yang bersentuhan dengan tanah. Daunnya merupakan daun tunggal yang tersusun berseling dengan bentuk khas menyerupai telapak kaki kambing, yaitu berbentuk membulat dengan lekukan yang cukup dalam pada bagian ujung sehingga terbagi menjadi dua lobus. Permukaan daun relatif licin dan tebal, dengan warna hijau serta tangkai daun yang cukup panjang.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga katang-katang tumbuh pada ketiak daun dan berbentuk seperti corong dengan ukuran relatif besar. Mahkota bunga umumnya berwarna merah muda hingga ungu muda dengan bagian tengah yang lebih gelap, sedangkan kelopak berwarna hijau. Buah berbentuk kapsul bulat telur hingga hampir bulat dan mengandung beberapa biji berwarna cokelat kehitaman dengan permukaan berbulu. Sistem perakaran berkembang pada bagian ruas batang yang menyentuh tanah sehingga membantu tumbuhan bertahan pada substrat berpasir. Karakter batang yang menjalar, daun berbentuk khas dengan dua lobus, serta bunga berbentuk corong menjadi ciri morfologi utama yang memudahkan identifikasi I. pes-caprae di kawasan pesisir Pantai Muara Mbaduk, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Katang-katang memiliki peran penting dalam mempertahankan kestabilan substrat pada kawasan pantai berpasir. Pertumbuhannya yang menjalar dan sistem perakaran yang berkembang pada lapisan pasir memungkinkan tumbuhan ini membantu mengikat sedimen serta mengurangi pergerakan pasir akibat angin. Fungsi tersebut menjadikan katang-katang sebagai salah satu komponen vegetasi yang berperan dalam proses stabilisasi pantai dan pengurangan potensi erosi. Keberadaannya juga dapat mendukung terbentuknya kondisi mikrohabitat yang memungkinkan organisme lain memanfaatkan kawasan tersebut. Di sisi lain, katang-katang memiliki potensi pemanfaatan dalam bidang kesehatan karena berbagai penelitian telah mengidentifikasi kandungan metabolit sekunder dan aktivitas biologis dari bagian tanaman tersebut. Potensi ini dapat menjadi dasar pengembangan penelitian bahan alam, khususnya dalam pencarian senyawa bioaktif, meskipun pemanfaatannya sebagai bahan obat tetap memerlukan pengujian lebih lanjut terkait efektivitas, keamanan, dan dosis.',
+      },
+
+      { type: 'subheading', text: '2. Ketapang' },
+      { type: 'image', caption: 'Pohon serta daun dan buah Ketapang — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Myrtales, Famili Combretaceae, Genus Terminalia, Spesies Terminalia catappa L.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Ketapang (Terminalia catappa L.) merupakan pohon yang termasuk dalam famili Combretaceae dan umum ditemukan di kawasan pesisir tropis. Pohon ini memiliki batang tegak dengan kulit batang berwarna cokelat keabu-abuan serta percabangan yang tumbuh mendatar dan tersusun bertingkat sehingga membentuk tajuk menyerupai payung. Daunnya merupakan daun tunggal berukuran besar, berbentuk membulat telur hingga lonjong terbalik (obovate), dengan tepi rata dan pertulangan menyirip yang jelas. Daun muda umumnya berwarna hijau muda hingga kemerahan, kemudian berubah menjadi hijau tua dan dapat berubah menjadi kuning, jingga, atau merah kecokelatan sebelum gugur.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga ketapang berukuran kecil, berwarna putih kehijauan hingga kekuningan, dan tersusun dalam bentuk bulir pada ketiak daun atau ujung ranting. Buah berbentuk bulat telur hingga lonjong dengan bagian tepi melebar menyerupai sayap, berwarna hijau saat muda dan berubah menjadi kuning, merah keunguan, hingga cokelat ketika matang. Bijinya berada di dalam lapisan buah yang cukup keras. Karakter tajuk yang lebar, daun besar, serta buah bersayap menjadi ciri morfologi utama yang memudahkan identifikasi T. catappa di kawasan pesisir, termasuk kawasan wisata Pantai Muara Mbaduk, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Ketapang laut memiliki manfaat ekologis melalui perannya dalam membentuk tutupan vegetasi dan menyediakan kondisi mikrohabitat di kawasan pesisir. Tajuk yang relatif lebar dapat memberikan keteduhan serta mengurangi paparan radiasi matahari secara langsung pada permukaan tanah. Serasah daun yang dihasilkan juga berkontribusi terhadap pemasukan bahan organik ke dalam tanah setelah mengalami proses dekomposisi. Siklus tersebut merupakan bagian dari proses pengembalian unsur hara yang mendukung produktivitas ekosistem. Selain fungsi ekologis, ketapang memiliki potensi pemanfaatan pada berbagai bidang. Buah dan bijinya diketahui dapat dimanfaatkan sebagai bahan pangan, sementara beberapa bagian tanaman telah digunakan dalam pengobatan tradisional. Kandungan senyawa bioaktif yang terdapat pada bagian tanaman juga menjadikan ketapang berpotensi untuk dikaji lebih lanjut dalam penelitian farmakologi dan pengembangan bahan alam. Dalam konteks pemanfaatan kawasan pesisir, keberadaan ketapang juga dapat mendukung kenyamanan masyarakat karena berfungsi sebagai vegetasi peneduh.',
+      },
+
+      { type: 'subheading', text: '3. Waru Laut' },
+      { type: 'image', caption: 'Pohon dan daun Waru Laut — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Tracheophyta, Kelas Magnoliopsida, Ordo Malvales, Famili Malvaceae, Genus Hibiscus, Spesies Hibiscus tiliaceus L.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Waru laut (Hibiscus tiliaceus L.) merupakan tumbuhan pesisir yang termasuk dalam famili Malvaceae dan memiliki kemampuan beradaptasi dengan lingkungan pantai. Tumbuhan ini umumnya berupa pohon atau perdu dengan batang tegak dan percabangan yang cukup banyak, serta dapat mencapai ukuran sedang. Kulit batang berwarna abu-abu kecokelatan dan pada bagian tertentu dapat menghasilkan serat yang kuat. Daunnya merupakan daun tunggal yang tersusun berseling, berbentuk jantung hingga menyerupai bulat telur, dengan ujung meruncing dan pangkal berbentuk jantung. Permukaan daun umumnya berwarna hijau dan memiliki tekstur agak kasar, sedangkan bagian bawah daun cenderung lebih pucat serta ditutupi rambut halus. Pertulangan daun menjari dengan beberapa tulang utama yang berawal dari pangkal daun sehingga menjadi salah satu karakter morfologi yang mudah diamati.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga waru laut berukuran cukup besar dan muncul pada ketiak daun atau bagian ujung ranting. Bunga memiliki lima mahkota yang umumnya berwarna kuning dengan bagian tengah berwarna merah tua atau keunguan, kemudian dapat berubah menjadi kemerahan sebelum gugur. Benang sari menyatu membentuk tabung yang mengelilingi tangkai putik, menjadi ciri khas bunga dari famili Malvaceae. Buah berbentuk bulat telur hingga hampir bulat dan merupakan buah kapsul yang ketika matang dapat membuka untuk melepaskan biji. Biji berukuran kecil dan umumnya berwarna cokelat hingga hitam. Kombinasi daun berbentuk jantung, bunga berwarna kuning dengan pusat kemerahan, serta buah kapsul menjadi karakter utama yang dapat digunakan untuk mengenali H. tiliaceus di kawasan pesisir Pantai Muara Mbaduk, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Waru laut memberikan kontribusi terhadap pembentukan vegetasi pelindung pada kawasan pesisir. Keberadaannya dapat membantu mempertahankan kondisi substrat serta mengurangi paparan langsung faktor lingkungan terhadap kawasan di belakang pantai. Tajuk dan struktur vegetasinya juga dapat menciptakan ruang yang lebih terlindungi bagi organisme yang memanfaatkan kawasan pesisir sebagai habitat. Bagi masyarakat, waru laut memiliki potensi pemanfaatan yang berkaitan dengan bahan kayu dan serat. Kayunya secara tradisional dapat digunakan untuk berbagai kebutuhan, termasuk bahan bangunan ringan, peralatan, dan kerajinan. Pemanfaatan tersebut menunjukkan adanya nilai ekonomi dan sosial yang dapat dikembangkan dari tumbuhan pesisir. Meskipun demikian, pemanfaatan perlu mempertimbangkan keberadaan tumbuhan di habitat alami agar kebutuhan manusia tidak menyebabkan penurunan populasi maupun mengurangi fungsi ekologisnya.',
+      },
+
+      { type: 'subheading', text: '4. Cemara Laut' },
+      { type: 'image', caption: 'Tegakan, daun, dan buah Cemara Laut — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Casuarinales, Famili Casuarinaceae, Genus Casuarina, Spesies Casuarina equisetifolia L.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Cemara laut (Casuarina equisetifolia L.) merupakan tumbuhan pesisir yang termasuk dalam famili Casuarinaceae dan memiliki kemampuan beradaptasi pada lingkungan pantai. Tumbuhan ini berupa pohon dengan batang tegak dan dapat tumbuh mencapai ukuran relatif besar, dengan percabangan yang banyak serta tajuk berbentuk kerucut hingga membulat. Kulit batang berwarna cokelat keabu-abuan dan bertekstur kasar, sedangkan cabang muda berwarna hijau dan berbentuk ramping menyerupai jarum. Daun cemara laut mengalami reduksi menjadi sisik-sisik kecil yang tersusun mengelilingi ranting sehingga ranting hijau berfungsi sebagai bagian utama dalam fotosintesis. Ranting tersebut berbentuk silindris, beruas, dan memberikan tampilan menyerupai daun jarum yang menjadi ciri khas C. equisetifolia.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga cemara laut berukuran kecil dan tidak memiliki mahkota yang mencolok. Bunga jantan dan betina umumnya terdapat pada satu individu, dengan bunga jantan tersusun dalam bulir pada bagian ujung ranting, sedangkan bunga betina berkembang pada bagian lateral ranting. Buahnya berbentuk menyerupai kerucut kecil dengan permukaan keras dan tersusun dari banyak bagian seperti sisik. Ketika matang, buah berwarna cokelat dan dapat menghasilkan biji kecil bersayap yang membantu penyebaran oleh angin. Sistem perakaran cemara laut berkembang kuat dan mampu membantu pohon bertahan pada substrat berpasir serta kondisi lingkungan pesisir. Karakter batang tegak, ranting hijau beruas menyerupai jarum, dan buah berbentuk kerucut menjadi ciri utama yang dapat digunakan untuk mengidentifikasi C. equisetifolia di kawasan Pantai Muara Mbaduk, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Cemara laut memiliki peran dalam membentuk struktur vegetasi yang dapat memberikan perlindungan terhadap kawasan pesisir. Keberadaan tegakan cemara laut dapat membantu mengurangi kecepatan angin dan memberikan perlindungan terhadap vegetasi yang berada di belakangnya. Kondisi tersebut juga dapat menciptakan lingkungan mikro yang lebih sesuai bagi pertumbuhan vegetasi lain. Dalam pengelolaan kawasan pesisir, cemara laut sering dikaitkan dengan kegiatan rehabilitasi dan penghijauan karena kemampuannya beradaptasi pada lingkungan pantai. Selain fungsi ekologis, keberadaan cemara laut memiliki potensi dalam mendukung pengembangan wisata berbasis alam. Tegakan pohon dapat memberikan keteduhan, memperbaiki kualitas visual lanskap, dan meningkatkan kenyamanan pengunjung. Dengan demikian, pengelolaan cemara laut dapat memberikan manfaat ekologis sekaligus mendukung fungsi sosial kawasan apabila dilakukan dengan tetap mempertahankan karakter vegetasi alami.',
+      },
+
+      { type: 'subheading', text: '5. Kranji Bangkong / Malapari' },
+      { type: 'image', caption: 'Pohon dan bunga Malapari — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Fabales, Famili Fabaceae, Genus Pongamia, Spesies Pongamia pinnata (L.) Pierre.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Kranji bangkong atau malapari (Pongamia pinnata (L.) Pierre) merupakan tumbuhan berbentuk pohon yang termasuk dalam famili Fabaceae dan banyak ditemukan pada kawasan pesisir tropis. Pohon ini memiliki batang tegak dengan percabangan yang cukup banyak serta tajuk yang lebar dan rindang. Kulit batang berwarna abu-abu kecokelatan hingga cokelat tua dengan permukaan yang relatif kasar. Daunnya merupakan daun majemuk menyirip ganjil yang tersusun berseling pada ranting. Anak daun umumnya berjumlah 5–7 helai, berbentuk bulat telur hingga elips, dengan permukaan licin dan mengilap, tepi rata, serta ujung meruncing. Daun muda berwarna hijau muda, sedangkan daun yang telah berkembang sempurna berwarna hijau tua.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga malapari tersusun dalam bentuk tandan yang muncul pada ketiak daun atau ujung ranting. Bunga berukuran sedang dengan mahkota berwarna putih hingga merah muda keunguan dan memiliki pola warna yang lebih gelap pada bagian tengahnya. Buah berupa polong berbentuk lonjong hingga agak pipih, berwarna hijau ketika muda dan berubah menjadi cokelat ketika matang, serta umumnya mengandung satu hingga dua biji. Biji berbentuk bulat telur hingga lonjong dan berwarna cokelat kemerahan. Sistem perakaran berkembang cukup kuat sehingga mendukung pertumbuhan pada lingkungan pesisir. Karakter daun majemuk dengan beberapa anak daun, bunga berwarna putih hingga merah muda, serta buah polong yang pipih menjadi ciri morfologi utama yang dapat digunakan untuk mengenali P. pinnata di kawasan pesisir Pantai Muara Mbaduk, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Kranji bangkong atau Malapari memiliki potensi pemanfaatan yang menonjol dalam bidang energi terbarukan. Biji tumbuhan ini mengandung minyak nabati yang dapat diolah dan dikembangkan sebagai bahan baku biodiesel. Pemanfaatan tersebut memberikan peluang dalam pengembangan sumber energi alternatif yang berasal dari sumber daya hayati dan dapat diperbarui. Potensi malapari menjadi semakin relevan dalam konteks kebutuhan terhadap sumber energi yang lebih berkelanjutan serta pengurangan ketergantungan terhadap bahan bakar fosil. Selain menghasilkan bahan baku energi, keberadaan pohon malapari tetap memberikan fungsi ekologis sebagai bagian dari vegetasi pesisir. Tajuk dan sistem perakarannya dapat berkontribusi terhadap pembentukan tutupan vegetasi dan perlindungan substrat. Pengembangan malapari untuk kepentingan ekonomi perlu dilakukan melalui pendekatan budidaya dan pemanfaatan yang terencana sehingga tidak mengorbankan fungsi ekologis kawasan.',
+      },
+
+      { type: 'subheading', text: '6. Rumput Angin' },
+      { type: 'image', caption: 'Daun, rumpun, dan buah Rumput Angin — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Equisetopsida, Ordo Poales, Famili Poaceae, Genus Spinifex, Spesies Spinifex littoreus (Burm.f.) Merr.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Rumput angin (Spinifex littoreus (Burm.f.) Merr.) merupakan tumbuhan herba tahunan yang termasuk dalam famili Poaceae dan umum ditemukan pada kawasan pantai berpasir. Tumbuhan ini memiliki batang menjalar yang tumbuh membentuk rumpun dan dapat memanjang di atas permukaan pasir. Akar tumbuh pada buku-buku batang yang bersentuhan dengan substrat sehingga membantu tumbuhan melekat dan berkembang pada lingkungan berpasir. Daunnya berbentuk pita atau lanset sempit, bertekstur agak kaku, dengan ujung meruncing dan permukaan yang dapat terasa kasar. Daun berwarna hijau hingga hijau keabu-abuan dan tersusun pada buku batang. Karakter batang yang menjalar dan kemampuan membentuk rumpun merupakan ciri penting yang mendukung adaptasi S. littoreus terhadap kondisi lingkungan pantai.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Perbungaan rumput angin memiliki bentuk khas berupa bonggol atau kepala bunga yang relatif besar dan menyerupai bola berduri. Bunga jantan dan betina terdapat pada individu yang berbeda (dioesis), dengan perbungaan betina umumnya memiliki struktur yang lebih besar dan mencolok. Perbungaan dapat terlepas dan terbawa angin setelah matang sehingga membantu proses penyebaran. Buah atau spikelet berukuran kecil dan terlindungi oleh struktur perbungaan yang keras serta berduri. Sistem perakaran dan batang menjalar memungkinkan rumput angin membantu mengikat pasir dan membentuk vegetasi penutup pada kawasan pantai. Karakter daun sempit dan kaku, batang menjalar, serta perbungaan berbentuk bola menjadi ciri morfologi utama yang dapat digunakan untuk mengidentifikasi S. littoreus di kawasan Pantai Muara Mbaduk, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Rumput angin memiliki peranan penting dalam mempertahankan struktur pantai berpasir, terutama pada kawasan yang memiliki gumuk pasir. Sistem perakarannya membantu mengikat partikel pasir sehingga mengurangi mobilitas sedimen yang dipengaruhi oleh angin. Proses tersebut berkontribusi terhadap stabilisasi permukaan pasir dan mempertahankan struktur geomorfologi pantai. Hilangnya vegetasi pantai seperti rumput angin dapat menyebabkan substrat menjadi lebih mudah bergerak sehingga meningkatkan kerentanan kawasan terhadap erosi dan perubahan bentuk pantai. Selain fungsi ekologisnya, keberadaan rumput angin memiliki potensi sebagai objek pendidikan lingkungan karena dapat digunakan untuk menjelaskan proses adaptasi tumbuhan terhadap kondisi pesisir serta hubungan antara vegetasi dan kestabilan pantai. Nilai tersebut dapat dikembangkan dalam kegiatan edukasi dan interpretasi lingkungan, khususnya pada kawasan wisata berbasis alam.',
+      },
+
+      { type: 'subheading', text: '7. Biduri' },
+      { type: 'image', caption: 'Tumbuhan, daun, dan bunga Biduri — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Gentianales, Famili Apocynaceae, Genus Calotropis, Spesies Calotropis gigantea (L.) W.T.Aiton.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Biduri (Calotropis gigantea (L.) Dryand.) merupakan tumbuhan perdu yang termasuk dalam famili Apocynaceae dan umum ditemukan pada kawasan pesisir tropis, terutama pada lahan terbuka dan berpasir. Batangnya berwarna hijau hingga abu-abu dan memiliki permukaan yang relatif halus serta mengandung getah putih yang keluar apabila jaringan tanaman terluka. Daunnya merupakan daun tunggal yang tersusun berhadapan, berukuran besar, berbentuk bulat telur hingga elips, dengan ujung meruncing dan pangkal membulat hingga berbentuk hati. Permukaan daun berwarna hijau keabu-abuan. Pertulangan daun menyirip cukup jelas dan tulang daun utama tampak menonjol pada bagian bawah daun.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga biduri tersusun dalam perbungaan berbentuk payung yang muncul pada ketiak daun atau ujung ranting. Bunga memiliki lima mahkota dengan bentuk menyerupai bintang dan umumnya berwarna putih hingga ungu muda, dengan bagian tengah berupa struktur mahkota tambahan yang lebih menonjol. Buah berbentuk sepasang folikel yang menyerupai polong dan berwarna hijau ketika muda, kemudian mengering saat matang. Di dalam buah terdapat banyak biji berwarna cokelat yang dilengkapi rambut halus berwarna putih pada salah satu ujungnya sehingga membantu penyebaran biji oleh angin. Getah putih, daun berukuran besar dan berbulu, serta bunga berbentuk bintang merupakan karakter morfologi utama yang dapat digunakan untuk mengidentifikasi C. gigantea di kawasan pesisir Pantai Muara Mbaduk, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Biduri memiliki manfaat ekologis dalam mendukung pembentukan vegetasi pada kawasan pesisir yang memiliki kondisi lingkungan relatif kering dan terbuka. Keberadaannya dapat membantu menutup permukaan tanah serta berkontribusi dalam mempertahankan struktur substrat melalui sistem perakarannya. Vegetasi biduri juga dapat menjadi bagian dari habitat bagi berbagai organisme, termasuk serangga yang memanfaatkan tumbuhan sebagai sumber pakan maupun tempat beraktivitas. Selain manfaat ekologis, biduri memiliki potensi pemanfaatan dalam bidang kesehatan dan penelitian bahan alam. Berbagai bagian tumbuhan ini diketahui mengandung senyawa metabolit sekunder yang berpotensi memiliki aktivitas biologis, sehingga menarik untuk dikaji dalam penelitian farmakologi maupun pengembangan bahan obat. Dalam pengetahuan tradisional, biduri juga telah dimanfaatkan untuk berbagai keperluan. Namun, pemanfaatannya perlu dilakukan secara hati-hati karena getah biduri mengandung senyawa yang dapat bersifat toksik dan menyebabkan iritasi. Oleh karena itu, potensi biduri lebih tepat dikembangkan melalui penelitian dan pengolahan yang terkontrol, bukan melalui penggunaan secara langsung tanpa pengetahuan yang memadai.',
+      },
+
+      { type: 'subheading', text: '8. Pandan Laut' },
+      { type: 'image', caption: 'Tumbuhan dan bunga Pandan Laut — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Pandanales, Famili Pandanaceae, Genus Pandanus, Spesies Pandanus odorifer (Forssk.) Kuntze.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pandan laut (Pandanus odorifer (Forssk.) Kuntze) merupakan tumbuhan pesisir yang termasuk dalam famili Pandanaceae dan umumnya tumbuh pada kawasan pantai berpasir. Tumbuhan ini berbentuk perdu atau pohon kecil dengan batang tegak dan bercabang, serta memiliki akar tunjang yang tumbuh dari bagian batang dan berfungsi memperkuat tumbuhan pada substrat berpasir. Daunnya berbentuk pita panjang, sempit, dan kaku dengan ujung meruncing serta tepi yang berduri. Daun tersusun rapat dan spiral pada ujung batang. Permukaan daun berwarna hijau hingga hijau tua dengan pertulangan sejajar yang jelas. Karakter akar tunjang dan susunan daun yang rapat pada ujung batang menjadi ciri morfologi khas P. odorifer.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pandan laut merupakan tumbuhan dioesis, sehingga bunga jantan dan bunga betina terdapat pada individu yang berbeda. Perbungaan jantan umumnya memiliki struktur seperti rangkaian bulir yang dikelilingi braktea berwarna putih hingga kekuningan dan menghasilkan aroma yang khas, sedangkan perbungaan betina berkembang menjadi buah majemuk berbentuk bulat hingga menyerupai nanas. Buah tersusun atas banyak bagian kecil berbentuk poligonal yang disebut drupelet dan umumnya berwarna hijau ketika muda, kemudian berubah menjadi kuning hingga jingga ketika matang. Biji berada di dalam bagian buah tersebut dan dapat tersebar melalui berbagai media, terutama air. Daun panjang berduri, akar tunjang yang kuat, serta buah majemuk yang menyerupai nanas menjadi karakter morfologi utama yang dapat digunakan untuk mengidentifikasi P. odorifer di kawasan Pantai Muara Mbaduk, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pandan laut memiliki kontribusi penting terhadap kestabilan lingkungan pantai melalui sistem perakarannya yang mampu memperkuat substrat berpasir. Keberadaannya dapat membantu mengurangi pergerakan pasir serta membentuk vegetasi yang berperan dalam mempertahankan kondisi kawasan pesisir. Vegetasi pandan laut juga dapat menyediakan ruang perlindungan bagi organisme kecil yang memanfaatkan kawasan tersebut. Selain fungsi ekologis, pandan laut memiliki potensi ekonomi melalui pemanfaatan daunnya sebagai bahan baku kerajinan. Daun yang memiliki serat kuat dapat diolah menjadi berbagai produk anyaman, seperti tikar, tas, wadah, dan produk kerajinan lainnya. Pengembangan produk berbasis pandan laut dapat menjadi salah satu alternatif ekonomi kreatif bagi masyarakat pesisir. Apabila disertai dengan pengelolaan bahan baku yang berkelanjutan, pemanfaatan tersebut dapat meningkatkan nilai ekonomi sumber daya lokal sekaligus mendorong masyarakat untuk mempertahankan keberadaan vegetasi pandan laut di lingkungannya.',
+      },
+
+      // ================= PANTAI BENTENG =================
+      { type: 'heading', text: 'Pantai Benteng' },
+      {
+        type: 'paragraph',
+        text: 'Vegetasi yang terdapat di kawasan Pantai Benteng merupakan salah satu komponen penting dalam membentuk karakter ekosistem pesisir sekaligus memperkaya daya tarik alami kawasan wisata. Berbagai jenis tumbuhan memiliki karakteristik taksonomi dan morfologi yang beragam sebagai bentuk adaptasi terhadap kondisi lingkungan pantai. Keberadaan tumbuhan tersebut tidak hanya memiliki nilai ekologis, tetapi juga dapat memberikan potensi dalam pengembangan wisata edukasi, konservasi, dan pengenalan keanekaragaman hayati kepada pengunjung. Untuk mengetahui nilai tersebut secara lebih mendalam, setiap jenis tumbuhan selanjutnya diperkenalkan berdasarkan klasifikasi taksonomi, karakteristik morfologi, dan potensi yang dimilikinya di kawasan Pantai Benteng.',
+      },
+
+      { type: 'subheading', text: '1. Kranji Bangkong / Malapari' },
+      { type: 'image', caption: 'Pohon dan bunga Malapari — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Fabales, Famili Fabaceae, Genus Pongamia, Spesies Pongamia pinnata (L.) Pierre.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Kranji bangkong atau malapari (Pongamia pinnata (L.) Pierre) merupakan tumbuhan berbentuk pohon yang termasuk dalam famili Fabaceae dan banyak ditemukan pada kawasan pesisir tropis. Pohon ini memiliki batang tegak dengan percabangan yang cukup banyak serta tajuk yang lebar dan rindang. Kulit batang berwarna abu-abu kecokelatan hingga cokelat tua dengan permukaan yang relatif kasar. Daunnya merupakan daun majemuk menyirip ganjil yang tersusun berseling pada ranting. Anak daun umumnya berjumlah 5–7 helai, berbentuk bulat telur hingga elips, dengan permukaan licin dan mengilap, tepi rata, serta ujung meruncing. Daun muda berwarna hijau muda, sedangkan daun yang telah berkembang sempurna berwarna hijau tua.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga malapari tersusun dalam bentuk tandan yang muncul pada ketiak daun atau ujung ranting. Bunga berukuran sedang dengan mahkota berwarna putih hingga merah muda keunguan dan memiliki pola warna yang lebih gelap pada bagian tengahnya. Buah berupa polong berbentuk lonjong hingga agak pipih, berwarna hijau ketika muda dan berubah menjadi cokelat ketika matang, serta umumnya mengandung satu hingga dua biji. Biji berbentuk bulat telur hingga lonjong dan berwarna cokelat kemerahan. Sistem perakaran berkembang cukup kuat sehingga mendukung pertumbuhan pada lingkungan pesisir. Karakter daun majemuk dengan beberapa anak daun, bunga berwarna putih hingga merah muda, serta buah polong yang pipih menjadi ciri morfologi utama yang dapat digunakan untuk mengenali P. pinnata di kawasan pesisir Pantai Benteng, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Kranji bangkong atau malapari memiliki potensi pemanfaatan yang menonjol dalam bidang energi terbarukan. Biji tumbuhan ini mengandung minyak nabati yang dapat diolah dan dikembangkan sebagai bahan baku biodiesel. Pemanfaatan tersebut memberikan peluang dalam pengembangan sumber energi alternatif yang berasal dari sumber daya hayati dan dapat diperbarui. Potensi malapari menjadi semakin relevan dalam konteks kebutuhan terhadap sumber energi yang lebih berkelanjutan serta pengurangan ketergantungan terhadap bahan bakar fosil. Selain menghasilkan bahan baku energi, keberadaan pohon malapari tetap memberikan fungsi ekologis sebagai bagian dari vegetasi pesisir. Tajuk dan sistem perakarannya dapat berkontribusi terhadap pembentukan tutupan vegetasi dan perlindungan substrat. Pengembangan malapari untuk kepentingan ekonomi perlu dilakukan melalui pendekatan budidaya dan pemanfaatan yang terencana sehingga tidak mengorbankan fungsi ekologis kawasan.',
+      },
+
+      { type: 'subheading', text: '2. Beruas Laut' },
+      { type: 'image', caption: 'Rumpun dan daun Beruas Laut — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Equisetopsida, Ordo Campanulales, Famili Goodeniaceae, Genus Scaevola, Spesies Scaevola taccada (Gaertn.) Roxb.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Beruas laut (Scaevola taccada (Gaertn.) Roxb.) merupakan tumbuhan perdu yang termasuk dalam famili Goodeniaceae dan umum ditemukan pada kawasan pesisir tropis. Tumbuhan ini memiliki batang yang tegak hingga menjalar dengan percabangan cukup banyak dan membentuk tajuk yang rimbun. Batangnya berwarna hijau hingga cokelat keabu-abuan dengan permukaan relatif licin. Daunnya merupakan daun tunggal yang tersusun berseling dan cenderung mengelompok pada ujung ranting. Daun berbentuk bulat telur hingga lonjong terbalik (obovate), berukuran cukup tebal dan berdaging, dengan ujung membulat serta tepi daun rata. Permukaan daun berwarna hijau mengilap, sedangkan pertulangan daun menyirip tampak cukup jelas pada permukaan bawah daun.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga beruas laut berukuran kecil hingga sedang dan umumnya muncul pada ketiak daun. Mahkota bunga berwarna putih hingga putih kehijauan dan memiliki bentuk khas yang terbelah pada satu sisi sehingga menyerupai kipas atau setengah lingkaran. Buah berbentuk bulat hingga agak lonjong, berdaging, berwarna hijau ketika muda dan berubah menjadi putih hingga ungu kehitaman ketika matang. Buah umumnya mengandung satu biji yang berukuran relatif besar. Karakter daun yang tebal dan berdaging, bunga berbentuk kipas, serta buah yang berubah warna menjadi gelap ketika matang merupakan ciri morfologi utama yang dapat digunakan untuk mengidentifikasi S. taccada di kawasan pesisir Pantai Benteng, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Beruas laut memiliki fungsi ekologis sebagai bagian dari vegetasi yang berkembang pada lingkungan pesisir dan berkontribusi terhadap pembentukan tutupan tumbuhan di dekat garis pantai. Keberadaannya dapat membantu mempertahankan kondisi substrat serta menyediakan ruang yang dapat dimanfaatkan oleh organisme kecil. Vegetasi pesisir yang terbentuk juga memiliki peranan dalam menjaga kompleksitas habitat sehingga mendukung keberadaan berbagai organisme yang saling berinteraksi dalam ekosistem. Dari perspektif pemanfaatan, beruas laut memiliki potensi untuk dikaji sebagai sumber bahan alam karena beberapa penelitian menunjukkan adanya kandungan senyawa metabolit sekunder dengan aktivitas biologis tertentu. Potensi tersebut membuka peluang penelitian lebih lanjut dalam bidang farmasi, pangan fungsional, maupun pengembangan bahan alami. Namun, pengembangan pemanfaatannya perlu didukung oleh kajian ilmiah yang memadai serta memperhatikan keberlanjutan populasi di habitat alaminya.',
+      },
+
+      { type: 'subheading', text: '3. Katang-Katang' },
+      { type: 'image', caption: 'Tumbuhan dan daun Katang-Katang — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Solanales, Famili Convolvulaceae, Genus Ipomoea, Spesies Ipomoea pes-caprae.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Katang-katang (Ipomoea pes-caprae (L.) R.Br.) merupakan tumbuhan menjalar yang termasuk dalam famili Convolvulaceae dan umum ditemukan pada kawasan pantai berpasir. Tumbuhan ini memiliki batang berbentuk bulat, menjalar di atas permukaan tanah, dan dapat tumbuh memanjang dengan percabangan yang cukup banyak. Batangnya umumnya berwarna hijau hingga kecokelatan dan pada bagian tertentu dapat membentuk akar pada ruas yang bersentuhan dengan tanah. Daunnya merupakan daun tunggal yang tersusun berseling dengan bentuk khas menyerupai telapak kaki kambing, yaitu berbentuk membulat dengan lekukan yang cukup dalam pada bagian ujung sehingga terbagi menjadi dua lobus. Permukaan daun relatif licin dan tebal, dengan warna hijau serta tangkai daun yang cukup panjang.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga katang-katang tumbuh pada ketiak daun dan berbentuk seperti corong dengan ukuran relatif besar. Mahkota bunga umumnya berwarna merah muda hingga ungu muda dengan bagian tengah yang lebih gelap, sedangkan kelopak berwarna hijau. Buah berbentuk kapsul bulat telur hingga hampir bulat dan mengandung beberapa biji berwarna cokelat kehitaman dengan permukaan berbulu. Sistem perakaran berkembang pada bagian ruas batang yang menyentuh tanah sehingga membantu tumbuhan bertahan pada substrat berpasir. Karakter batang yang menjalar, daun berbentuk khas dengan dua lobus, serta bunga berbentuk corong menjadi ciri morfologi utama yang memudahkan identifikasi I. pes-caprae di kawasan pesisir Pantai Benteng, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Katang-katang memiliki peran penting dalam mempertahankan kestabilan substrat pada kawasan pantai berpasir. Pertumbuhannya yang menjalar dan sistem perakaran yang berkembang pada lapisan pasir memungkinkan tumbuhan ini membantu mengikat sedimen serta mengurangi pergerakan pasir akibat angin. Fungsi tersebut menjadikan katang-katang sebagai salah satu komponen vegetasi yang berperan dalam proses stabilisasi pantai dan pengurangan potensi erosi. Keberadaannya juga dapat mendukung terbentuknya kondisi mikrohabitat yang memungkinkan organisme lain memanfaatkan kawasan tersebut. Di sisi lain, katang-katang memiliki potensi pemanfaatan dalam bidang kesehatan karena berbagai penelitian telah mengidentifikasi kandungan metabolit sekunder dan aktivitas biologis dari bagian tanaman tersebut. Potensi ini dapat menjadi dasar pengembangan penelitian bahan alam, khususnya dalam pencarian senyawa bioaktif, meskipun pemanfaatannya sebagai bahan obat tetap memerlukan pengujian lebih lanjut terkait efektivitas, keamanan, dan dosis.',
+      },
+
+      { type: 'subheading', text: '4. Waru Laut' },
+      { type: 'image', caption: 'Pohon dan daun Waru Laut — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Tracheophyta, Kelas Magnoliopsida, Ordo Malvales, Famili Malvaceae, Genus Hibiscus, Spesies Hibiscus tiliaceus L.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Waru laut (Hibiscus tiliaceus L.) merupakan tumbuhan pesisir yang termasuk dalam famili Malvaceae dan memiliki kemampuan beradaptasi dengan lingkungan pantai. Tumbuhan ini umumnya berupa pohon atau perdu dengan batang tegak dan percabangan yang cukup banyak, serta dapat mencapai ukuran sedang. Kulit batang berwarna abu-abu kecokelatan dan pada bagian tertentu dapat menghasilkan serat yang kuat. Daunnya merupakan daun tunggal yang tersusun berseling, berbentuk jantung hingga menyerupai bulat telur, dengan ujung meruncing dan pangkal berbentuk jantung. Permukaan daun umumnya berwarna hijau dan memiliki tekstur agak kasar, sedangkan bagian bawah daun cenderung lebih pucat serta ditutupi rambut halus. Pertulangan daun menjari dengan beberapa tulang utama yang berawal dari pangkal daun sehingga menjadi salah satu karakter morfologi yang mudah diamati.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga waru laut berukuran cukup besar dan muncul pada ketiak daun atau bagian ujung ranting. Bunga memiliki lima mahkota yang umumnya berwarna kuning dengan bagian tengah berwarna merah tua atau keunguan, kemudian dapat berubah menjadi kemerahan sebelum gugur. Benang sari menyatu membentuk tabung yang mengelilingi tangkai putik, menjadi ciri khas bunga dari famili Malvaceae. Buah berbentuk bulat telur hingga hampir bulat dan merupakan buah kapsul yang ketika matang dapat membuka untuk melepaskan biji. Biji berukuran kecil dan umumnya berwarna cokelat hingga hitam. Kombinasi daun berbentuk jantung, bunga berwarna kuning dengan pusat kemerahan, serta buah kapsul menjadi karakter utama yang dapat digunakan untuk mengenali H. tiliaceus di kawasan pesisir Pantai Benteng, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Waru laut memberikan kontribusi terhadap pembentukan vegetasi pelindung pada kawasan pesisir. Keberadaannya dapat membantu mempertahankan kondisi substrat serta mengurangi paparan langsung faktor lingkungan terhadap kawasan di belakang pantai. Tajuk dan struktur vegetasinya juga dapat menciptakan ruang yang lebih terlindungi bagi organisme yang memanfaatkan kawasan pesisir sebagai habitat. Bagi masyarakat, waru laut memiliki potensi pemanfaatan yang berkaitan dengan bahan kayu dan serat. Kayunya secara tradisional dapat digunakan untuk berbagai kebutuhan, termasuk bahan bangunan ringan, peralatan, dan kerajinan. Pemanfaatan tersebut menunjukkan adanya nilai ekonomi dan sosial yang dapat dikembangkan dari tumbuhan pesisir. Meskipun demikian, pemanfaatan perlu mempertimbangkan keberadaan tumbuhan di habitat alami agar kebutuhan manusia tidak menyebabkan penurunan populasi maupun mengurangi fungsi ekologisnya.',
+      },
+
+      { type: 'subheading', text: '5. Pandan Laut' },
+      { type: 'image', caption: 'Tumbuhan dan bunga Pandan Laut — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Pandanales, Famili Pandanaceae, Genus Pandanus, Spesies Pandanus odorifer (Forssk.) Kuntze.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pandan laut (Pandanus odorifer (Forssk.) Kuntze) merupakan tumbuhan pesisir yang termasuk dalam famili Pandanaceae dan umumnya tumbuh pada kawasan pantai berpasir. Tumbuhan ini berbentuk perdu atau pohon kecil dengan batang tegak dan bercabang, serta memiliki akar tunjang yang tumbuh dari bagian batang dan berfungsi memperkuat tumbuhan pada substrat berpasir. Daunnya berbentuk pita panjang, sempit, dan kaku dengan ujung meruncing serta tepi yang berduri. Daun tersusun rapat dan spiral pada ujung batang. Permukaan daun berwarna hijau hingga hijau tua dengan pertulangan sejajar yang jelas. Karakter akar tunjang dan susunan daun yang rapat pada ujung batang menjadi ciri morfologi khas P. odorifer.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pandan laut merupakan tumbuhan dioesis, sehingga bunga jantan dan bunga betina terdapat pada individu yang berbeda. Perbungaan jantan umumnya memiliki struktur seperti rangkaian bulir yang dikelilingi braktea berwarna putih hingga kekuningan dan menghasilkan aroma yang khas, sedangkan perbungaan betina berkembang menjadi buah majemuk berbentuk bulat hingga menyerupai nanas. Buah tersusun atas banyak bagian kecil berbentuk poligonal yang disebut drupelet dan umumnya berwarna hijau ketika muda, kemudian berubah menjadi kuning hingga jingga ketika matang. Biji berada di dalam bagian buah tersebut dan dapat tersebar melalui berbagai media, terutama air. Daun panjang berduri, akar tunjang yang kuat, serta buah majemuk yang menyerupai nanas menjadi karakter morfologi utama yang dapat digunakan untuk mengidentifikasi P. odorifer di kawasan Pantai Benteng, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pandan laut memiliki kontribusi penting terhadap kestabilan lingkungan pantai melalui sistem perakarannya yang mampu memperkuat substrat berpasir. Keberadaannya dapat membantu mengurangi pergerakan pasir serta membentuk vegetasi yang berperan dalam mempertahankan kondisi kawasan pesisir. Vegetasi pandan laut juga dapat menyediakan ruang perlindungan bagi organisme kecil yang memanfaatkan kawasan tersebut. Selain fungsi ekologis, pandan laut memiliki potensi ekonomi melalui pemanfaatan daunnya sebagai bahan baku kerajinan. Daun yang memiliki serat kuat dapat diolah menjadi berbagai produk anyaman, seperti tikar, tas, wadah, dan produk kerajinan lainnya. Pengembangan produk berbasis pandan laut dapat menjadi salah satu alternatif ekonomi kreatif bagi masyarakat pesisir. Apabila disertai dengan pengelolaan bahan baku yang berkelanjutan, pemanfaatan tersebut dapat meningkatkan nilai ekonomi sumber daya lokal sekaligus mendorong masyarakat untuk mempertahankan keberadaan vegetasi pandan laut di lingkungannya.',
+      },
+
+      // ================= PANTAI RAJEGWESI =================
+      { type: 'heading', text: 'Pantai Rajegwesi' },
+      {
+        type: 'paragraph',
+        text: 'Keberadaan berbagai jenis vegetasi di kawasan Pantai Rajegwesi menunjukkan tingginya keragaman tumbuhan yang menjadi bagian dari ekosistem pesisir. Setiap jenis tumbuhan memiliki ciri taksonomi dan morfologi yang khas serta kemampuan adaptasi yang berbeda terhadap kondisi lingkungan pantai. Keragaman tersebut tidak hanya penting bagi keseimbangan ekologis kawasan, tetapi juga memiliki potensi untuk mendukung pengembangan wisata berbasis edukasi dan konservasi. Dengan demikian, pengenalan jenis tumbuhan di Pantai Rajegwesi dilakukan melalui pembahasan taksonomi, karakteristik morfologi, dan potensi masing-masing jenis dalam mendukung nilai ekologis serta daya tarik wisata kawasan.',
+      },
+
+      { type: 'subheading', text: '1. Ketapang' },
+      { type: 'image', caption: 'Pohon dan daun muda Ketapang — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Myrtales, Famili Combretaceae, Genus Terminalia, Spesies Terminalia catappa L.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Ketapang (Terminalia catappa L.) merupakan pohon yang termasuk dalam famili Combretaceae dan umum ditemukan di kawasan pesisir tropis. Pohon ini memiliki batang tegak dengan kulit batang berwarna cokelat keabu-abuan serta percabangan yang tumbuh mendatar dan tersusun bertingkat sehingga membentuk tajuk menyerupai payung. Daunnya merupakan daun tunggal berukuran besar, berbentuk membulat telur hingga lonjong terbalik (obovate), dengan tepi rata dan pertulangan menyirip yang jelas. Daun muda umumnya berwarna hijau muda hingga kemerahan, kemudian berubah menjadi hijau tua dan dapat berubah menjadi kuning, jingga, atau merah kecokelatan sebelum gugur.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga ketapang berukuran kecil, berwarna putih kehijauan hingga kekuningan, dan tersusun dalam bentuk bulir pada ketiak daun atau ujung ranting. Buah berbentuk bulat telur hingga lonjong dengan bagian tepi melebar menyerupai sayap, berwarna hijau saat muda dan berubah menjadi kuning, merah keunguan, hingga cokelat ketika matang. Bijinya berada di dalam lapisan buah yang cukup keras. Karakter tajuk yang lebar, daun besar, serta buah bersayap menjadi ciri morfologi utama yang memudahkan identifikasi T. catappa di kawasan pesisir, termasuk kawasan wisata Pantai Rajegwesi, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Ketapang laut memiliki manfaat ekologis melalui perannya dalam membentuk tutupan vegetasi dan menyediakan kondisi mikrohabitat di kawasan pesisir. Tajuk yang relatif lebar dapat memberikan keteduhan serta mengurangi paparan radiasi matahari secara langsung pada permukaan tanah. Serasah daun yang dihasilkan juga berkontribusi terhadap pemasukan bahan organik ke dalam tanah setelah mengalami proses dekomposisi. Siklus tersebut merupakan bagian dari proses pengembalian unsur hara yang mendukung produktivitas ekosistem. Selain fungsi ekologis, ketapang memiliki potensi pemanfaatan pada berbagai bidang. Buah dan bijinya diketahui dapat dimanfaatkan sebagai bahan pangan, sementara beberapa bagian tanaman telah digunakan dalam pengobatan tradisional. Kandungan senyawa bioaktif yang terdapat pada bagian tanaman juga menjadikan ketapang berpotensi untuk dikaji lebih lanjut dalam penelitian farmakologi dan pengembangan bahan alam. Dalam konteks pemanfaatan kawasan pesisir, keberadaan ketapang juga dapat mendukung kenyamanan masyarakat karena berfungsi sebagai vegetasi peneduh.',
+      },
+
+      { type: 'subheading', text: '2. Nyamplung' },
+      { type: 'image', caption: 'Pohon dan daun Nyamplung — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Streptophyta, Kelas Equisetopsida, Ordo Malpighiales, Famili Calophyllaceae, Genus Calophyllum, Spesies Callophyllum inophyllum L.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Nyamplung (Calophyllum inophyllum L.) merupakan pohon pesisir yang termasuk dalam famili Calophyllaceae dan banyak ditemukan pada wilayah pantai tropis. Pohon ini memiliki batang tegak dengan percabangan yang cukup banyak dan membentuk tajuk yang relatif lebar dan rimbun. Kulit batang umumnya berwarna cokelat keabu-abuan hingga cokelat tua dengan permukaan yang relatif kasar, sedangkan bagian dalam batang dapat menghasilkan getah berwarna putih kekuningan. Daunnya merupakan daun tunggal yang tersusun berhadapan, berbentuk elips hingga lonjong, dengan permukaan licin dan mengilap serta tepi daun rata. Pertulangan daun terlihat jelas berupa tulang daun sekunder yang tersusun rapat dan hampir sejajar sehingga menjadi salah satu karakter penting dalam mengenali nyamplung.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga nyamplung berukuran kecil, berwarna putih, dan umumnya tersusun dalam perbungaan yang muncul pada ketiak daun atau ujung ranting. Bunga memiliki benang sari berwarna kuning yang tampak menonjol di bagian tengah sehingga memberikan ciri khas pada bunga. Buah berbentuk bulat hingga agak lonjong dengan permukaan licin, berwarna hijau ketika muda dan berubah menjadi kekuningan hingga kecokelatan ketika matang. Buah memiliki satu biji berukuran relatif besar yang dilindungi oleh lapisan tempurung keras. Karakter batang yang kokoh, daun tebal dan mengilap, serta buah bulat dengan biji besar menjadi ciri morfologi utama yang dapat digunakan untuk mengidentifikasi C. inophyllum di kawasan pesisir, termasuk kawasan wisata Pantai Rajegwesi, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Nyamplung memiliki nilai ekologis sekaligus potensi ekonomi yang cukup besar. Keberadaan pohon ini dapat berkontribusi terhadap pembentukan tutupan vegetasi, perlindungan substrat, dan penyediaan habitat bagi organisme yang berada di kawasan pesisir. Potensi utama nyamplung terdapat pada bijinya yang menghasilkan minyak nabati. Minyak tersebut telah banyak dikaji sebagai bahan baku biodiesel sehingga nyamplung memiliki peluang untuk dikembangkan sebagai salah satu sumber bahan bakar nabati. Pengembangan tersebut dapat memberikan nilai tambah terhadap sumber daya lokal sekaligus mendukung diversifikasi energi terbarukan. Selain minyak, bagian tanaman lainnya juga memiliki potensi pemanfaatan, termasuk kayu dan komponen biomassa. Apabila dikelola melalui sistem budidaya, pemanenan, dan pengolahan yang tepat, nyamplung dapat menjadi salah satu sumber daya yang memberikan manfaat ekonomi tanpa menghilangkan fungsi ekologisnya sebagai bagian dari vegetasi pesisir.',
+      },
+
+      { type: 'subheading', text: '3. Waru Laut' },
+      { type: 'image', caption: 'Pohon dan daun Waru Laut — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Tracheophyta, Kelas Magnoliopsida, Ordo Malvales, Famili Malvaceae, Genus Hibiscus, Spesies Hibiscus tiliaceus L.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Waru laut (Hibiscus tiliaceus L.) merupakan tumbuhan pesisir yang termasuk dalam famili Malvaceae dan memiliki kemampuan beradaptasi dengan lingkungan pantai. Tumbuhan ini umumnya berupa pohon atau perdu dengan batang tegak dan percabangan yang cukup banyak, serta dapat mencapai ukuran sedang. Kulit batang berwarna abu-abu kecokelatan dan pada bagian tertentu dapat menghasilkan serat yang kuat. Daunnya merupakan daun tunggal yang tersusun berseling, berbentuk jantung hingga menyerupai bulat telur, dengan ujung meruncing dan pangkal berbentuk jantung. Permukaan daun umumnya berwarna hijau dan memiliki tekstur agak kasar, sedangkan bagian bawah daun cenderung lebih pucat serta ditutupi rambut halus. Pertulangan daun menjari dengan beberapa tulang utama yang berawal dari pangkal daun sehingga menjadi salah satu karakter morfologi yang mudah diamati.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga waru laut berukuran cukup besar dan muncul pada ketiak daun atau bagian ujung ranting. Bunga memiliki lima mahkota yang umumnya berwarna kuning dengan bagian tengah berwarna merah tua atau keunguan, kemudian dapat berubah menjadi kemerahan sebelum gugur. Benang sari menyatu membentuk tabung yang mengelilingi tangkai putik, menjadi ciri khas bunga dari famili Malvaceae. Buah berbentuk bulat telur hingga hampir bulat dan merupakan buah kapsul yang ketika matang dapat membuka untuk melepaskan biji. Biji berukuran kecil dan umumnya berwarna cokelat hingga hitam. Kombinasi daun berbentuk jantung, bunga berwarna kuning dengan pusat kemerahan, serta buah kapsul menjadi karakter utama yang dapat digunakan untuk mengenali H. tiliaceus di kawasan pesisir Pantai Rajegwesi, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Waru laut memberikan kontribusi terhadap pembentukan vegetasi pelindung pada kawasan pesisir. Keberadaannya dapat membantu mempertahankan kondisi substrat serta mengurangi paparan langsung faktor lingkungan terhadap kawasan di belakang pantai. Tajuk dan struktur vegetasinya juga dapat menciptakan ruang yang lebih terlindungi bagi organisme yang memanfaatkan kawasan pesisir sebagai habitat. Bagi masyarakat, waru laut memiliki potensi pemanfaatan yang berkaitan dengan bahan kayu dan serat. Kayunya secara tradisional dapat digunakan untuk berbagai kebutuhan, termasuk bahan bangunan ringan, peralatan, dan kerajinan. Pemanfaatan tersebut menunjukkan adanya nilai ekonomi dan sosial yang dapat dikembangkan dari tumbuhan pesisir. Meskipun demikian, pemanfaatan perlu mempertimbangkan keberadaan tumbuhan di habitat alami agar kebutuhan manusia tidak menyebabkan penurunan populasi maupun mengurangi fungsi ekologisnya.',
+      },
+
+      { type: 'subheading', text: '4. Katang-Katang' },
+      { type: 'image', caption: 'Tumbuhan dan daun Katang-Katang — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Solanales, Famili Convolvulaceae, Genus Ipomoea, Spesies Ipomoea pes-caprae.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Katang-katang (Ipomoea pes-caprae (L.) R.Br.) merupakan tumbuhan menjalar yang termasuk dalam famili Convolvulaceae dan umum ditemukan pada kawasan pantai berpasir. Tumbuhan ini memiliki batang berbentuk bulat, menjalar di atas permukaan tanah, dan dapat tumbuh memanjang dengan percabangan yang cukup banyak. Batangnya umumnya berwarna hijau hingga kecokelatan dan pada bagian tertentu dapat membentuk akar pada ruas yang bersentuhan dengan tanah. Daunnya merupakan daun tunggal yang tersusun berseling dengan bentuk khas menyerupai telapak kaki kambing, yaitu berbentuk membulat dengan lekukan yang cukup dalam pada bagian ujung sehingga terbagi menjadi dua lobus. Permukaan daun relatif licin dan tebal, dengan warna hijau serta tangkai daun yang cukup panjang.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga katang-katang tumbuh pada ketiak daun dan berbentuk seperti corong dengan ukuran relatif besar. Mahkota bunga umumnya berwarna merah muda hingga ungu muda dengan bagian tengah yang lebih gelap, sedangkan kelopak berwarna hijau. Buah berbentuk kapsul bulat telur hingga hampir bulat dan mengandung beberapa biji berwarna cokelat kehitaman dengan permukaan berbulu. Sistem perakaran berkembang pada bagian ruas batang yang menyentuh tanah sehingga membantu tumbuhan bertahan pada substrat berpasir. Karakter batang yang menjalar, daun berbentuk khas dengan dua lobus, serta bunga berbentuk corong menjadi ciri morfologi utama yang memudahkan identifikasi I. pes-caprae di kawasan pesisir Pantai Rajegwesi, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Katang-katang memiliki peran penting dalam mempertahankan kestabilan substrat pada kawasan pantai berpasir. Pertumbuhannya yang menjalar dan sistem perakaran yang berkembang pada lapisan pasir memungkinkan tumbuhan ini membantu mengikat sedimen serta mengurangi pergerakan pasir akibat angin. Fungsi tersebut menjadikan katang-katang sebagai salah satu komponen vegetasi yang berperan dalam proses stabilisasi pantai dan pengurangan potensi erosi. Keberadaannya juga dapat mendukung terbentuknya kondisi mikrohabitat yang memungkinkan organisme lain memanfaatkan kawasan tersebut. Di sisi lain, katang-katang memiliki potensi pemanfaatan dalam bidang kesehatan karena berbagai penelitian telah mengidentifikasi kandungan metabolit sekunder dan aktivitas biologis dari bagian tanaman tersebut. Potensi ini dapat menjadi dasar pengembangan penelitian bahan alam, khususnya dalam pencarian senyawa bioaktif, meskipun pemanfaatannya sebagai bahan obat tetap memerlukan pengujian lebih lanjut terkait efektivitas, keamanan, dan dosis.',
+      },
+
+      { type: 'subheading', text: '5. Cemara Laut' },
+      { type: 'image', caption: 'Pohon dan daun Cemara Laut — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Casuarinales, Famili Casuarinaceae, Genus Casuarina, Spesies Casuarina equisetifolia L.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Cemara laut (Casuarina equisetifolia L.) merupakan tumbuhan pesisir yang termasuk dalam famili Casuarinaceae dan memiliki kemampuan beradaptasi pada lingkungan pantai. Tumbuhan ini berupa pohon dengan batang tegak dan dapat tumbuh mencapai ukuran relatif besar, dengan percabangan yang banyak serta tajuk berbentuk kerucut hingga membulat. Kulit batang berwarna cokelat keabu-abuan dan bertekstur kasar, sedangkan cabang muda berwarna hijau dan berbentuk ramping menyerupai jarum. Daun cemara laut mengalami reduksi menjadi sisik-sisik kecil yang tersusun mengelilingi ranting sehingga ranting hijau berfungsi sebagai bagian utama dalam fotosintesis. Ranting tersebut berbentuk silindris, beruas, dan memberikan tampilan menyerupai daun jarum yang menjadi ciri khas C. equisetifolia.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga cemara laut berukuran kecil dan tidak memiliki mahkota yang mencolok. Bunga jantan dan betina umumnya terdapat pada satu individu, dengan bunga jantan tersusun dalam bulir pada bagian ujung ranting, sedangkan bunga betina berkembang pada bagian lateral ranting. Buahnya berbentuk menyerupai kerucut kecil dengan permukaan keras dan tersusun dari banyak bagian seperti sisik. Ketika matang, buah berwarna cokelat dan dapat menghasilkan biji kecil bersayap yang membantu penyebaran oleh angin. Sistem perakaran cemara laut berkembang kuat dan mampu membantu pohon bertahan pada substrat berpasir serta kondisi lingkungan pesisir. Karakter batang tegak, ranting hijau beruas menyerupai jarum, dan buah berbentuk kerucut menjadi ciri utama yang dapat digunakan untuk mengidentifikasi C. equisetifolia di kawasan Pantai Rajegwesi, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Cemara laut memiliki peran dalam membentuk struktur vegetasi yang dapat memberikan perlindungan terhadap kawasan pesisir. Keberadaan tegakan cemara laut dapat membantu mengurangi kecepatan angin dan memberikan perlindungan terhadap vegetasi yang berada di belakangnya. Kondisi tersebut juga dapat menciptakan lingkungan mikro yang lebih sesuai bagi pertumbuhan vegetasi lain. Dalam pengelolaan kawasan pesisir, cemara laut sering dikaitkan dengan kegiatan rehabilitasi dan penghijauan karena kemampuannya beradaptasi pada lingkungan pantai. Selain fungsi ekologis, keberadaan cemara laut memiliki potensi dalam mendukung pengembangan wisata berbasis alam. Tegakan pohon dapat memberikan keteduhan, memperbaiki kualitas visual lanskap, dan meningkatkan kenyamanan pengunjung. Dengan demikian, pengelolaan cemara laut dapat memberikan manfaat ekologis sekaligus mendukung fungsi sosial kawasan apabila dilakukan dengan tetap mempertahankan karakter vegetasi alami.',
+      },
+
+      { type: 'subheading', text: '6. Keben' },
+      { type: 'image', caption: 'Semai dan daun Keben — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Ericales, Famili Lecythidaceae, Genus Barringtonia, Spesies Barringtonia asiatica (L.) Kurz.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Keben (Barringtonia asiatica (L.) Kurz) merupakan tumbuhan pesisir yang termasuk dalam famili Lecythidaceae dan umumnya tumbuh pada kawasan pantai tropis. Tumbuhan ini berupa pohon dengan batang tegak, percabangan relatif rendah, serta tajuk yang lebar dan rimbun. Kulit batang berwarna abu-abu kecokelatan dengan permukaan yang relatif kasar. Daunnya merupakan daun tunggal yang tersusun mengelompok pada ujung ranting, berukuran besar, berbentuk bulat telur hingga lonjong, dengan ujung membulat dan tepi daun rata. Permukaan daun berwarna hijau tua, tebal, serta mengilap, sedangkan pertulangan daun menyirip dan terlihat cukup jelas. Karakter daun yang besar dan tersusun rapat pada ujung ranting menjadi salah satu ciri yang mudah dikenali pada B. asiatica.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga keben berukuran besar dan tersusun dalam bentuk tandan yang muncul dari ketiak daun atau bagian ujung ranting. Bunga memiliki kelopak berwarna hijau dan mahkota berwarna putih dengan banyak benang sari yang panjang, umumnya berwarna putih hingga merah muda pada bagian ujungnya, sehingga memberikan penampilan menyerupai kuas. Buah keben berbentuk bulat hingga agak persegi dengan permukaan berserat atau bersegi, berwarna hijau ketika muda dan berubah menjadi kecokelatan ketika matang. Buah mengandung satu biji berukuran besar yang terlindungi oleh lapisan buah yang cukup kuat. Kombinasi daun besar dan mengilap, bunga putih dengan benang sari panjang, serta buah berukuran besar menjadi karakter morfologi utama yang dapat digunakan untuk mengidentifikasi B. asiatica di kawasan pesisir Pantai Rajegwesi, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Keben memiliki manfaat ekologis sebagai bagian dari vegetasi alami yang tumbuh pada kawasan pesisir. Keberadaannya berkontribusi terhadap pembentukan struktur vegetasi, penyediaan naungan, serta penyediaan ruang hidup bagi berbagai organisme yang berasosiasi dengan kawasan pantai. Pohon ini juga memiliki nilai dalam pengetahuan tradisional masyarakat karena beberapa bagian tumbuhan telah dimanfaatkan untuk berbagai keperluan. Pengetahuan tersebut memiliki potensi untuk dikembangkan menjadi bahan kajian etnobotani maupun penelitian mengenai kandungan bioaktif. Selain itu, keberadaan keben dapat dimanfaatkan sebagai bagian dari materi pendidikan lingkungan dan interpretasi keanekaragaman hayati pesisir. Pemanfaatan yang didasarkan pada pengetahuan lokal dan didukung penelitian ilmiah dapat memberikan nilai tambah, tetapi tetap perlu memperhatikan keberlanjutan populasi serta tidak mendorong eksploitasi berlebihan terhadap tumbuhan di alam.',
+      },
+
+      // ================= PANTAI SUKAMADE =================
+      { type: 'heading', text: 'Pantai Sukamade' },
+      {
+        type: 'paragraph',
+        text: 'Kawasan Pantai Sukamade memiliki keanekaragaman flora yang menjadi bagian penting dari ekosistem alami Taman Nasional Meru Betiri. Jenis tumbuhan yang terdapat di kawasan ini memiliki karakteristik taksonomi dan morfologi yang beragam serta menunjukkan kemampuan adaptasi terhadap kondisi habitatnya. Selain berperan secara ekologis, beberapa jenis tumbuhan memiliki nilai penting dalam aspek konservasi, pendidikan, dan pengembangan wisata berbasis keanekaragaman hayati. Oleh sebab itu, pengenalan flora di kawasan Pantai Sukamade mencakup identifikasi taksonomi, karakteristik morfologi, serta potensi ekologis, edukatif, dan wisata dari masing-masing jenis tumbuhan yang ditemukan.',
+      },
+
+      { type: 'subheading', text: '1. Waru Laut' },
+      { type: 'image', caption: 'Bunga Waru Laut berwarna ungu dan daunnya — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Tracheophyta, Kelas Magnoliopsida, Ordo Malvales, Famili Malvaceae, Genus Hibiscus, Spesies Hibiscus tiliaceus L.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Waru laut (Hibiscus tiliaceus L.) merupakan tumbuhan pesisir yang termasuk dalam famili Malvaceae dan memiliki kemampuan beradaptasi dengan lingkungan pantai. Tumbuhan ini umumnya berupa pohon atau perdu dengan batang tegak dan percabangan yang cukup banyak, serta dapat mencapai ukuran sedang. Kulit batang berwarna abu-abu kecokelatan dan pada bagian tertentu dapat menghasilkan serat yang kuat. Daunnya merupakan daun tunggal yang tersusun berseling, berbentuk jantung hingga menyerupai bulat telur, dengan ujung meruncing dan pangkal berbentuk jantung. Permukaan daun umumnya berwarna hijau dan memiliki tekstur agak kasar, sedangkan bagian bawah daun cenderung lebih pucat serta ditutupi rambut halus. Pertulangan daun menjari dengan beberapa tulang utama yang berawal dari pangkal daun sehingga menjadi salah satu karakter morfologi yang mudah diamati.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga waru laut berukuran cukup besar dan muncul pada ketiak daun atau bagian ujung ranting. Bunga memiliki lima mahkota yang umumnya berwarna kuning dengan bagian tengah berwarna merah tua atau keunguan, kemudian dapat berubah menjadi kemerahan sebelum gugur. Namun, yang ditemukan di area Pantai Sukamade memiliki bunga berwarna ungu. Benang sari menyatu membentuk tabung yang mengelilingi tangkai putik, menjadi ciri khas bunga dari famili Malvaceae. Buah berbentuk bulat telur hingga hampir bulat dan merupakan buah kapsul yang ketika matang dapat membuka untuk melepaskan biji. Biji berukuran kecil dan umumnya berwarna cokelat hingga hitam. Kombinasi daun berbentuk jantung, bunga berwarna kuning dengan pusat kemerahan, serta buah kapsul menjadi karakter utama yang dapat digunakan untuk mengenali H. tiliaceus di kawasan pesisir Pantai Sukamade, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Waru laut memberikan kontribusi terhadap pembentukan vegetasi pelindung pada kawasan pesisir. Keberadaannya dapat membantu mempertahankan kondisi substrat serta mengurangi paparan langsung faktor lingkungan terhadap kawasan di belakang pantai. Tajuk dan struktur vegetasinya juga dapat menciptakan ruang yang lebih terlindungi bagi organisme yang memanfaatkan kawasan pesisir sebagai habitat. Bagi masyarakat, waru laut memiliki potensi pemanfaatan yang berkaitan dengan bahan kayu dan serat. Kayunya secara tradisional dapat digunakan untuk berbagai kebutuhan, termasuk bahan bangunan ringan, peralatan, dan kerajinan. Pemanfaatan tersebut menunjukkan adanya nilai ekonomi dan sosial yang dapat dikembangkan dari tumbuhan pesisir. Meskipun demikian, pemanfaatan perlu mempertimbangkan keberadaan tumbuhan di habitat alami agar kebutuhan manusia tidak menyebabkan penurunan populasi maupun mengurangi fungsi ekologisnya.',
+      },
+
+      { type: 'subheading', text: '2. Rumput Angin' },
+      { type: 'image', caption: 'Daun, rumpun, dan buah Rumput Angin — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Equisetopsida, Ordo Poales, Famili Poaceae, Genus Spinifex, Spesies Spinifex littoreus (Burm.f.) Merr.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Rumput angin (Spinifex littoreus (Burm.f.) Merr.) merupakan tumbuhan herba tahunan yang termasuk dalam famili Poaceae dan umum ditemukan pada kawasan pantai berpasir. Tumbuhan ini memiliki batang menjalar yang tumbuh membentuk rumpun dan dapat memanjang di atas permukaan pasir. Akar tumbuh pada buku-buku batang yang bersentuhan dengan substrat sehingga membantu tumbuhan melekat dan berkembang pada lingkungan berpasir. Daunnya berbentuk pita atau lanset sempit, bertekstur agak kaku, dengan ujung meruncing dan permukaan yang dapat terasa kasar. Daun berwarna hijau hingga hijau keabu-abuan dan tersusun pada buku batang. Karakter batang yang menjalar dan kemampuan membentuk rumpun merupakan ciri penting yang mendukung adaptasi S. littoreus terhadap kondisi lingkungan pantai.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Perbungaan rumput angin memiliki bentuk khas berupa bonggol atau kepala bunga yang relatif besar dan menyerupai bola berduri. Bunga jantan dan betina terdapat pada individu yang berbeda (dioesis), dengan perbungaan betina umumnya memiliki struktur yang lebih besar dan mencolok. Perbungaan dapat terlepas dan terbawa angin setelah matang sehingga membantu proses penyebaran. Buah atau spikelet berukuran kecil dan terlindungi oleh struktur perbungaan yang keras serta berduri. Sistem perakaran dan batang menjalar memungkinkan rumput angin membantu mengikat pasir dan membentuk vegetasi penutup pada kawasan pantai. Karakter daun sempit dan kaku, batang menjalar, serta perbungaan berbentuk bola menjadi ciri morfologi utama yang dapat digunakan untuk mengidentifikasi S. littoreus di kawasan Pantai Sukamade, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Rumput angin memiliki peranan penting dalam mempertahankan struktur pantai berpasir, terutama pada kawasan yang memiliki gumuk pasir. Sistem perakarannya membantu mengikat partikel pasir sehingga mengurangi mobilitas sedimen yang dipengaruhi oleh angin. Proses tersebut berkontribusi terhadap stabilisasi permukaan pasir dan mempertahankan struktur geomorfologi pantai. Hilangnya vegetasi pantai seperti rumput angin dapat menyebabkan substrat menjadi lebih mudah bergerak sehingga meningkatkan kerentanan kawasan terhadap erosi dan perubahan bentuk pantai. Selain fungsi ekologisnya, keberadaan rumput angin memiliki potensi sebagai objek pendidikan lingkungan karena dapat digunakan untuk menjelaskan proses adaptasi tumbuhan terhadap kondisi pesisir serta hubungan antara vegetasi dan kestabilan pantai. Nilai tersebut dapat dikembangkan dalam kegiatan edukasi dan interpretasi lingkungan, khususnya pada kawasan wisata berbasis alam.',
+      },
+
+      { type: 'subheading', text: '3. Beruas Laut' },
+      { type: 'image', caption: 'Tumbuhan dan daun Beruas Laut — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Equisetopsida, Ordo Campanulales, Famili Goodeniaceae, Genus Scaevola, Spesies Scaevola taccada (Gaertn.) Roxb.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Beruas laut (Scaevola taccada (Gaertn.) Roxb.) merupakan tumbuhan perdu yang termasuk dalam famili Goodeniaceae dan umum ditemukan pada kawasan pesisir tropis. Tumbuhan ini memiliki batang yang tegak hingga menjalar dengan percabangan cukup banyak dan membentuk tajuk yang rimbun. Batangnya berwarna hijau hingga cokelat keabu-abuan dengan permukaan relatif licin. Daunnya merupakan daun tunggal yang tersusun berseling dan cenderung mengelompok pada ujung ranting. Daun berbentuk bulat telur hingga lonjong terbalik (obovate), berukuran cukup tebal dan berdaging, dengan ujung membulat serta tepi daun rata. Permukaan daun berwarna hijau mengilap, sedangkan pertulangan daun menyirip tampak cukup jelas pada permukaan bawah daun.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga beruas laut berukuran kecil hingga sedang dan umumnya muncul pada ketiak daun. Mahkota bunga berwarna putih hingga putih kehijauan dan memiliki bentuk khas yang terbelah pada satu sisi sehingga menyerupai kipas atau setengah lingkaran. Buah berbentuk bulat hingga agak lonjong, berdaging, berwarna hijau ketika muda dan berubah menjadi putih hingga ungu kehitaman ketika matang. Buah umumnya mengandung satu biji yang berukuran relatif besar. Karakter daun yang tebal dan berdaging, bunga berbentuk kipas, serta buah yang berubah warna menjadi gelap ketika matang merupakan ciri morfologi utama yang dapat digunakan untuk mengidentifikasi S. taccada di kawasan pesisir Sukamade, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Beruas laut memiliki fungsi ekologis sebagai bagian dari vegetasi yang berkembang pada lingkungan pesisir dan berkontribusi terhadap pembentukan tutupan tumbuhan di dekat garis pantai. Keberadaannya dapat membantu mempertahankan kondisi substrat serta menyediakan ruang yang dapat dimanfaatkan oleh organisme kecil. Vegetasi pesisir yang terbentuk juga memiliki peranan dalam menjaga kompleksitas habitat sehingga mendukung keberadaan berbagai organisme yang saling berinteraksi dalam ekosistem. Dari perspektif pemanfaatan, beruas laut memiliki potensi untuk dikaji sebagai sumber bahan alam karena beberapa penelitian menunjukkan adanya kandungan senyawa metabolit sekunder dengan aktivitas biologis tertentu. Potensi tersebut membuka peluang penelitian lebih lanjut dalam bidang farmasi, pangan fungsional, maupun pengembangan bahan alami. Namun, pengembangan pemanfaatannya perlu didukung oleh kajian ilmiah yang memadai serta memperhatikan keberlanjutan populasi di habitat alaminya.',
+      },
+
+      { type: 'subheading', text: '4. Ketapang' },
+      { type: 'image', caption: 'Pohon Ketapang — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Myrtales, Famili Combretaceae, Genus Terminalia, Spesies Terminalia catappa L.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Ketapang (Terminalia catappa L.) merupakan pohon yang termasuk dalam famili Combretaceae dan umum ditemukan di kawasan pesisir tropis. Pohon ini memiliki batang tegak dengan kulit batang berwarna cokelat keabu-abuan serta percabangan yang tumbuh mendatar dan tersusun bertingkat sehingga membentuk tajuk menyerupai payung. Daunnya merupakan daun tunggal berukuran besar, berbentuk membulat telur hingga lonjong terbalik (obovate), dengan tepi rata dan pertulangan menyirip yang jelas. Daun muda umumnya berwarna hijau muda hingga kemerahan, kemudian berubah menjadi hijau tua dan dapat berubah menjadi kuning, jingga, atau merah kecokelatan sebelum gugur.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Ketapang laut memiliki manfaat ekologis melalui perannya dalam membentuk tutupan vegetasi dan menyediakan kondisi mikrohabitat di kawasan pesisir. Tajuk yang relatif lebar dapat memberikan keteduhan serta mengurangi paparan radiasi matahari secara langsung pada permukaan tanah. Serasah daun yang dihasilkan juga berkontribusi terhadap pemasukan bahan organik ke dalam tanah setelah mengalami proses dekomposisi. Siklus tersebut merupakan bagian dari proses pengembalian unsur hara yang mendukung produktivitas ekosistem. Selain fungsi ekologis, ketapang memiliki potensi pemanfaatan pada berbagai bidang. Buah dan bijinya diketahui dapat dimanfaatkan sebagai bahan pangan, sementara beberapa bagian tanaman telah digunakan dalam pengobatan tradisional. Kandungan senyawa bioaktif yang terdapat pada bagian tanaman juga menjadikan ketapang berpotensi untuk dikaji lebih lanjut dalam penelitian farmakologi dan pengembangan bahan alam. Dalam konteks pemanfaatan kawasan pesisir, keberadaan ketapang juga dapat mendukung kenyamanan masyarakat karena berfungsi sebagai vegetasi peneduh.',
+      },
+
+      { type: 'subheading', text: '5. Keben' },
+      { type: 'image', caption: 'Pohon dan daun Keben — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Ericales, Famili Lecythidaceae, Genus Barringtonia, Spesies Barringtonia asiatica (L.) Kurz.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Keben (Barringtonia asiatica (L.) Kurz) merupakan tumbuhan pesisir yang termasuk dalam famili Lecythidaceae dan umumnya tumbuh pada kawasan pantai tropis. Tumbuhan ini berupa pohon dengan batang tegak, percabangan relatif rendah, serta tajuk yang lebar dan rimbun. Kulit batang berwarna abu-abu kecokelatan dengan permukaan yang relatif kasar. Daunnya merupakan daun tunggal yang tersusun mengelompok pada ujung ranting, berukuran besar, berbentuk bulat telur hingga lonjong, dengan ujung membulat dan tepi daun rata. Permukaan daun berwarna hijau tua, tebal, serta mengilap, sedangkan pertulangan daun menyirip dan terlihat cukup jelas. Karakter daun yang besar dan tersusun rapat pada ujung ranting menjadi salah satu ciri yang mudah dikenali pada B. asiatica.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga keben berukuran besar dan tersusun dalam bentuk tandan yang muncul dari ketiak daun atau bagian ujung ranting. Bunga memiliki kelopak berwarna hijau dan mahkota berwarna putih dengan banyak benang sari yang panjang, umumnya berwarna putih hingga merah muda pada bagian ujungnya, sehingga memberikan penampilan menyerupai kuas. Buah keben berbentuk bulat hingga agak persegi dengan permukaan berserat atau bersegi, berwarna hijau ketika muda dan berubah menjadi kecokelatan ketika matang. Buah mengandung satu biji berukuran besar yang terlindungi oleh lapisan buah yang cukup kuat. Kombinasi daun besar dan mengilap, bunga putih dengan benang sari panjang, serta buah berukuran besar menjadi karakter morfologi utama yang dapat digunakan untuk mengidentifikasi B. asiatica di kawasan pesisir Pantai Sukamade, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Keben memiliki manfaat ekologis sebagai bagian dari vegetasi alami yang tumbuh pada kawasan pesisir. Keberadaannya berkontribusi terhadap pembentukan struktur vegetasi, penyediaan naungan, serta penyediaan ruang hidup bagi berbagai organisme yang berasosiasi dengan kawasan pantai. Pohon ini juga memiliki nilai dalam pengetahuan tradisional masyarakat karena beberapa bagian tumbuhan telah dimanfaatkan untuk berbagai keperluan. Pengetahuan tersebut memiliki potensi untuk dikembangkan menjadi bahan kajian etnobotani maupun penelitian mengenai kandungan bioaktif. Selain itu, keberadaan keben dapat dimanfaatkan sebagai bagian dari materi pendidikan lingkungan dan interpretasi keanekaragaman hayati pesisir. Pemanfaatan yang didasarkan pada pengetahuan lokal dan didukung penelitian ilmiah dapat memberikan nilai tambah, tetapi tetap perlu memperhatikan keberlanjutan populasi serta tidak mendorong eksploitasi berlebihan terhadap tumbuhan di alam.',
+      },
+
+      { type: 'subheading', text: '6. Nyamplung' },
+      { type: 'image', caption: 'Tumbuhan dan daun Nyamplung — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Streptophyta, Kelas Equisetopsida, Ordo Malpighiales, Famili Calophyllaceae, Genus Calophyllum, Spesies Callophyllum inophyllum L.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Nyamplung (Calophyllum inophyllum L.) merupakan pohon pesisir yang termasuk dalam famili Calophyllaceae dan banyak ditemukan pada wilayah pantai tropis. Pohon ini memiliki batang tegak dengan percabangan yang cukup banyak dan membentuk tajuk yang relatif lebar dan rimbun. Kulit batang umumnya berwarna cokelat keabu-abuan hingga cokelat tua dengan permukaan yang relatif kasar, sedangkan bagian dalam batang dapat menghasilkan getah berwarna putih kekuningan. Daunnya merupakan daun tunggal yang tersusun berhadapan, berbentuk elips hingga lonjong, dengan permukaan licin dan mengilap serta tepi daun rata. Pertulangan daun terlihat jelas berupa tulang daun sekunder yang tersusun rapat dan hampir sejajar sehingga menjadi salah satu karakter penting dalam mengenali nyamplung.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bunga nyamplung berukuran kecil, berwarna putih, dan umumnya tersusun dalam perbungaan yang muncul pada ketiak daun atau ujung ranting. Bunga memiliki benang sari berwarna kuning yang tampak menonjol di bagian tengah sehingga memberikan ciri khas pada bunga. Buah berbentuk bulat hingga agak lonjong dengan permukaan licin, berwarna hijau ketika muda dan berubah menjadi kekuningan hingga kecokelatan ketika matang. Buah memiliki satu biji berukuran relatif besar yang dilindungi oleh lapisan tempurung keras. Karakter batang yang kokoh, daun tebal dan mengilap, serta buah bulat dengan biji besar menjadi ciri morfologi utama yang dapat digunakan untuk mengidentifikasi C. inophyllum di kawasan pesisir, termasuk kawasan wisata Pantai Sukamade, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Nyamplung memiliki nilai ekologis sekaligus potensi ekonomi yang cukup besar. Keberadaan pohon ini dapat berkontribusi terhadap pembentukan tutupan vegetasi, perlindungan substrat, dan penyediaan habitat bagi organisme yang berada di kawasan pesisir. Potensi utama nyamplung terdapat pada bijinya yang menghasilkan minyak nabati. Minyak tersebut telah banyak dikaji sebagai bahan baku biodiesel sehingga nyamplung memiliki peluang untuk dikembangkan sebagai salah satu sumber bahan bakar nabati. Pengembangan tersebut dapat memberikan nilai tambah terhadap sumber daya lokal sekaligus mendukung diversifikasi energi terbarukan. Selain minyak, bagian tanaman lainnya juga memiliki potensi pemanfaatan, termasuk kayu dan komponen biomassa. Apabila dikelola melalui sistem budidaya, pemanenan, dan pengolahan yang tepat, nyamplung dapat menjadi salah satu sumber daya yang memberikan manfaat ekonomi tanpa menghilangkan fungsi ekologisnya sebagai bagian dari vegetasi pesisir.',
+      },
+
+      { type: 'subheading', text: '7. Pandan Laut' },
+      { type: 'image', caption: 'Rumpun Pandan Laut — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Pandanales, Famili Pandanaceae, Genus Pandanus, Spesies Pandanus odorifer (Forssk.) Kuntze.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pandan laut (Pandanus odorifer (Forssk.) Kuntze) merupakan tumbuhan pesisir yang termasuk dalam famili Pandanaceae dan umumnya tumbuh pada kawasan pantai berpasir. Tumbuhan ini berbentuk perdu atau pohon kecil dengan batang tegak dan bercabang, serta memiliki akar tunjang yang tumbuh dari bagian batang dan berfungsi memperkuat tumbuhan pada substrat berpasir. Daunnya berbentuk pita panjang, sempit, dan kaku dengan ujung meruncing serta tepi yang berduri. Daun tersusun rapat dan spiral pada ujung batang. Permukaan daun berwarna hijau hingga hijau tua dengan pertulangan sejajar yang jelas. Karakter akar tunjang dan susunan daun yang rapat pada ujung batang menjadi ciri morfologi khas P. odorifer.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pandan laut merupakan tumbuhan dioesis, sehingga bunga jantan dan bunga betina terdapat pada individu yang berbeda. Perbungaan jantan umumnya memiliki struktur seperti rangkaian bulir yang dikelilingi braktea berwarna putih hingga kekuningan dan menghasilkan aroma yang khas, sedangkan perbungaan betina berkembang menjadi buah majemuk berbentuk bulat hingga menyerupai nanas. Buah tersusun atas banyak bagian kecil berbentuk poligonal yang disebut drupelet dan umumnya berwarna hijau ketika muda, kemudian berubah menjadi kuning hingga jingga ketika matang. Biji berada di dalam bagian buah tersebut dan dapat tersebar melalui berbagai media, terutama air. Daun panjang berduri, akar tunjang yang kuat, serta buah majemuk yang menyerupai nanas menjadi karakter morfologi utama yang dapat digunakan untuk mengidentifikasi P. odorifer di kawasan Pantai Sukamade, Banyuwangi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pandan laut memiliki kontribusi penting terhadap kestabilan lingkungan pantai melalui sistem perakarannya yang mampu memperkuat substrat berpasir. Keberadaannya dapat membantu mengurangi pergerakan pasir serta membentuk vegetasi yang berperan dalam mempertahankan kondisi kawasan pesisir. Vegetasi pandan laut juga dapat menyediakan ruang perlindungan bagi organisme kecil yang memanfaatkan kawasan tersebut. Selain fungsi ekologis, pandan laut memiliki potensi ekonomi melalui pemanfaatan daunnya sebagai bahan baku kerajinan. Daun yang memiliki serat kuat dapat diolah menjadi berbagai produk anyaman, seperti tikar, tas, wadah, dan produk kerajinan lainnya. Pengembangan produk berbasis pandan laut dapat menjadi salah satu alternatif ekonomi kreatif bagi masyarakat pesisir. Apabila disertai dengan pengelolaan bahan baku yang berkelanjutan, pemanfaatan tersebut dapat meningkatkan nilai ekonomi sumber daya lokal sekaligus mendorong masyarakat untuk mempertahankan keberadaan vegetasi pandan laut di lingkungannya.',
+      },
+
+      { type: 'subheading', text: '8. Bunga Padmosari (Rafflesia)' },
+      { type: 'image', caption: 'Bunga Padmosari saat mekar dan sebelum mekar (kuncup) — foto akan ditambahkan' },
+      {
+        type: 'paragraph',
+        text: 'Klasifikasi: Kingdom Plantae, Divisi Spermatophyta, Kelas Angiospermae, Ordo Aristolochiales, Famili Rafflesiaceae, Genus Rafflesia, Spesies Rafflesia zollingeriana Kds.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Rafflesia zollingeriana Kds. merupakan tumbuhan holoparasit dari famili Rafflesiaceae yang memiliki morfologi sangat khas karena tidak mempunyai akar, batang, dan daun sejati. Seluruh tubuh vegetatifnya berkembang di dalam jaringan tumbuhan inang, terutama liana dari genus Tetrastigma, sedangkan bagian yang tampak di atas permukaan tanah berupa struktur bunga. Kuncup bunga pada awal perkembangannya berbentuk bulat hingga menyerupai kubah dan muncul dari jaringan inang. Menjelang mekar, bagian perigon mulai berkembang dan memperlihatkan warna kemerahan. Bunga yang telah mekar memiliki diameter 15–40 cm, dengan lima lobus perigon berwarna merah hingga merah kecokelatan yang dihiasi bintik-bintik putih. Karakter bunga yang besar, tidak memiliki daun dan batang, serta hidup bergantung pada tumbuhan inang menjadi ciri utama R. zollingeriana sehingga sangat bergantung pada keberadaan tumbuhan inangnya. Siklus mekarnya diawali dari kopula atau kuncup, kemudian berkembang menjadi brakta (Br), perigon (P), dan akhirnya memasuki fase mekar yang terjadi dalam waktu yang relatif singkat.',
+      },
+    ],
     variant: 1,
   },
 ]
