@@ -10,6 +10,11 @@ export const vReveal = {
     const delay = typeof binding.value === 'number' ? binding.value : 0
     el.style.transitionDelay = delay ? `${delay}ms` : ''
 
+    // threshold near 0 (not e.g. 0.15) so this still fires for elements much
+    // taller than the viewport — IntersectionObserver's ratio is
+    // (visible area / target area), which for a very tall target (a long
+    // article body wrapped in one v-reveal) can never reach a higher
+    // threshold no matter how far you scroll.
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -17,7 +22,7 @@ export const vReveal = {
           observer.unobserve(el)
         }
       },
-      { threshold: 0.15, rootMargin: '0px 0px -10% 0px' },
+      { threshold: 0, rootMargin: '0px 0px -10% 0px' },
     )
 
     observer.observe(el)
