@@ -19,6 +19,7 @@ import agroherbal2 from '@/assets/images/edukasi/webp/agroherbal2.webp'
 import agroherbal3 from '@/assets/images/edukasi/webp/agroherbal3.webp'
 import filtrasi1 from '@/assets/images/edukasi/webp/filtrasi1.webp'
 import filtrasi2 from '@/assets/images/edukasi/webp/filtrasi2.webp'
+import flora1 from '@/assets/images/edukasi/webp/flora1.webp'
 
 const loremShort =
   'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since 1966.'
@@ -1109,6 +1110,7 @@ export const articles = [
         text: 'Rafflesia zollingeriana Kds. merupakan tumbuhan holoparasit dari famili Rafflesiaceae yang memiliki morfologi sangat khas karena tidak mempunyai akar, batang, dan daun sejati. Seluruh tubuh vegetatifnya berkembang di dalam jaringan tumbuhan inang, terutama liana dari genus Tetrastigma, sedangkan bagian yang tampak di atas permukaan tanah berupa struktur bunga. Kuncup bunga pada awal perkembangannya berbentuk bulat hingga menyerupai kubah dan muncul dari jaringan inang. Menjelang mekar, bagian perigon mulai berkembang dan memperlihatkan warna kemerahan. Bunga yang telah mekar memiliki diameter 15–40 cm, dengan lima lobus perigon berwarna merah hingga merah kecokelatan yang dihiasi bintik-bintik putih. Karakter bunga yang besar, tidak memiliki daun dan batang, serta hidup bergantung pada tumbuhan inang menjadi ciri utama R. zollingeriana sehingga sangat bergantung pada keberadaan tumbuhan inangnya. Siklus mekarnya diawali dari kopula atau kuncup, kemudian berkembang menjadi brakta (Br), perigon (P), dan akhirnya memasuki fase mekar yang terjadi dalam waktu yang relatif singkat.',
       },
     ],
+    image: flora1,
     variant: 1,
   },
 ]
