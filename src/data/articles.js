@@ -20,6 +20,8 @@ import agroherbal3 from '@/assets/images/edukasi/webp/agroherbal3.webp'
 import filtrasi1 from '@/assets/images/edukasi/webp/filtrasi1.webp'
 import filtrasi2 from '@/assets/images/edukasi/webp/filtrasi2.webp'
 import flora1 from '@/assets/images/edukasi/webp/flora1.webp'
+import sapi1 from '@/assets/images/edukasi/webp/sapi1.webp'
+import sapi2 from '@/assets/images/edukasi/webp/sapi2.webp'
 
 const loremShort =
   'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since 1966.'
@@ -578,7 +580,7 @@ export const articles = [
     slug: 'artikel-8',
     title: 'Mengenal Keanekaragaman Flora Pesisir Kawasan Sarongan: Muara Mbaduk, Pantai Benteng, Pantai Rajegwesi, dan Pantai Sukamade',
     category: 'Flora & Keanekaragaman Hayati',
-    date: '2026-06-14',
+    date: '2026-07-29',
     excerpt: 'Dokumentasi taksonomi, karakteristik morfologi, dan potensi ekologis maupun ekonomi berbagai jenis vegetasi pesisir yang ditemukan di empat kawasan pantai: Muara Mbaduk, Pantai Benteng, Pantai Rajegwesi, dan Pantai Sukamade.',
     content: [
       // ================= MUARA MBADUK =================
@@ -1113,4 +1115,57 @@ export const articles = [
     image: flora1,
     variant: 1,
   },
+  {
+    slug: 'artikel-9',
+    title: 'Cegah Penyakit, Mahasiswa KKN-PPM UGM Praktik Langsung Beri Obat Cacing dan Vitamin Bolus ke 20 Sapi di Desa Sarongan',
+    category: 'Peternakan',
+    date: '2026-07-30',
+    excerpt: 'Mahasiswa KKN-PPM UGM melakukan praktik langsung memberikan obat cacing dan vitamin bolus kepada 20 sapi di Desa Sarongan untuk mencegah penyakit dan meningkatkan kesehatan hewan ternak.',
+    content: [
+      {
+        type: 'paragraph',
+        text: 'SARONGAN - Program kesehatan ternak kembali digelar oleh mahasiswa Kuliah Kerja Nyata (KKN) di Desa Sarongan, Kecamatan Pesanggaran, Kabupaten Banyuwangi tepatnya pada Dusun Sukamade. Kali ini kegiatan tidak hanya berhenti pada penyuluhan, sebab mahasiswa turun langsung ke kandang warga untuk mempraktikkan pemberian obat cacing dan vitamin bolus kepada 20 ekor sapi milik peternak setempat.',
+      },
+      {
+        type: 'image',
+        src: sapi2,
+        caption: '',
+      },
+      {
+        type: 'paragraph',
+        text: 'Kegiatan yang dilakukan secara door to door ini menyasar sapi-sapi yang sedang dalam masa penggemukan. Obat cacing diberikan untuk membersihkan saluran pencernaan sapi dari parasit yang dapat mengganggu penyerapan nutrisi, sementara vitamin bolus diberikan untuk menjaga daya tahan tubuh sekaligus merangsang nafsu makan ternak agar proses penggemukan berjalan lebih optimal.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Salah satu mahasiswa yang terlibat dalam kegiatan menjelaskan bahwa pemberian obat cacing dan vitamin secara berkala sangat penting dilakukan, terutama karena selama ini banyak peternak di desa yang jarang melakukan perawatan kesehatan ternak secara rutin. Padahal, sapi yang terinfeksi cacing biasanya menunjukkan gejala seperti tubuh kurus meski nafsu makan normal, bulu kusam, hingga pertumbuhan bobot badan yang melambat.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Praktik pemberian obat dilakukan dengan tahapan yang hati-hati agar tidak membuat sapi stres maupun cedera. Sapi terlebih dahulu ditenangkan dan diikat pada bagian kandang yang kokoh, kemudian obat cacing diberikan melalui mulut dengan bantuan alat khusus, disusul dengan pemberian bolus vitamin. Mahasiswa turut mendampingi dan mengarahkan peternak agar ke depannya dapat melakukan praktik serupa secara mandiri.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Selain praktik kesehatan ternak, mahasiswa juga menyampaikan materi mengenai penerapan prinsip Good Farming Practices dalam usaha penggemukan sapi pedaging kepada para peternak, dengan pembekalan dasar meliputi pemilihan bibit sapi, pakan dan air minum, manajemen kandang, kesehatan dan kesejahteraan ternak, dan pemeriksaan ternak.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Mahasiswa juga memberikan pemahaman mengenai pentingnya menjaga kesehatan dan kesejahteraan ternak dengan memperhatikan kondisi fisik serta kebutuhan dasar sapi selama masa pemeliharaan. Selain itu, peternak dibekali pengetahuan mengenai pemeriksaan ternak secara berkala untuk mendeteksi perubahan kondisi atau gejala yang tidak normal. Melalui pembekalan ini, peternak diharapkan dapat menerapkan prinsip Good Farming Practices secara lebih baik dalam mendukung keberhasilan usaha penggemukan sapi pedaging.',
+      },
+      {
+        type: 'image',
+        src: sapi1,
+        caption: '',
+      },
+      {
+        type: 'paragraph',
+        text: 'Para peternak di Desa Sarongan menyambut antusias kegiatan ini. Sejumlah peternak mengaku baru pertama kali melihat langsung proses pemberian obat cacing dan vitamin bolus yang benar, dan berharap dapat mempraktikkannya sendiri di kemudian hari agar sapi ternak mereka tumbuh lebih sehat dan siap dipasarkan dengan nilai jual yang lebih tinggi.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Melalui kegiatan yang tergabung dalam program Fattening Farm ini, mahasiswa KKN berharap dapat memberikan kontribusi nyata bagi peningkatan kualitas usaha peternakan sapi potong di Desa Sarongan, sekaligus mendorong peternak untuk lebih memperhatikan aspek kesehatan ternak sebagai bagian tak terpisahkan dari keberhasilan program penggemukan sapi.',
+      },
+    ],
+    image: sapi1,
+    variant: 1,
+  }
 ]
