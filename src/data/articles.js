@@ -22,6 +22,8 @@ import filtrasi2 from '@/assets/images/edukasi/webp/filtrasi2.webp'
 import flora1 from '@/assets/images/edukasi/webp/flora1.webp'
 import sapi1 from '@/assets/images/edukasi/webp/sapi1.webp'
 import sapi2 from '@/assets/images/edukasi/webp/sapi2.webp'
+import sabun1 from '@/assets/images/edukasi/webp/sabun1.webp'
+import sabun2 from '@/assets/images/edukasi/webp/sabun2.webp'
 
 const loremShort =
   'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since 1966.'
@@ -302,7 +304,7 @@ export const articles = [
     title: 'Mengenal Kondisi Sumber Air Desa Sarongan Melalui Pemetaan dan Peninjauan Kualitas Air Tanah',
     category: 'Edukasi Lingkungan',
     date: '2026-07-18',
-    excerpt: loremShort,
+    excerpt: 'Mahasiswa KKN-PPM UGM Desa Sarongan melakukan pemetaan dan peninjauan kualitas air tanah di Dusun Krajan, Desa Sarongan sebagai upaya edukasi dan promosi pemahaman sistem air tanah untuk mendukung konservasi sumber daya air.',
     content: [
       {
         type: 'paragraph',
@@ -356,8 +358,8 @@ export const articles = [
     slug: 'artikel-6',
     title: 'Dari Tanah ke Keran: Mengenal Konsep Filtrasi Air, dari yang Sederhana hingga yang Canggih',
     category: 'Lingkungan',
-    date: '2026-06-14',
-    excerpt: loremShort,
+    date: '2026-07-31',
+    excerpt: 'Survei air tanah di Dusun Krajan sebelumnya menunjukkan bahwa parameter kualitas air seperti pH, TDS, dan suhu bervariasi di tiap titik pengamatan, dipengaruhi kondisi geologi dan aktivitas sekitar (pertanian, peternakan, permukiman). Artinya, air dari sumur atau mata air tidak selalu langsung siap pakai tanpa penanganan lebih lanjut.',
     content: [
       {
         type: 'paragraph',
@@ -498,7 +500,7 @@ export const articles = [
     title: 'Menjaga Jejak Pulang Penyu: Upaya Konservasi Penyu di Taman Nasional Meru Betiri',
     category: 'Konservasi',
     date: '2026-07-30',
-    excerpt: loremShort,
+    excerpt: 'Pantai Sukamade yang berada di kawasan Taman Nasional Meru Betiri, Dusun Sukamade, Desa Sarongan, Kecamatan Pesanggaran, Kabupaten Banyuwangi, Jawa Timur, merupakan salah satu area konservasi penyu di Indonesia yang menjadi lokasi pendaratan serta peneluran alami penyu. Pantai Sukamade memiliki karakteristik pantai yang landai, hamparan pasir yang mendukung proses peneluran, serta lingkungan pesisir yang masih terjaga. Kondisi tersebut menjadikan Sukamade sebagai salah satu lokasi penting bagi keberlangsungan populasi penyu di Indonesia. Berdasarkan informasi dari pengelola Taman Nasional Meru Betiri, terdapat empat jenis penyu dari tujuh jenis penyu laut yang diketahui di dunia yang ditemukan di Pantai Sukamade, yaitu penyu hijau (Chelonia mydas), penyu sisik (Eretmochelys imbricata), penyu slengkrah atau penyu lekang (Lepidochelys olivacea), dan penyu belimbing (Dermochelys coriacea).',
     content: [
       {
         type: 'paragraph',
@@ -1166,6 +1168,63 @@ export const articles = [
       },
     ],
     image: sapi1,
+    variant: 1,
+  },
+  {
+    slug: 'artikel-10',
+    title: 'Sirkular dari Rumah: PKK Desa Sarongan Belajar Mengolah dan Memanfaatkan Minyak Jelantah menjadi Sabun Cair Ramah Lingkungan',
+    category: 'Lingkungan',
+    date: '2026-07-10',
+    excerpt: 'PKK Desa Sarongan mengikuti pelatihan pengolahan minyak jelantah menjadi sabun cair ramah lingkungan, sebagai upaya mendukung pengelolaan limbah rumah tangga dan meningkatkan kesadaran masyarakat terhadap praktik sirkular.',
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Sarongan, 10 Juli 2026 — Pengelolaan limbah rumah tangga menjadi salah satu langkah penting dalam meningkatkan kesadaran masyarakat terhadap lingkungan. Salah satu jenis limbah yang dihasilkan setiap hari oleh masyarakat yang hingga saat ini belum dikelola secara optimal adalah limbah minyak jelantah. Minyak yang telah digunakan secara berulang pada umumnya dianggap sudah tidak bernilai dan dibuang begitu saja. Pembuangan limbah secara sembarangan tersebut berpotensi mencemari tanah dan air, selain itu juga proses penguraian alami yang relatif membutuhkan waktu yang lama. ',
+      },
+      {
+        type: 'paragraph',
+        text: 'Berdasarkan potensi yang ada di tengah masyarakat, mahasiswa KKN-PPM UGM melaksanakan kegiatan sosialisasi dan demonstrasi pembuatan sabun cair dari limbah minyak jelantah bersama dengan anggota PKK Desa Sarongan. Kegiatan dilaksanakan pada hari Jum’at, 10 Juli 2026, bertempat di Balai Desa Sarongan dengan peserta sebanyak 30 anggota PKK Desa Sarongan. Kegiatan ini dilaksanakan sebagai ruang penyampaian informasi sekaligus pelatihan praktis agar masyarakat dapat mengetahui dampak serta pemanfaatan minyak jelantah menjadi produk yang memiliki nilai guna. ',
+      },
+      {
+        type: 'paragraph',
+        text: 'Kegiatan diawali dengan sosialisasi mengenai karakteristik minyak jelantah dan dampak pembuangan terhadap kualitas lingkungan. Peserta juga dilibatkan dalam memahami pemanfaatan minyak jelantah sebagai bahan baku berbagai produk, salah satunya sabun dengan proses saponifikasi. Saponifikasi merupakan reaksi antara minyak atau lemak yang mengandung trigliserida dengan kandungan basa yang kuat. Dalam pembuatan sabun cair, basa yang digunakan adalah kalium hidroksida (KOH). Melalui reaksi ini, trigliserida dalam minyak dapat diuraikan menjadi garam kalium dari asam lemak. Kandungan tersebut menjadi komponen utama dalam pembuatan sabun, serta gliserol sebagai salah satu hasil samping proses saponifikasi. ',
+      },
+      {
+        type: 'image',
+        src: sabun1,
+        caption: 'Demonstrasi pembuatan sabun cair dari minyak jelantah di Balai Desa Sarongan',
+      },
+      {
+        type: 'paragraph',
+        text: 'Sesi selanjutnya dilanjutkan dengan demonstrasi pembuatan sabun cair. Bahan yang digunakan dalam demonstrasi ini relatif sederhana, yakni minyak jelantah atau cooking oil, bleaching earth, KOH, air, dan essential oil. Penambahan essential oil ini bersifat opsional untuk memberikan aroma pada produk. Proses pembuatan sabun cair dari minyak jelantah dilakukan melalui beberapa tahapan pengolahan, mulai dari pemurnian minyak, penentuan formulasi KOH, proses saponifikasi, hingga pengenceran dan penambahan aroma. ',
+      },
+      {
+        type: 'image',
+        src: sabun2,
+        caption: 'Sosialisasi dan demonstrasi pembuatan sabun cair dari minyak jelantah di Balai Desa Sarongan',
+      },
+      {
+        type: 'paragraph',
+        text: 'Tahapan pertama dimulai dengan pemurnian minyak jelantah. Minyak yang telah digunakan berulang kali pada umumnya mengalami perubahan warna dan kualitas. Oleh karena itu, minyak jelantah terlebih dahulu diolah dengan menggunakan bleaching earth. Bahan ini dicampurkan ke dalam minyak dan diaduk hingga merata, kemudian campuran tersebut disaring untuk memisahkan bahan adsorben dari minyak. Proses ini menghasilkan minyak yang relatif lebih bersih dan siap digunakan sebagai bahan baku pembuatan sabun. ',
+      },
+      {
+        type: 'paragraph',
+        text: 'Tahap berikutnya berupa penentuan jumlah KOH yang diperlukan. Dalam proses pembuatan sabun, penggunaan KOH perlu disesuaikan dengan karakteristik setiap jenis minyak. Hal tersebut dikarenakan terdapat perbedaan nilai penyabunan atau saponification value (SAP) pada setiap jenis minyak. Nilai yang dihasilkan ini menjadi dasar dalam menentukan jumlah basa yang dibutuhkan agar trigliserida dalam minyak dapat mengalami proses saponifikasi. Dalam kegiatan ini, formulasi setiap satu gram minyak jelantah membutuhkan 0,1865 gram KOH dengan konsentrasi sebesar 90%. Kemudian, digunakan air sebagai pelarut KOH dengan perbandingan air dan KOH sebesar 3:1. Sebagai bahan percontohan atau demonstrasi dalam kegiatan tersebut, digunakan KOH sebanyak 9,23 gram yang membutuhkan 27,70 gram air. Perhitungan tersebut dilakukan untuk memastikan komposisi bahan sesuai dengan formulasi yang telah ditetapkan. ',
+      },
+      {
+        type: 'paragraph',
+        text: 'Setelah formulasi disiapkan, KOH dilarutkan ke dalam air secara perlahan dan hati-hati. Larutan ini selanjutnya dicampurkan dengan minyak jelantah yang telah dimurnikan. Dalam proses saponifikasi, trigliserida dalam minyak bereaksi dengan KOH dan menghasilkan garam kalium dari asam lemak sebagai komponen utama sabun, dengan gliserol sebagai salah satu produk samping. Campuran tersebut kemudian diencerkan secara bertahap dengan air hingga mendapatkan kekentalan sabun cair yang sesuai. Setelahnya, dapat ditambahkan essential oil yang bersifat opsional untuk memberikan aroma tertentu dengan formulasi sekitar 1-2 tetes untuk setiap 20 gram minyak jelantah. ',
+      },
+      {
+        type: 'paragraph',
+        text: 'Rangkaian demonstrasi tersebut mendapatkan perhatian besar dari Ibu-ibu PKK Desa Sarongan dengan antusias dan aktif menanyakan fungsi bahan, perhitungan KOH, hingga tahapan pengolahan minyak jelantah sebelum digunakan sebagai bahan baku sabun. Proses penyampaian materi yang disertai dengan praktik langsung ini membuat proses yang terdengar teknis menjadi mudah dipahami oleh peserta. ',
+      },
+      {
+        type: 'paragraph',
+        text: 'Melalui demonstrasi ini, peserta dapat melihat bahwa minyak jelantah yang selama ini dianggap sebagai limbah ternyata masih dapat dimanfaatkan menjadi produk yang bernilai guna. Kegiatan ini diharapkan dapat mendorong masyarakat untuk mengelola limbah berbasis rumah tangga sekaligus mendorong kesadaran masyarakat terhadap upaya menjaga kebersihan dan kelestarian lingkungan di Desa Sarongan. ',
+      },
+    ],
+    image: sabun2,
     variant: 1,
   }
 ]
