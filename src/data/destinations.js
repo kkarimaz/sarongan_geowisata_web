@@ -18,7 +18,7 @@ export const destinations = [
     name: 'Muara Mbaduk',
     category: 'Camping Ground',
     location: 'Sarongan, Banyuwangi',
-    excerpt: loremShort,
+    excerpt: 'Tempat bertemunya sungai, laut, dan keajaiban alam di selatan Meru Betiri.',
     description: [
       {
         type: 'paragraph',
@@ -33,6 +33,7 @@ export const destinations = [
         text: 'Di sekitar bagian dalam muara, vegetasi mangrove tumbuh mengikuti kondisi lingkungan yang dipengaruhi oleh percampuran air sungai dan air laut. Kehadiran mangrove memberikan warna hijau yang kontras dengan pasir dan birunya perairan. Tidak hanya mempercantik lanskap, kawasan mangrove juga menjadi habitat bagi berbagai organisme pesisir. Akar-akar mangrove yang rapat menjadi tempat berlindung bagi ikan, kepiting, dan berbagai organisme lainnya. Bagi pengunjung, keberadaan mangrove memberikan pengalaman yang berbeda dari wisata pantai pada umumnya. Muara tidak hanya dapat dinikmati dari sisi laut, tetapi juga dari lingkungan pesisir yang lebih tenang dan hijau.',
       },
     ],
+    image: '',
     variant: 0,
   },
   {
