@@ -15,7 +15,7 @@ const articles = computed(() => docs.value.map(toCardArticle))
 
     <section class="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
       <p v-reveal class="max-w-2xl text-brand-950/65">
-        Artikel berita seputar apa yang terjadi di Desa Sarongan.
+        Temukan berita terbaru seputar kegiatan warga, upaya konservasi, dan perkembangan ekowisata di Desa Sarongan. Dapatkan informasi terkini yang menginspirasi dan memperkaya pengetahuan Anda tentang keindahan alam dan budaya lokal.
       </p>
 
       <div v-if="isLoading" class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

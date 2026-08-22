@@ -24,6 +24,17 @@ import sapi1 from '@/assets/images/edukasi/webp/sapi1.webp'
 import sapi2 from '@/assets/images/edukasi/webp/sapi2.webp'
 import sabun1 from '@/assets/images/edukasi/webp/sabun1.webp'
 import sabun2 from '@/assets/images/edukasi/webp/sabun2.webp'
+import mineral1 from '@/assets/images/edukasi/webp/mineral1.webp'
+import mineral2 from '@/assets/images/edukasi/webp/mineral2.webp'
+import enzim1 from '@/assets/images/edukasi/webp/enzim1.webp'
+import enzim2 from '@/assets/images/edukasi/webp/enzim2.webp'
+import edufair1 from '@/assets/images/edukasi/webp/edufair1.webp'
+import edufair2 from '@/assets/images/edukasi/webp/edufair2.webp'
+import edufair3 from '@/assets/images/edukasi/webp/edufair3.webp'
+import edufair4 from '@/assets/images/edukasi/webp/edufair4.webp'
+import edufair5 from '@/assets/images/edukasi/webp/edufair5.webp'
+import edufair6 from '@/assets/images/edukasi/webp/edufair6.webp'
+
 
 const loremShort =
   'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since 1966.'
@@ -593,7 +604,9 @@ export const articles = [
       },
 
       { type: 'subheading', text: '1. Katang-Katang' },
-      { type: 'image', caption: 'Tumbuhan, daun, dan buah Katang-Katang — foto akan ditambahkan' },
+      { type: 'image', 
+        src: '',
+        caption: 'Tumbuhan, daun, dan buah Katang-Katang — foto akan ditambahkan' },
       {
         type: 'paragraph',
         text: 'Klasifikasi: Kingdom Plantae, Divisi Magnoliophyta, Kelas Magnoliopsida, Ordo Solanales, Famili Convolvulaceae, Genus Ipomoea, Spesies Ipomoea pes-caprae.',
@@ -1226,5 +1239,159 @@ export const articles = [
     ],
     image: sabun2,
     variant: 1,
-  }
+  },
+  {
+    // dari sini belum ada fotonya
+    slug: 'artikel-11',
+    title: 'EDUFAIR: Satu Langkah Kecil untuk Mengenal Puluhan Jalan Menuju Masa Depan',
+    category: 'Edukasi',
+    date: '2026-07-16',
+    excerpt: 'EDUFAIR merupakan kegiatan yang diselenggarakan oleh mahasiswa KKN-PPM UGM di Desa Sarongan untuk memberikan informasi mengenai berbagai jalur pendidikan dan peluang karier bagi siswa SMP 1 Pesanggaran.',
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Sarongan — Edufair merupakan program kerja yang dilaksanakan oleh mahasiswa KKN-PPM UGM yang hadir sebagai ruang bagi siswa untuk mengenal lebih dekat dunia perkuliahan dan berbagai pilihan bidang studi. Kegiatan dilaksanakan pada 16 Juli 2026 bertempat di SMPN 1 Pesanggaran, dan diikuti sekitar 180 siswa kelas VIII dan IX.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Rangkaian kegiatan yang dilaksanakan meliputi, pengenalan kampus, eksperimen, hingga eksplorasi berbagai jurusan. Melalui kegiatan ini, siswa diajak untuk melihat berbagai pilihan dapat dipertimbangkan untuk masa depan. Kegiatan diawali dengan memperkenalkan UGM dan gambaran kehidupan mahasiswa, yang kemudian dilanjut dengan menyaksikan exhibition eksperimen dari mahasiswa Teknik Kimia.',
+      },
+      {
+        type: 'image',
+        src: edufair1,
+      },
+      {
+        type: 'image',
+        src: edufair2,
+      },
+      {
+        type: 'image',
+        src: edufair3,
+      },
+      {
+        type: 'paragraph',
+        text: 'Kegiatan kemudian dilanjutkan dengan ekspo program studi yang dibagi menjadi empat klaster, yaitu Soshum, Medika, Agro, dan Saintek. Di setiap klusternya, siswa diberikan penjelasan mengenai berbagai program studi di UGM, bidang yang dipelajari, serta gambaran mata pelajaran yang dapat menjadi bekal ketika melanjutkan pendidikan ke jenjang SMA. Pada tiap-tiap kluster tersebut, siswa diperbolehkan bertanya secara langsung mengenai jurusan, mata pelajaran, kehidupan perkuliahan, hingga pengalaman menjadi mahasiswa. Suasana yang santai membuat siswa lebih leluasa menyampaikan rasa penasaran mereka tentang dunia yang mungkin masih terasa cukup jauh dari kehidupan mereka saat ini.',
+      },
+      {
+        type: 'image',
+        src: edufair4,
+      },
+      {
+        type: 'image',
+        src: edufair6,
+      },
+      {
+        type: 'paragraph',
+        text: 'Melalui EDUFAIR, siswa mendapatkan gambaran mengenai berbagai bidang, berani bertanya, dan mengetahui apa yang diminati dapat menjadi langkah awal untuk menentukan pilihan pendidikan di kemudian hari. Kegiatan ini diharapkan dapat meningkatkan minat siswa untuk dapat melanjutkan pendidikan ke jenjang yang lebih tinggi. Karena masa depan adalah pilihan yang dapat diambil oleh semua.',
+      },
+    ],
+    image: edufair5,
+    variant: 1,
+  },
+  {
+    slug: 'artikel-12',
+    title: 'Mahasiswa KKN-PPM UGM Kenalkan Mineral Blok bagi Kelompok Ternak di Banyuwangi',
+    category: 'Peternakan',
+    date: '2026-07-22',
+    excerpt: 'Mahasiswa KKN-PPM UGM memperkenalkan mineral blok kepada kelompok ternak di Banyuwangi sebagai upaya meningkatkan kesehatan dan produktivitas hewan ternak melalui suplementasi mineral yang tepat.',
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Banyuwangi – Meningkatkan produktivitas peternakan tidak hanya bergantung pada pakan hijauan atau konsentrat saja, tetapi juga pada kecukupan nutrisi yang diterima ternak. Salah satu nutrisi penting tersebut adalah mineral, yaitu mikronutrien esensial yang berperan dalam menunjang pertumbuhan, proses fisiologis, reproduksi, serta menjaga daya tahan tubuh ternak. Berangkat dari pemenuhan kebutuhan mineral tersebut, mahasiswa Kuliah Kerja Nyata–Pembelajaran Pemberdayaan Masyarakat (KKN-PPM) Universitas Gadjah Mada Unit Sagara Pesanggaran menyelenggarakan sosialisasi dan pelatihan pembuatan mineral blok bagi Kelompok Ternak Mendolestari di Dusun Siliragung, Desa Sumberagung, Kecamatan Pesanggaran, Kabupaten Banyuwangi. ',
+      },
+      {
+        type: 'paragraph',
+        text: 'Program kerja ini memadukan penyampaian materi dan demonstrasi yang memiliki tujuan mengenalkan suplementasi mineral sekaligus mempraktekan cara pembuatan mineral blok mandiri menggunakan bahan yang mudah dicari. Pelatihan diawali dengan pemaparan materi mengenai pentingnya mineral dalam pemeliharaan ternak. Mineral merupakan zat gizi yang dibutuhkan ternak dalam jumlah relatif kecil, tetapi memiliki peran yang sangat besar terhadap berbagai proses fisiologis ternak. Karena kekurangan mineral dalam jangka panjang dapat menyebabkan penurunan performa ternak yang berdampak langsung pada produktivitas peternakan.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Tim KKN-PPM mengajak peternak mengenali tanda-tanda ternak yang mengalami defisiensi mineral. Salah satu gejala yang sering dijumpai adalah perilaku abnormal berupa kebiasaan menjilat atau memakan benda-benda yang bukan merupakan pakan, seperti tanah, tembok kandang, kayu, bahkan plastik. Selain itu, ternak yang kekurangan mineral dapat mengalami bulu yang tampak kusam dan mudah rontok, kondisi tubuh yang kurus, pertumbuhan yang terhambat, penurunan daya tahan tubuh, hingga gangguan reproduksi. Berbagai gejala tersebut kerap dianggap sebagai kondisi biasa, padahal dapat menjadi indikasi bahwa kebutuhan mineral ternak belum terpenuhi. ',
+      },
+      {
+        type: 'image',
+        src: mineral2,
+      },
+      {
+        type: 'paragraph',
+        text: 'Menjawab persoalan tersebut, tim KKN-PPM memperkenalkan mineral blok sebagai salah satu bentuk suplemen pakan yang praktis dan ekonomis. Mineral blok merupakan campuran berbagai bahan sumber mineral yang dicetak menjadi bentuk padat sehingga dapat dijilat oleh ternak. Bentuk padat ini memungkinkan konsumsi mineral berlangsung secara bertahap, mengurangi pemborosan, serta memudahkan peternak dalam pemberiannya. Formulasi mineral blok tergolong sederhana dengan bahan-bahan yang mudah ditemui. Misalnya seperti garam, premix dan semen putih dengan perbandingan 4:1:1 satuan kilogram. Bahan-bahan tersebut memiliki fungsi masing-masing. Garam berfungsi sebagai sumber natrium sekaligus meningkatkan palatabilitas sehingga ternak tertarik menjilat mineral blok. Premix berperan sebagai sumber mineral makro dan mikro untuk ternak, sedangkan semen putih digunakan sebagai bahan pengikat agar adonan dapat mengeras dan mempertahankan bentuknya selama digunakan di kandang. Seluruh bahan dicampurkan hingga menyatu, kemudian ditambahkan air secukupnya sampai membentuk adonan yang mudah dicetak. Adonan selanjutnya dimasukkan ke dalam cetakan, seperti pipa atau gelas plastik, sebelum didiamkan selama kurang lebih satu hingga dua hari hingga mengeras dan siap digunakan.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Tim KKN-PPM menjelaskan teknik pencampuran yang pas, konsistensi adonan, hingga waktu proses pengeringan yang diperlukan agar mineral blok memiliki tekstur yang kuat tetapi tetap mudah dijilat oleh ternak. Peserta juga diberikan penjelasan mengenai cara penempatan mineral blok di dalam kandang agar mudah dijangkau ternak dan tetap terjaga kebersihannya. Suasana pelatihan berlangsung interaktif. Anggota Kelompok Ternak Mendolestari aktif mengajukan berbagai pertanyaan mengenai bahan baku, biaya pembuatan, frekuensi pemberian, hingga efektivitas mineral blok dalam mendukung kesehatan ternak. Peserta juga terlibat langsung dalam proses pencampuran dan pencetakan adonan sehingga memperoleh pengalaman yang dapat diterapkan secara mandiri setelah kegiatan berakhir.',
+      },
+    ],
+    image: mineral1,
+    variant: 1,
+  },
+  {
+    slug: 'artikel-13',
+    title: 'Dari Edukasi hingga Aksi: Peran Mahasiswa KKN-PPM UGM dalam Penguatan Edukasi Zoonosis, Biosekuriti, dan Pemanfaatan Eco-Enzyme untuk Kesehatan Ternak',
+    category: 'Peternakan',
+    date: '2026-07-21',
+    excerpt: 'Mahasiswa KKN-PPM UGM mengedukasi masyarakat tentang zoonosis, biosekuriti, dan pemanfaatan eco-enzyme untuk kesehatan ternak, serta melakukan praktik langsung pembuatan eco-enzyme sebagai upaya meningkatkan kesadaran dan keterampilan masyarakat dalam menjaga kesehatan hewan ternak.',
+    content: [
+      {
+        type: 'paragraph',
+        text: 'Sarongan, Banyuwangi — Upaya menjaga kesehatan ternak tidak hanya berkaitan dengan penanganan ketika hewan mengalami sakit, tetapi juga dimulai dari kemampuan masyarakat dalam mengenali risiko penyakit, mencegah penularan, serta menjaga kebersihan lingkungan pemeliharaan. Berangkat dari kebutuhan tersebut, mahasiswa KKN-PPM Universitas Gadjah Mada menghadirkan rangkaian kegiatan edukasi yang mengintegrasikan aspek kesehatan hewan, kesehatan masyarakat, dan pengelolaan lingkungan melalui program BIOSAFE: Sosialisasi Penyakit Zoonosis pada Hewan Ternak dan Optimalisasi Biosekuriti Kandang, Warga Jaga Ternak, serta Edukasi dan Demonstrasi Pembuatan Eco-Enzyme sebagai Disinfektan untuk Mendukung Kesehatan Ternak.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Rangkaian program tersebut menyasar anggota kelompok tani di Desa Sarongan, yakni Kelompok Tani Sumber Makmur yang sebagian besar anggotanya juga merupakan peternak. Penentuan sasaran dilakukan melalui pendataan kelompok tani untuk mengidentifikasi kelompok yang memiliki anggota dengan aktivitas pemeliharaan ternak sehingga materi yang diberikan dapat disesuaikan dengan kondisi dan kebutuhan masyarakat. Pendekatan ini dilakukan agar edukasi tidak berhenti pada penyampaian informasi secara umum, tetapi dapat memberikan pengetahuan yang relevan dan aplikatif dalam kehidupan sehari-hari.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Kegiatan diawali melalui program BIOSAFE yang berfokus pada pengenalan penyakit zoonosis dan pentingnya penerapan biosekuriti kandang. Masyarakat diperkenalkan pada berbagai penyakit yang berpotensi ditularkan dari hewan kepada manusia, mekanisme penularannya, langkah-langkah pencegahan, serta peran kebersihan dan pengelolaan lingkungan kandang dalam memutus risiko penyebaran penyakit. Materi disampaikan secara interaktif melalui presentasi, diskusi, dan sesi tanya jawab sehingga peserta memiliki kesempatan untuk menghubungkan materi dengan pengalaman mereka selama memelihara ternak.',
+      },
+      {
+        type: 'image',
+        src: enzim1,
+      },
+      {
+        type: 'paragraph',
+        text: 'Antusiasme masyarakat terlihat selama sesi diskusi berlangsung.. Tingginya partisipasi tersebut menunjukkan adanya ketertarikan masyarakat untuk memahami lebih jauh mengenai penyakit zoonosis dan praktik pemeliharaan ternak yang lebih aman. Hal ini menjadi penting mengingat interaksi yang erat antara manusia, hewan, dan lingkungan dalam aktivitas peternakan dapat menciptakan peluang terjadinya penularan penyakit apabila aspek kesehatan dan kebersihan tidak diperhatikan dengan baik.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pemahaman mengenai zoonosis kemudian diperkuat melalui program Warga Jaga Ternak yang mengangkat penerapan biosekuriti secara lebih aplikatif. Program ini merupakan bentuk kolaborasi interdisipliner yang memperluas pembahasan dari pengenalan risiko penyakit menuju langkah pencegahan yang dapat dilakukan di lingkungan peternakan. Masyarakat diberikan pemahaman bahwa biosekuriti merupakan serangkaian tindakan preventif yang bertujuan mengurangi kemungkinan masuk dan menyebarnya agen penyakit ke dalam maupun di antara lingkungan pemeliharaan ternak.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Salah satu aspek yang diperkenalkan dalam kegiatan tersebut adalah pemanfaatan eco-enzyme sebagai salah satu alternatif bahan pendukung sanitasi lingkungan peternakan atau desinfektan. Eco-enzyme diperkenalkan sebagai produk hasil pemanfaatan bahan organik yang dapat dikembangkan oleh masyarakat sebagai bagian dari upaya pengelolaan limbah sekaligus mendukung kebersihan lingkungan. Dengan demikian, edukasi tidak hanya membahas kesehatan ternak dari sisi medis, tetapi juga menghubungkannya dengan pengelolaan lingkungan yang berkelanjutan.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pendekatan tersebut kemudian diwujudkan secara lebih aplikatif melalui program Edukasi dan Demonstrasi Pembuatan Eco-Enzyme sebagai Disinfektan untuk Mendukung Kesehatan Ternak. Dalam kegiatan ini, masyarakat memperoleh penjelasan mengenai pengertian eco-enzyme, bahan yang digunakan, tahapan pembuatannya, proses fermentasi, serta potensi pemanfaatannya sebagai bahan pendukung sanitasi lingkungan peternakan. Demonstrasi dilakukan agar peserta tidak hanya memahami konsep secara teoritis, tetapi juga memperoleh gambaran mengenai proses pembuatannya.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Penggunaan buah naga sebagai bahan lokal menjadi bagian penting dalam demonstrasi tersebut. Selain memperkenalkan alternatif pemanfaatan bahan organik, kegiatan ini memberikan perspektif bahwa pengelolaan limbah dan kesehatan lingkungan dapat berjalan beriringan dengan pemanfaatan potensi desa. Masyarakat dapat melihat adanya kemungkinan untuk mengolah bahan organik yang tersedia di lingkungan sekitar menjadi produk yang memiliki nilai guna.',
+      },
+      {
+        type: 'image',
+        src: enzim2,
+      },
+      {
+        type: 'paragraph',
+        text: 'Rangkaian ketiga program tersebut pada akhirnya membentuk alur edukasi yang berkesinambungan. BIOSAFE memberikan pemahaman mengenai apa risiko penyakit yang perlu dikenali melalui pengenalan zoonosis. Warga Jaga Ternak kemudian memperkenalkan bagaimana risiko tersebut dapat diminimalkan melalui penerapan biosekuriti. Selanjutnya, edukasi dan demonstrasi eco-enzyme memberikan contoh pemanfaatan potensi lokal buah naga sebagai bagian dari pendekatan pengelolaan lingkungan dan sanitasi peternakan.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Melalui pendekatan tersebut, mahasiswa KKN-PPM UGM tidak hanya hadir sebagai penyampai informasi, tetapi juga sebagai fasilitator yang bersama masyarakat mengidentifikasi potensi dan kebutuhan yang ada di Desa Sarongan. Pengintegrasian buah naga dalam kegiatan menjadi contoh bahwa program pengabdian dapat dikembangkan dengan mempertimbangkan karakteristik dan sumber daya lokal, sehingga materi yang diberikan lebih dekat dengan kehidupan masyarakat.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Lebih jauh, kegiatan ini juga memperkuat pemahaman mengenai konsep “One Health”, yaitu bahwa kesehatan manusia, kesehatan hewan, dan kesehatan lingkungan merupakan satu kesatuan yang saling berkaitan. Upaya mencegah zoonosis tidak hanya dilakukan dengan mengenali penyakit, tetapi juga melalui pemeliharaan ternak yang baik, penerapan biosekuriti, kebersihan lingkungan, serta pengelolaan sumber daya yang bertanggung jawab.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Bagi masyarakat Desa Sarongan, rangkaian kegiatan ini diharapkan dapat menjadi langkah awal untuk meningkatkan kesadaran bahwa menjaga kesehatan ternak merupakan bagian dari menjaga kesehatan keluarga dan lingkungan. Sementara bagi mahasiswa KKN-PPM UGM, proses tersebut menjadi pembelajaran langsung bahwa pengabdian kepada masyarakat bukan sekadar membawa pengetahuan dari lingkungan akademik, melainkan juga mendengarkan kebutuhan masyarakat, memahami potensi lokal, dan mengembangkan solusi yang sesuai dengan kondisi setempat.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pada akhirnya, pemanfaatan buah naga dalam pembuatan eco-enzyme menjadi lebih dari sekadar demonstrasi pengolahan bahan organik. Kegiatan tersebut menjadi simbol bagaimana potensi lokal Desa Sarongan dapat dipertemukan dengan pengetahuan dan inovasi mahasiswa untuk mendukung kesehatan ternak serta lingkungan. Melalui sinergi antara masyarakat dan mahasiswa KKN-PPM UGM, diharapkan kesadaran mengenai zoonosis, biosekuriti, sanitasi, dan pemanfaatan sumber daya lokal dapat terus berkembang dan memberikan manfaat yang berkelanjutan bagi Desa Sarongan.',
+      },
+    ],
+    image: enzim1,
+    variant: 1,
+  },
 ]

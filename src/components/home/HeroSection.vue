@@ -4,7 +4,7 @@ import PlaceholderHero from '@/components/common/PlaceholderHero.vue'
 
 <template>
   <section class="relative h-[560px] w-full overflow-hidden md:h-[680px]">
-    <PlaceholderHero label="Foto Aerial Kawasan Sarongan — Placeholder" />
+    <PlaceholderHero label="Foto Aerial Kawasan Sarongan" />
     <img 
     src="@/assets/images/IMG_6276.webp" 
     alt="Teluk Ijo, Sarongan, Banyuwangi" 

@@ -1,4 +1,3 @@
-// Placeholder — ganti nama, kategori, lokasi, foto, dan deskripsi dengan data asli.
 import muarambaduk1 from '@/assets/images/edukasi/webp/muarambaduk1.webp'
 import muarambaduk2 from '@/assets/images/edukasi/webp/muarambaduk2.webp'
 import muarambaduk3 from '@/assets/images/edukasi/webp/muarambaduk3.webp'
@@ -34,7 +33,7 @@ import sukamade7 from '@/assets/images/edukasi/webp/sukamade7.webp'
 export const destinations = [
   {
     slug: 'destinasi-1',
-    name: 'Muara Mbaduk',
+    name: 'Muara Mbaduk: Tempat Bertemunya Sungai, Laut, dan Keajaiban Alam di Selatan Meru Betiri',
     category: 'Camping Ground',
     location: 'Sarongan, Banyuwangi',
     excerpt: 'Tempat bertemunya sungai, laut, dan keajaiban alam di selatan Meru Betiri.',
@@ -77,11 +76,11 @@ export const destinations = [
   },
   {
     slug: 'destinasi-2',
-    name: 'Teluk Ijo',
+    name: 'Teluk Ijo: Pesona Air Hijau di Tengah Hutan Meru Betiri',
     category: 'Wisata Bahari',
     location: 'Sarongan, Banyuwangi',
     excerpt:
-      'Teluk Ijo — teluk kecil dengan air laut hijau kebiruan yang jernih, diapit tebing berhutan dan batu karang, populer untuk berenang dan snorkeling.',
+      'Teluk Ijo, teluk kecil dengan air laut hijau kebiruan yang jernih, diapit tebing berhutan dan batu karang, populer untuk berenang dan snorkeling.',
     description: [
       {
         type: 'paragraph',
@@ -103,11 +102,11 @@ export const destinations = [
   },
   {
     slug: 'destinasi-3',
-    name: 'Pantai Benteng',
+    name: 'Pantai Benteng: Menelusuri Pantai Bersejarah dengan Pesona Alam yang Masih Alami',
     category: 'Camping Ground',
     location: 'Sarongan, Banyuwangi',
     excerpt:
-      'Pantai Benteng — pantai berpasir luas dengan sisa bungker peninggalan masa penjajahan Jepang yang tersembunyi di balik vegetasi pantai.',
+      'Pantai Benteng, pantai berpasir luas dengan sisa bungker peninggalan masa penjajahan Jepang yang tersembunyi di balik vegetasi pantai.',
     description: [
       {
         type: 'paragraph',
@@ -143,11 +142,11 @@ export const destinations = [
   },
   {
     slug: 'destinasi-4',
-    name: 'Pantai Batu',
+    name: 'Pantai Batu: Menikmati Suara “Klatakan” di Pesisir Sarongan',
     category: 'Wisata Alam',
     location: 'Sarongan, Banyuwangi',
     excerpt:
-      'Pantai Batu — pantai unik dengan hamparan batu-batu bulat menggantikan pasir, dikelilingi tebing hijau dan air laut yang tenang.',
+    'Pantai Batu, pantai unik dengan hamparan batu-batu bulat yang menggantikan pasir, diapit tebing berhutan dan aliran air tawar.',
     description: [
       {
         type: 'paragraph',
@@ -179,15 +178,19 @@ export const destinations = [
   },
   {
     slug: 'destinasi-5',
-    name: 'Pantai Rajegwesi',
+    name: 'Pantai Rajegwesi: Menyusuri Kampung Nelayan dan Tradisi Petik Laut',
     category: 'Wisata Bahari',
     location: 'Sarongan, Banyuwangi',
     excerpt:
-      'Pantai Rajegwesi — pantai berpasir landai yang menjadi dermaga tradisional nelayan setempat, sekaligus pintu gerbang menuju Sukamade.',
+      'Pantai Rajegwesi, pantai berpasir landai yang menjadi dermaga tradisional nelayan setempat, sekaligus pintu gerbang menuju Sukamade.',
     description: [
       {
         type: 'paragraph',
-        text: 'Pantai Rajegwesi dikenal sebagai kawasan pesisir yang menjadi pusat aktivitas nelayan tradisional, ditandai dengan barisan perahu jukung berwarna-warni yang bersandar di sepanjang garis pantai. Teluk yang tenang dan terlindung menjadikan lokasi ini aman digunakan sebagai tempat berlabuh. Selain menjadi saksi aktivitas nelayan sehari-hari, Pantai Rajegwesi juga dikenal sebagai salah satu titik transit menuju kawasan Sukamade yang berada di dalam Taman Nasional Meru Betiri.',
+        text: 'Sarongan - Ada pantai yang datang dengan pasir putih dan air laut yang jernih. Namun, Pantai Rajegwesi menawarkan sesuatu yang berbeda. Di balik hamparan pasir kecokelatan dan teluk yang tenang, terdapat kehidupan masyarakat nelayan yang telah berjalan berdampingan dengan laut dari generasi ke generasi. Terletak di Desa Sarongan, Kecamatan Pesanggaran, Kabupaten Banyuwangi, Pantai Rajegwesi menjadi salah satu kawasan pesisir yang menarik untuk dikunjungi di sekitar Taman Nasional Meru Betiri. Hutan tropis yang mengelilingi pantai, perahu-perahu nelayan, serta aktivitas masyarakat membuat tempat ini terasa lebih hidup daripada sekadar destinasi untuk menikmati pemandangan laut.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Salah satu hal yang membuat Pantai Rajegwesi berbeda adalah keberadaan masyarakat nelayan yang menjadikan laut sebagai bagian penting dari kehidupan sehari-hari. Perahu-perahu nelayan dapat ditemukan di sekitar pantai, menjadi pemandangan yang tidak hanya mempercantik lanskap tetapi juga memperlihatkan aktivitas masyarakat pesisir. Laut di hadapan Rajegwesi bukan sekadar panorama yang dinikmati wisatawan. Di sanalah para nelayan mencari ikan dan menggantungkan kehidupan. Ketika pagi datang, suasana pantai perlahan mulai hidup. Aktivitas masyarakat dan perahu nelayan memberikan warna tersendiri di antara hamparan pasir dan hutan yang masih asri. Pemandangan sederhana seperti ini justru menjadi salah satu pengalaman yang sulit ditemukan di pantai-pantai yang telah berkembang menjadi kawasan wisata ramai.'
       },
       {
         type: 'image',
@@ -195,9 +198,25 @@ export const destinations = [
         caption: 'Perahu-perahu nelayan yang bersandar di Pantai Rajegwesi saat pagi hari.',
       },
       {
+        type: 'paragraph',
+        text: 'Berjalan menyusuri pantai sambil melihat perahu nelayan dan aktivitas masyarakat membuat perjalanan terasa seperti sedang mengenal kehidupan sebuah kampung pesisir, bukan hanya berkunjung ke tempat wisata. Hubungan masyarakat Rajegwesi dengan laut tidak hanya terlihat dari aktivitas nelayan. Setiap tahun, hubungan tersebut juga dirayakan melalui tradisi Petik Laut.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Bagi masyarakat nelayan Rajegwesi, Petik Laut merupakan ungkapan rasa syukur kepada Tuhan atas rezeki yang diperoleh dari laut sekaligus doa untuk keselamatan dan keberkahan dalam menjalankan kehidupan sebagai nelayan. Tradisi ini biasanya dilaksanakan pada bulan Muharram atau Suro dan diselenggarakan melalui gotong royong masyarakat. Berbagai rangkaian kegiatan dapat mengiringinya, mulai dari pertunjukan seni, kegiatan keagamaan, kenduri, hingga prosesi larung sesaji.'
+      },
+      {
         type: 'image',
         src: rajagwesi2,
         caption: 'Aktivitas nelayan di perairan Rajegwesi yang tenang dan terlindung.',
+      },
+      {
+        type: 'paragraph',
+        text: 'Pada bagian utama prosesi, sesaji ditempatkan di dalam perahu yang dihias dengan bunga dan janur. Perahu kemudian dibawa menuju tengah laut untuk dilarung. Bagi masyarakat, prosesi tersebut menjadi simbol rasa syukur sekaligus penghormatan terhadap alam dan laut yang menjadi sumber kehidupan. Pada saat Petik Laut berlangsung, suasana Pantai Rajegwesi berubah. Kawasan yang biasanya tenang menjadi ruang berkumpul masyarakat. Warga dari berbagai usia ikut mengambil bagian, sementara pertunjukan kesenian dan berbagai kegiatan lainnya membuat pantai terasa lebih meriah. Tradisi ini memperlihatkan bahwa wisata di Rajegwesi tidak hanya berbicara mengenai keindahan alam. Ada budaya dan kehidupan masyarakat yang menjadi bagian penting dari identitas tempat tersebut. Bagi wisatawan, berkunjung ketika Petik Laut berlangsung dapat memberikan pengalaman yang berbeda. Bukan hanya melihat pantai, tetapi juga menyaksikan bagaimana masyarakat menjaga tradisi dan merayakan hubungan mereka dengan laut.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Nama Rajegwesi sendiri memiliki cerita yang menarik. Dalam bahasa Jawa, rajeg wesi kurang lebih berarti “pagar besi”. Nama tersebut dikaitkan dengan karakter batuan dan tebing yang mengelilingi teluk. Kawasan ini juga menyimpan jejak sejarah. Pada masa pendudukan Jepang, terdapat beberapa peninggalan pertahanan di sekitar Rajegwesi. Dahulu disebut terdapat meriam yang menghadap ke arah teluk dan tiang pancang Rajegwesi. Saat ini, sebagian besar peninggalan tersebut telah hilang dan salah satu jejak yang masih dapat ditemukan adalah bunker Jepang. Di samping kisah tersebut, terdapat pula cerita masyarakat mengenai hubungan kawasan Rajegwesi dengan Ki Agung Wilis dan Kerajaan Blambangan. Petilasan Mbah Agung Wilis menjadi salah satu bagian dari cerita lokal yang masih dikenal hingga sekarang.'
       },
     ],
     image: rajagwesi1,

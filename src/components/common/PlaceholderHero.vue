@@ -6,7 +6,7 @@
  * an <img>/background-image where this component is used. See README.
  */
 defineProps({
-  label: { type: String, default: 'Foto Aerial Sarongan — Placeholder' },
+  label: { type: String, default: 'Foto Aerial Sarongan' },
 })
 </script>
 

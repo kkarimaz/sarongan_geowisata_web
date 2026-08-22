@@ -10,8 +10,7 @@ import { destinations } from '@/data/destinations'
 
     <section class="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
       <p v-reveal class="max-w-2xl text-brand-950/65">
-        Daftar destinasi wisata di kawasan Sarongan berikut masih menggunakan data dan foto
-        placeholder — akan diperbarui dengan informasi resmi setiap lokasi.
+        Sarongan memiliki beragam destinasi wisata yang menarik untuk dijelajahi, mulai dari pantai yang indah, hutan yang rimbun, hingga situs budaya yang kaya akan sejarah. Temukan pengalaman unik dan kenangan tak terlupakan di setiap sudut Sarongan.
       </p>
 
       <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
